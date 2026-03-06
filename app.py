@@ -2,10 +2,10 @@
 The Speaker — Personal OSINT Chatbot
 
 A Flask web application that proxies chat messages to Claude via the
-Anthropic Messages API. The assistant has web-search guidance built into
-its system prompt so it will:
-  1. Use its training data and reasoning
-  2. Cite sources when drawing on web search results
+Anthropic Messages API.  At startup the app loads every Markdown file in
+the ``_AI_CONTEXT_INDEX/`` directory and injects them into the system
+prompt so the assistant can reference the Knowledge Base when answering
+questions.
 
 All configuration is done through environment variables so the app can be
 deployed on Render (or any host) without touching the source code.
@@ -19,6 +19,8 @@ from flask import (
     session, redirect, url_for,
 )
 import anthropic
+
+from knowledge_base import KNOWLEDGE_BASE_TEXT
 
 # ---------------------------------------------------------------------------
 # App setup
@@ -42,18 +44,30 @@ ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
 
 # System prompt that steers the assistant's behaviour
-SYSTEM_PROMPT = os.environ.get(
+_BASE_SYSTEM_PROMPT = os.environ.get(
     "SYSTEM_PROMPT",
     (
         "You are The Speaker, an advanced OSINT research assistant. "
-        "When answering questions, always prioritize information from your "
-        "attached Knowledge Base files first. If the Knowledge Base does not "
-        "contain the answer, use your training data. If neither source is "
-        "sufficient, perform a live web search to find the most accurate and "
-        "up-to-date information. Always cite your sources when using web "
-        "search results."
+        "Below is your Knowledge Base — a collection of reference documents "
+        "loaded from the _AI_CONTEXT_INDEX directory. When answering "
+        "questions, always prioritize information from this Knowledge Base "
+        "first. If the Knowledge Base does not contain the answer, use your "
+        "training data. If neither source is sufficient, say so clearly. "
+        "Always cite which Knowledge Base file you are drawing from when "
+        "applicable (e.g. '(see 01_CORE_THEORY.md)')."
     ),
 )
+
+# Build the full system prompt by appending the Knowledge Base content.
+if KNOWLEDGE_BASE_TEXT:
+    SYSTEM_PROMPT = (
+        f"{_BASE_SYSTEM_PROMPT}\n\n"
+        f"--- START OF KNOWLEDGE BASE ---\n\n"
+        f"{KNOWLEDGE_BASE_TEXT}\n\n"
+        f"--- END OF KNOWLEDGE BASE ---"
+    )
+else:
+    SYSTEM_PROMPT = _BASE_SYSTEM_PROMPT
 
 
 # ---------------------------------------------------------------------------
