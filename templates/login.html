@@ -16,6 +16,7 @@
             <div class="mb-4 text-sm text-red-400 bg-red-900/30 p-3 rounded border border-red-800">{{ error }}</div>
         {% endif %}
         <form action="/login" method="post" class="space-y-4">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
             <div>
                 <label class="block text-sm font-semibold text-slate-300 mb-1">Clearance Code</label>
                 <input type="password" name="password" required autofocus
