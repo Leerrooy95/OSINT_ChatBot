@@ -12,6 +12,7 @@ deployed on Render (or any host) without touching the source code.
 """
 
 import os
+import hmac
 import sys
 from functools import wraps
 
@@ -108,7 +109,7 @@ def login_required(f):
 def login():
     error = None
     if request.method == "POST":
-        if request.form.get("password") == APP_PASSWORD:
+        if hmac.compare_digest(request.form.get("password", ""), APP_PASSWORD):
             session["logged_in"] = True
             return redirect(url_for("chat_ui"))
         else:
