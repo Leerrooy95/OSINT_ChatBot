@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: the-speaker
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    healthCheckPath: /health
+    envVars:
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      - key: APP_PASSWORD
+        sync: false              # set manually in the Render dashboard
+      - key: DO_AGENT_ENDPOINT
+        sync: false              # your DigitalOcean agent URL ending in /api/v1
+      - key: DO_AGENT_KEY
+        sync: false              # your DigitalOcean agent API key
+      - key: PYTHON_VERSION
+        value: "3.12.3"
