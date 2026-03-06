@@ -41,7 +41,7 @@ ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 # Claude model to use (default: claude-sonnet-4-6)
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
 
-# System prompt that reinforces the Knowledge-Base-first priority
+# System prompt that steers the assistant's behaviour
 SYSTEM_PROMPT = os.environ.get(
     "SYSTEM_PROMPT",
     (
