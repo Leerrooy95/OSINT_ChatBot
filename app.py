@@ -12,12 +12,17 @@ deployed on Render (or any host) without touching the source code.
 """
 
 import os
+import hmac
+import sys
 from functools import wraps
 
 from flask import (
     Flask, request, jsonify, render_template,
     session, redirect, url_for,
 )
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+from flask_wtf.csrf import CSRFProtect
 import anthropic
 
 from knowledge_base import KNOWLEDGE_BASE_TEXT
@@ -32,10 +37,23 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", os.urandom(32).hex())
 app.config["SESSION_COOKIE_HTTPONLY"] = True
 app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 
+# CSRF protection
+csrf = CSRFProtect(app)
+
+# Rate limiting — uses client IP by default, in-memory storage
+limiter = Limiter(
+    get_remote_address,
+    app=app,
+    default_limits=[],              # no global default; limits set per-route
+    storage_uri="memory://",
+)
+
 # ---------------------------------------------------------------------------
 # Configuration — all from environment variables
 # ---------------------------------------------------------------------------
-APP_PASSWORD = os.environ.get("APP_PASSWORD", "trident2026")
+APP_PASSWORD = os.environ.get("APP_PASSWORD")
+if not APP_PASSWORD:
+    sys.exit("FATAL: APP_PASSWORD environment variable is not set. Exiting.")
 
 # Anthropic API key
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
@@ -87,10 +105,12 @@ def login_required(f):
 # Routes
 # ---------------------------------------------------------------------------
 @app.route("/login", methods=["GET", "POST"])
+@limiter.limit("10 per minute", methods=["POST"])
 def login():
     error = None
     if request.method == "POST":
-        if request.form.get("password") == APP_PASSWORD:
+        password = request.form.get("password")
+        if password is not None and hmac.compare_digest(password, APP_PASSWORD):
             session["logged_in"] = True
             return redirect(url_for("chat_ui"))
         else:
@@ -110,8 +130,13 @@ def chat_ui():
     return render_template("chat.html")
 
 
+MAX_CONVERSATION_MESSAGES = 50   # keep the last N messages to bound context size
+
+
 @app.route("/api/chat", methods=["POST"])
 @login_required
+@limiter.limit("30 per minute")
+@csrf.exempt                       # JSON endpoint; session cookie is SameSite=Lax
 def api_chat():
     """
     Secure backend route.
@@ -127,6 +152,9 @@ def api_chat():
 
     if not ANTHROPIC_API_KEY:
         return jsonify({"error": "ANTHROPIC_API_KEY is not configured on the server."}), 500
+
+    # Truncate to the most recent messages to prevent unbounded context growth.
+    messages = messages[-MAX_CONVERSATION_MESSAGES:]
 
     try:
         client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
