@@ -11,9 +11,7 @@ services:
         generateValue: true
       - key: APP_PASSWORD
         sync: false              # set manually in the Render dashboard
-      - key: DO_AGENT_ENDPOINT
-        sync: false              # your DigitalOcean agent URL ending in /api/v1
-      - key: DO_AGENT_KEY
-        sync: false              # your DigitalOcean agent API key
+      - key: ANTHROPIC_API_KEY
+        sync: false              # your Anthropic API key
       - key: PYTHON_VERSION
         value: "3.12.3"

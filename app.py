@@ -1,11 +1,11 @@
 """
 The Speaker — Personal OSINT Chatbot
 
-A Flask web application that proxies chat messages to a DigitalOcean AI Agent.
-The agent has a Knowledge Base attached and web-search enabled so it will:
-  1. Check its Knowledge Base first
-  2. Fall back to its training data
-  3. Use live web search when the answer isn't available in its files
+A Flask web application that proxies chat messages to Claude via the
+Anthropic Messages API. The assistant has web-search guidance built into
+its system prompt so it will:
+  1. Use its training data and reasoning
+  2. Cite sources when drawing on web search results
 
 All configuration is done through environment variables so the app can be
 deployed on Render (or any host) without touching the source code.
@@ -18,7 +18,7 @@ from flask import (
     Flask, request, jsonify, render_template,
     session, redirect, url_for,
 )
-from openai import OpenAI
+import anthropic
 
 # ---------------------------------------------------------------------------
 # App setup
@@ -35,11 +35,13 @@ app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 # ---------------------------------------------------------------------------
 APP_PASSWORD = os.environ.get("APP_PASSWORD", "trident2026")
 
-# DigitalOcean Agent endpoint (must end with /api/v1)
-DO_AGENT_ENDPOINT = os.environ.get("DO_AGENT_ENDPOINT", "")
-DO_AGENT_KEY = os.environ.get("DO_AGENT_KEY", "")
+# Anthropic API key
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 
-# System prompt that reinforces the Knowledge-Base-first priority
+# Claude model to use (default: claude-sonnet-4-6)
+ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
+
+# System prompt that steers the assistant's behaviour
 SYSTEM_PROMPT = os.environ.get(
     "SYSTEM_PROMPT",
     (
@@ -99,10 +101,9 @@ def chat_ui():
 def api_chat():
     """
     Secure backend route.
-    Receives conversation history from the browser, prepends a system prompt
-    that prioritises the Knowledge Base, sends it to the DigitalOcean Agent
-    via the OpenAI-compatible API, and returns the reply.
-    The DO_AGENT_KEY is never exposed to the browser.
+    Receives conversation history from the browser, prepends a system prompt,
+    sends it to Claude via the Anthropic Messages API, and returns the reply.
+    The ANTHROPIC_API_KEY is never exposed to the browser.
     """
     data = request.get_json(silent=True) or {}
     messages = data.get("messages", [])
@@ -110,32 +111,24 @@ def api_chat():
     if not messages:
         return jsonify({"error": "No messages provided."}), 400
 
-    if not DO_AGENT_ENDPOINT:
-        return jsonify({"error": "DO_AGENT_ENDPOINT is not configured on the server."}), 500
-
-    if not DO_AGENT_KEY:
-        return jsonify({"error": "DO_AGENT_KEY is not configured on the server."}), 500
+    if not ANTHROPIC_API_KEY:
+        return jsonify({"error": "ANTHROPIC_API_KEY is not configured on the server."}), 500
 
     try:
-        client = OpenAI(
-            base_url=DO_AGENT_ENDPOINT,
-            api_key=DO_AGENT_KEY,
-        )
+        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
-        # Prepend system prompt to steer KB-first behaviour
-        full_messages = [{"role": "system", "content": SYSTEM_PROMPT}] + messages
-
-        response = client.chat.completions.create(
-            model="agent",
-            messages=full_messages,
+        response = client.messages.create(
+            model=ANTHROPIC_MODEL,
             max_tokens=4096,
+            system=SYSTEM_PROMPT,
+            messages=messages,
         )
 
-        reply_text = response.choices[0].message.content
+        reply_text = response.content[0].text
         return jsonify({"reply": reply_text})
 
     except Exception as e:
-        app.logger.error("Agent API error: %s", e)
+        app.logger.error("Anthropic API error: %s", e)
         return jsonify({"error": str(e)}), 500
 
 
