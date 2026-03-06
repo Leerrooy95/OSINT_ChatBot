@@ -69,6 +69,15 @@
             margin-bottom: 0.5rem;
             color: #94a3b8;
         }
+
+        /* Download button on individual messages */
+        .msg-download-btn {
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .msg-wrapper:hover .msg-download-btn {
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-200 font-sans h-screen flex flex-col overflow-hidden">
@@ -82,7 +91,16 @@
                 <p class="text-xs text-emerald-400 font-mono">Knowledge Base &amp; Web Search Active</p>
             </div>
         </div>
-        <a href="/logout" class="text-sm text-slate-400 hover:text-white transition px-3 py-1 rounded hover:bg-slate-800">Disconnect</a>
+        <div class="flex items-center space-x-2">
+            <button id="download-convo-btn" onclick="downloadConversation()" title="Download entire conversation"
+                class="text-sm text-slate-400 hover:text-white transition px-3 py-1 rounded hover:bg-slate-800 flex items-center space-x-1 disabled:opacity-40 disabled:cursor-not-allowed" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3" />
+                </svg>
+                <span>Save Chat</span>
+            </button>
+            <a href="/logout" class="text-sm text-slate-400 hover:text-white transition px-3 py-1 rounded hover:bg-slate-800">Disconnect</a>
+        </div>
     </header>
 
     <!-- Chat Area -->
@@ -147,7 +165,7 @@
         function appendMessage(role, content) {
             const isUser = role === 'user';
             const wrapper = document.createElement('div');
-            wrapper.className = `flex ${isUser ? 'justify-end' : 'justify-start'}`;
+            wrapper.className = `flex ${isUser ? 'justify-end' : 'justify-start'} msg-wrapper`;
 
             const bubble = document.createElement('div');
             bubble.className = `max-w-[85%] md:max-w-[75%] ${
@@ -163,9 +181,33 @@
                 bubble.innerHTML = DOMPurify.sanitize(marked.parse(content));
             }
 
-            wrapper.appendChild(bubble);
+            // Wrap bubble and optional download button in a column container
+            const col = document.createElement('div');
+            col.className = isUser ? 'flex flex-col items-end' : 'flex flex-col items-start';
+            col.appendChild(bubble);
+
+            if (!isUser) {
+                const dlBtn = document.createElement('button');
+                dlBtn.className = 'msg-download-btn mt-1 text-slate-500 hover:text-emerald-400 transition p-1 rounded hover:bg-slate-800 flex items-center space-x-1';
+                dlBtn.title = 'Download this reply';
+                dlBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3" />
+                </svg><span class="text-xs">Save reply</span>`;
+                dlBtn.addEventListener('click', function () {
+                    const ts = new Date().toISOString().split('.')[0].replace(/[:T]/g, '-');
+                    downloadText(content, `speaker-reply-${ts}.md`);
+                });
+                col.appendChild(dlBtn);
+            }
+
+            wrapper.appendChild(col);
             chatContainer.appendChild(wrapper);
             chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            // Enable the header download button once there is at least one exchange
+            if (conversationHistory.length > 0) {
+                document.getElementById('download-convo-btn').disabled = false;
+            }
         }
 
         function showTypingIndicator() {
@@ -185,6 +227,30 @@
         function removeTypingIndicator() {
             const indicator = document.getElementById('typing-indicator');
             if (indicator) indicator.remove();
+        }
+
+        // --- Download helpers ---------------------------------------------------
+        function downloadText(text, filename) {
+            const blob = new Blob([text], { type: 'text/markdown;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function downloadConversation() {
+            if (conversationHistory.length === 0) return;
+            const ts = new Date().toISOString().split('.')[0].replace(/[:T]/g, '-');
+            let md = `# The Speaker — Conversation Export\n\n_Exported: ${new Date().toLocaleString()}_\n\n---\n\n`;
+            conversationHistory.forEach(function (msg) {
+                const label = msg.role === 'user' ? '**You**' : '**The Speaker**';
+                md += `${label}:\n\n${msg.content}\n\n---\n\n`;
+            });
+            downloadText(md, `speaker-conversation-${ts}.md`);
         }
 
         async function sendMessage() {
