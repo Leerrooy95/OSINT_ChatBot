@@ -11,8 +11,11 @@ The files are sorted to guarantee a deterministic load order:
   3. Subdirectory files (Node_Dossiers/, sources/) in alphanumeric order
 """
 
+import logging
 import os
 from pathlib import Path
+
+log = logging.getLogger(__name__)
 
 # Resolve the knowledge-base directory relative to *this* file so it works
 # regardless of the working directory (local dev, gunicorn, etc.).
@@ -22,13 +25,14 @@ _KB_DIR = Path(__file__).resolve().parent / "_AI_CONTEXT_INDEX"
 def _load_knowledge_base() -> str:
     """Return the concatenated content of every .md file in _AI_CONTEXT_INDEX/."""
     if not _KB_DIR.is_dir():
+        log.warning("Knowledge base directory not found: %s", _KB_DIR)
         return ""
 
     md_files = sorted(_KB_DIR.rglob("*.md"))
     if not md_files:
         return ""
 
-    # Prioritise navigation files so the model sees them first.
+    # Prioritize navigation files so the model sees them first.
     priority = ("00_START_HERE.md", "CONTEXT_ROUTER.md")
 
     def _sort_key(p: Path) -> tuple:
@@ -46,7 +50,8 @@ def _load_knowledge_base() -> str:
         rel = md_path.relative_to(_KB_DIR)
         try:
             content = md_path.read_text(encoding="utf-8")
-        except OSError:
+        except OSError as exc:
+            log.warning("Failed to read knowledge base file %s: %s", md_path, exc)
             continue
         sections.append(
             f"=== FILE: {rel} ===\n{content}"
