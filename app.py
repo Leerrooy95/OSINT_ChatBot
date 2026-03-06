@@ -109,7 +109,8 @@ def login_required(f):
 def login():
     error = None
     if request.method == "POST":
-        if hmac.compare_digest(request.form.get("password", ""), APP_PASSWORD):
+        password = request.form.get("password")
+        if password is not None and hmac.compare_digest(password, APP_PASSWORD):
             session["logged_in"] = True
             return redirect(url_for("chat_ui"))
         else:
