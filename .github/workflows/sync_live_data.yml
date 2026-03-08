@@ -41,10 +41,8 @@ jobs:
           # Live verification JSON
           curl -sSfL -o _staging/friction_project/output/live_verification.json \
             "https://raw.githubusercontent.com/Leerrooy95/The_Regulated_Friction_Project/main/output/live_verification.json" || true
-
-          # Latest scrape
-          curl -sSfL -o _staging/friction_project/output/latest_scrape.json \
-            "https://raw.githubusercontent.com/Leerrooy95/The_Regulated_Friction_Project/main/output/latest_scrape.json" || true
+          
+          # We removed latest_scrape.json here to prevent JSON parsing errors
           echo "::endgroup::"
 
           echo "::group::Fetching Control_Proof/ (correlation datasets)"
@@ -69,12 +67,12 @@ jobs:
         run: |
           set -euo pipefail
           
-          # The security workaround: check if the secret is empty inside the bash script
+          # Security workaround: check for the token inside the shell
           if [ -z "$GH_TOKEN" ]; then
             echo "::warning::LIVE_TRACKERS_TOKEN not set. Skipping Live_Trackers fetch."
             exit 0
           fi
-          
+
           mkdir -p _staging/live_trackers
 
           echo "Attempting to clone Live_Trackers repository..."
@@ -146,9 +144,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "🤖 Daily sync: live intelligence data + digest update"
 
-            # Robust push with retry (modeled after The_Regulated_Friction_Project).
-            # --strategy-option=ours keeps the runner's freshly fetched data in
-            # case of conflicts; non-conflicting remote changes are incorporated.
+            # Robust push with retry
             MAX_RETRIES=5
             for i in $(seq 1 $MAX_RETRIES); do
               echo "--- Push attempt $i of $MAX_RETRIES ---"
@@ -176,4 +172,3 @@ jobs:
           else
             echo "No new data changes to commit."
           fi
-          
