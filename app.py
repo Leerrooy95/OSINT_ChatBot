@@ -14,6 +14,7 @@ deployed on Render (or any host) without touching the source code.
 import os
 import hmac
 import sys
+from datetime import timedelta
 from functools import wraps
 
 from flask import (
@@ -36,6 +37,8 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", os.urandom(32).hex())
 # Harden session cookies
 app.config["SESSION_COOKIE_HTTPONLY"] = True
 app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
+app.config["SESSION_COOKIE_SECURE"] = True      # require HTTPS in production
+app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(hours=2)
 
 # CSRF protection
 csrf = CSRFProtect(app)
@@ -47,6 +50,33 @@ limiter = Limiter(
     default_limits=[],              # no global default; limits set per-route
     storage_uri="memory://",
 )
+
+
+# ---------------------------------------------------------------------------
+# Security headers — applied to every response
+# ---------------------------------------------------------------------------
+@app.after_request
+def _set_security_headers(response):
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    response.headers["Permissions-Policy"] = (
+        "camera=(), microphone=(), geolocation=()"
+    )
+    response.headers["Strict-Transport-Security"] = (
+        "max-age=63072000; includeSubDomains; preload"
+    )
+    response.headers["Content-Security-Policy"] = (
+        "default-src 'self'; "
+        "script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com "
+        "https://cdn.jsdelivr.net; "
+        "style-src 'self' 'unsafe-inline'; "
+        "img-src 'self' data:; "
+        "connect-src 'self'; "
+        "frame-ancestors 'none'"
+    )
+    return response
+
 
 # ---------------------------------------------------------------------------
 # Configuration — all from environment variables
@@ -65,14 +95,14 @@ ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
 _BASE_SYSTEM_PROMPT = os.environ.get(
     "SYSTEM_PROMPT",
     (
-        "You are The Speaker, an advanced OSINT research assistant. "
-        "Below is your Knowledge Base — a collection of reference documents "
-        "loaded from the _AI_CONTEXT_INDEX directory. When answering "
-        "questions, always prioritize information from this Knowledge Base "
-        "first. If the Knowledge Base does not contain the answer, use your "
-        "training data. If neither source is sufficient, say so clearly. "
-        "Always cite which Knowledge Base file you are drawing from when "
-        "applicable (e.g. '(see 01_CORE_THEORY.md)')."
+        "You are The Speaker, an advanced OSINT research assistant built by "
+        "Leerrooy95. Below is your Knowledge Base — reference documents from "
+        "the _AI_CONTEXT_INDEX directory, including the developer's GitHub "
+        "Profile README (PROFILE_README.md). Prioritize Knowledge Base "
+        "information first. If it lacks the answer, use training data. If "
+        "neither suffices, say so. Cite your source file when applicable "
+        "(e.g. '(see 01_CORE_THEORY.md)'). Be thorough but concise — "
+        "prefer clear, direct answers over lengthy preambles."
     ),
 )
 
@@ -111,6 +141,7 @@ def login():
     if request.method == "POST":
         password = request.form.get("password")
         if password is not None and hmac.compare_digest(password, APP_PASSWORD):
+            session.permanent = True
             session["logged_in"] = True
             return redirect(url_for("chat_ui"))
         else:
@@ -131,6 +162,7 @@ def chat_ui():
 
 
 MAX_CONVERSATION_MESSAGES = 50   # keep the last N messages to bound context size
+MAX_MESSAGE_LENGTH = 20_000      # per-message character limit
 
 
 @app.route("/api/chat", methods=["POST"])
@@ -153,17 +185,31 @@ def api_chat():
     if not ANTHROPIC_API_KEY:
         return jsonify({"error": "ANTHROPIC_API_KEY is not configured on the server."}), 500
 
-    # Truncate to the most recent messages to prevent unbounded context growth.
-    messages = messages[-MAX_CONVERSATION_MESSAGES:]
+    # --- Input validation ---------------------------------------------------
+    validated: list[dict] = []
+    for msg in messages[-MAX_CONVERSATION_MESSAGES:]:
+        if not isinstance(msg, dict):
+            continue
+        role = msg.get("role")
+        content = msg.get("content")
+        if role not in ("user", "assistant") or not isinstance(content, str):
+            continue
+        validated.append({
+            "role": role,
+            "content": content[:MAX_MESSAGE_LENGTH],
+        })
+
+    if not validated:
+        return jsonify({"error": "No valid messages provided."}), 400
 
     try:
         client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
         response = client.messages.create(
             model=ANTHROPIC_MODEL,
-            max_tokens=4096,
+            max_tokens=16384,
             system=SYSTEM_PROMPT,
-            messages=messages,
+            messages=validated,
         )
 
         reply_text = response.content[0].text
