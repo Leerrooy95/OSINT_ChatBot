@@ -1,0 +1,181 @@
+{
+  "file_count": 44,
+  "files": {
+    ".api_budget.json": {
+      "sha256": "5af96a3cd65d92da8d2dbaf408319cb5c0700bf618dce79d466677c2f04b58af",
+      "size": 65
+    },
+    "00_START_HERE.md": {
+      "sha256": "84aa2e3ac2a67557463c71d8c8032a17018d384c4d34351ec20ee09f84c83ead",
+      "size": 14095
+    },
+    "01_CORE_THEORY.md": {
+      "sha256": "8728a6884ddd3b42b4ab3ba09725e60c6a65bb8940ac068360f2dd392b815e4d",
+      "size": 11148
+    },
+    "02_MEDIA_FIREWALL.md": {
+      "sha256": "d108b4b1dd4147e7463e143bdd54af3c733221abb081dccc70680c60532a2668",
+      "size": 26190
+    },
+    "03_BOARD_OF_PEACE.md": {
+      "sha256": "dcc8d2f2d3f00c31ca6dc715a389b586e8a4d9b758338358fe76ba6d270559ec",
+      "size": 8637
+    },
+    "04_CAPITAL_ARCHITECTURE.md": {
+      "sha256": "63d600e9d65826849acb1043c050346067cea5bf4354699ae5156d49f36451f1",
+      "size": 25352
+    },
+    "05_CRINK_FRAMEWORK.md": {
+      "sha256": "24ba2e979e2b1977ec1fd0b3e04e513a64ed3b649d9f0b258e9e4d0db7240ddc",
+      "size": 16099
+    },
+    "06_ATTENTION_ECONOMY.md": {
+      "sha256": "c818aa42d674ec81a7adbde928a520b2ca7c6eeace2a754e7e404ffbe972bc1d",
+      "size": 29177
+    },
+    "07_METHODOLOGY.md": {
+      "sha256": "6801a40753df0148a1ef2d9dc136e99f688d764895681cde4a1983a1177f88bc",
+      "size": 16966
+    },
+    "08_KEY_DATASETS.md": {
+      "sha256": "02a86a85f190d1c2838e6584cee02e587c78e292c6468c545e23c37e2c14835f",
+      "size": 9826
+    },
+    "09_CURRENT_THREADS.md": {
+      "sha256": "740a170fd79fc6f614dbe0fa6fcd5a0c903603d0b1ce1aec38a90a74b48fca0b",
+      "size": 74610
+    },
+    "10_FRAMEWORK_VALIDATION.md": {
+      "sha256": "c215c727cda17e81423bfcdf7fc7fed8892d708b2f13b3b00f095dd826687f5a",
+      "size": 24958
+    },
+    "11_LEVERAGE_THESIS.md": {
+      "sha256": "bfea2072c44678965309140c422ce6eaa903f1a54f481f79472ccec3198ea62d",
+      "size": 33515
+    },
+    "2026-02-27_Carlson_Fitts_Control_Grid.md": {
+      "sha256": "a22d3b78f1b108bf55065d8d8a10384631a31fc11ba822d355c30c2ba70f7e57",
+      "size": 8990
+    },
+    "2026-02-28_Arsenal_of_Freedom_Defense_Industrial_Convergence.md": {
+      "sha256": "ccc10c17727509a2201f7164200f800299a21e416e113d2eaa801f6281cb01ad",
+      "size": 9518
+    },
+    "2026-02-28_Cyber_Kinetic_Timeline_Analysis.md": {
+      "sha256": "6e37eaeae05a38f563533385d8c7f56789d35ce94ecb9d58a09318e30cff061c",
+      "size": 16326
+    },
+    "2026-02-28_Iran_Strike_Target_Mapping.md": {
+      "sha256": "04e86697d48f574fe2cca0ebf171343a1cffc15a29890d0daab3fdf53579465b",
+      "size": 8071
+    },
+    "CONTEXT_ROUTER.md": {
+      "sha256": "f1fad23a5e640a4db45d16722d38d4d240917a8ae306a289f62710de8f89496a",
+      "size": 16539
+    },
+    "GAP_ANALYSIS.md": {
+      "sha256": "0cf598b5b0a1b8110f284c0c39740c23fee1ef28391f811de86716165575ee6f",
+      "size": 21770
+    },
+    "NODE_INDEX.md": {
+      "sha256": "2bbe5fd469f6f7690809aa3e6b9e5357ffbf8226f86dae0d042cd99cc0d45c85",
+      "size": 10299
+    },
+    "PROFILE_README.md": {
+      "sha256": "7315f5b4f1c6815fa6d363f7f590417e48c9ce9ce0f57a021cad3eeb6dc0b680",
+      "size": 5749
+    },
+    "README.md": {
+      "sha256": "c7ea0edb54049e9e56dd0466cd95b5219ddad0021e8a6b3d2c41f3ea134b157b",
+      "size": 7542
+    },
+    "REPO_AUDIT_2026-03-01.md": {
+      "sha256": "6eb2dd3da9193f96158c03df4c2e26884b83ca7c99290f8c74684042edb2f3da",
+      "size": 38540
+    },
+    "SETUP.md": {
+      "sha256": "ed8ad9bfaaef0be441224b02577189b525bc33e0dd31d077abc65fe56e87eb50",
+      "size": 3648
+    },
+    "convergence_report.json": {
+      "sha256": "1b1e8a3d58ddc77c29e095f4321af8ca877311fe1980f156bc0ce4e0d89c9abd",
+      "size": 3546
+    },
+    "extracted_entities.json": {
+      "sha256": "8c1174fe3b2455d0fb3d5998eb7c2383feb492c5a1d57d12b58549fa81bf9240",
+      "size": 6409
+    },
+    "extraction_20260308_165753.json": {
+      "sha256": "8d257447af24351d39b8a9dc556d2b128809fc41876699907b93d07d1a569710",
+      "size": 6547
+    },
+    "extraction_20260308_201538.json": {
+      "sha256": "8c1174fe3b2455d0fb3d5998eb7c2383feb492c5a1d57d12b58549fa81bf9240",
+      "size": 6409
+    },
+    "node_status.json": {
+      "sha256": "9d164d4a69a7bdc0b8d3037e9dd0ae5729f1df3b78f69f8613bd5ff02a6a3334",
+      "size": 7079
+    },
+    "requirements.txt": {
+      "sha256": "6feae850c4e502c873e27d4ec5297030873b8d3d6bc825ef6b8b429b5ed4f2ab",
+      "size": 80
+    },
+    "requirements_live_trackers.txt": {
+      "sha256": "e41dfc7362af96a448ac01a09ea788502188946fdd030aae5df6ab3ddde56ad8",
+      "size": 59
+    },
+    "tier1_binsulayem_epstein.md": {
+      "sha256": "1faad21c5899940280603cddecc5acc093e97ce64be320bd3c73c8b722dc45b4",
+      "size": 5721
+    },
+    "tier1_kushner_historical.md": {
+      "sha256": "3bb3fca85277bf03e92151f9b05f50b81d819dd7ce4ceb7ab1a724f2fcfaa276",
+      "size": 13085
+    },
+    "tier1_maxwell_leverage.md": {
+      "sha256": "0b22811d7bd67675532a656eda9b6d407387448d56daf77f4d20ac8b98c4019b",
+      "size": 21124
+    },
+    "tier1_zorro_ranch_epstein.md": {
+      "sha256": "09afe548ab489c99897bc1c95ee4e48d092e51e489c76cd5db6f8dd2ef9c0ba0",
+      "size": 5738
+    },
+    "tier2_affinity_qxo.md": {
+      "sha256": "52fd5ca772d79cdaf5166f01f78b2211c8ac51cdcb840e3bd5a02fb6c8340f22",
+      "size": 8740
+    },
+    "tier2_egypt_gulf_integration.md": {
+      "sha256": "111d3dc18db81c6435c60eeac325ac618c2d8334bc323fa09c17b4f046c876e3",
+      "size": 10935
+    },
+    "tier2_entity_leadership_profiles.md": {
+      "sha256": "8ab78662ced0c2f323e843bd55beae11d6f7e8c82ad16d6adf6a30d7c814d407",
+      "size": 33485
+    },
+    "tier2_sovereign_wealth_movers.md": {
+      "sha256": "51caa4e8337f5cffd3cd4a160aba43ed0fabb3e81051bc8afd45789aaa6cb7be",
+      "size": 8987
+    },
+    "tier2_uae_coordination_node.md": {
+      "sha256": "6552993c1c7372c69d32e41cce871ca5a7982a7ed3d1c9aaaabaed00fe95387b",
+      "size": 17033
+    },
+    "tier3_thermostat_ruleset.md": {
+      "sha256": "4d3e3c08f3f7f2e09a84b19579c58a13d58a9a0df0873928c59691d95b1ed294",
+      "size": 7943
+    },
+    "tracker_20260308_165741.json": {
+      "sha256": "19f4218640bc023408efd11c2dd5754bb6d28d6f608e62a1d335d92e558f0424",
+      "size": 5263
+    },
+    "tracker_20260308_201523.json": {
+      "sha256": "9d164d4a69a7bdc0b8d3037e9dd0ae5729f1df3b78f69f8613bd5ff02a6a3334",
+      "size": 7079
+    },
+    "tracker_config.json": {
+      "sha256": "9c8dcb7a7de463267a57e90a4cdff11032fde6454e09c5a3f3b70e95dd0afb6b",
+      "size": 4176
+    }
+  }
+}

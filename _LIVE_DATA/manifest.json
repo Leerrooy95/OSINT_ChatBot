@@ -1,0 +1,25 @@
+{
+  "file_count": 5,
+  "files": {
+    "Control_Proof/MASTER_reflexive_control_v2.csv": {
+      "sha256": "4c8bd654506f5cfae8faa56f62c35979503f12e35885e09b994d673a632db68a",
+      "size": 61070
+    },
+    "Control_Proof/correlation_results.txt": {
+      "sha256": "61c476752201fa88c2db4cb9e3175b7c705ae8bdd63d4d57ecdd0a12e86fdf6e",
+      "size": 776
+    },
+    "Control_Proof/master_reflexive_correlation_data.csv": {
+      "sha256": "308516bbb8f2edbe10b5bf75201262c2a9a6c0682a10a81edea7dbfd3ad142b2",
+      "size": 919
+    },
+    "output/daily_intelligence.json": {
+      "sha256": "26c093b6589be02d81c364f0b50f291d8e3c550a7a902af9816854e9b981d742",
+      "size": 11445
+    },
+    "output/live_verification.json": {
+      "sha256": "1b19766720cf3fb476899cdb0568548afb2278fd0d322fcda93802a2d29b3759",
+      "size": 18627
+    }
+  }
+}

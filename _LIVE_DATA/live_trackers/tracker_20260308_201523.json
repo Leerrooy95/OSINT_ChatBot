@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-08T20:14:55.175979+00:00",
+  "run_date": "2026-03-08",
+  "nodes_queried": 4,
+  "nodes_active": 4,
+  "nodes_critical": 2,
+  "convergence_detected": true,
+  "node_statuses": {
+    "maxwell": {
+      "node_id": "maxwell",
+      "status": "ACTIVE",
+      "headline": "Ghislaine Maxwell prepares commutation application to Trump in exchange for Epstein-related testimony amid Democratic opposition.",
+      "summary": "Ghislaine Maxwell is filing for commutation of her sentence, with her attorneys indicating she will testify under oath only if granted clemency, following a July interview with Deputy AG Todd Blanche where she praised Trump.[1] She invoked her Fifth Amendment right during a recent video deposition before the House Oversight Committee in response to a congressional subpoena.[2] Senator Jacky Rosen introduced a Senate resolution opposing any clemency for Maxwell, aiming for a recorded vote or unanimous consent to pressure the White House.[2] Democrats, including Rep. Jamie Raskin, have criticized reports of special prison treatment for Maxwell at FPC Bryan, such as customized meals and organized visits.[1]",
+      "event_classification": "FRICTION",
+      "key_entities_mentioned": [
+        "Ghislaine Maxwell",
+        "House Oversight Committee",
+        "Epstein files",
+        "DOJ",
+        "Pam Bondi"
+      ],
+      "sources": [
+        "https://www.politico.com/news/2025/11/10/ghislaine-maxwell-seek-commutation-document-00644139",
+        "https://www.rosen.senate.gov/2026/02/12/rosen-announces-resolution-opposing-any-clemency-from-donald-trump-for-ghislaine-maxwell/"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-08",
+      "raw_response_length": 1378
+    },
+    "gulf_swf": {
+      "node_id": "gulf_swf",
+      "status": "CRITICAL",
+      "headline": "Saudi PIF soft-launches 2026-2030 strategy shifting focus to industry, minerals, AI, and tourism while scaling back mega-projects like The Line.",
+      "summary": "Saudi Arabia's Public Investment Fund (PIF) soft-launched its new five-year strategy for 2026-2030 with key investors at a Riyadh conference, marking a major recalibration of Vision 2030 amid fiscal pressures from low oil prices.[1][5] The blueprint prioritizes sectors including industry, minerals, artificial intelligence, and tourism, while reducing emphasis on expensive giga-projects such as The Line.[1][4][6] PIF also plans up to eight subsidiary IPOs in 2026, including ArcelorMittal Jubail and Sela, and is deepening private sector partnerships with over SAR 40 billion in investment opportunities offered.[2][3]",
+      "event_classification": "COMPLIANCE",
+      "key_entities_mentioned": [
+        "Saudi PIF"
+      ],
+      "sources": [
+        "https://www.investing.com/news/economy-news/saudi-pif-to-unveil-new-fiveyear-strategy-with-focus-shift--reuters-93CH-4494711",
+        "https://www.argaam.com/en/article/articledetail/id/1872853",
+        "https://english.aawsat.com/business/5239126-saudi-arabias-pif-shifts-launching-opportunities-accelerating-growth",
+        "https://www.binance.com/en/square/post/290267586500785",
+        "https://grbizm.com/the-strategic-realignment-of-sovereign-wealth-analyzing-saudi-arabias-public-investment-fund-2026-2030-blueprint/",
+        "https://gulfbusiness.com/saudi-pif-to-unveil-new-2026-2030-strategy/"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-08",
+      "raw_response_length": 1532
+    },
+    "oracle_ellison": {
+      "node_id": "oracle_ellison",
+      "status": "ACTIVE",
+      "headline": "Oracle announced $45-50B equity and debt financing plan for 2026 to fund cloud infrastructure expansion amid concerns over OpenAI exposure and existing debt.",
+      "summary": "Oracle revealed plans on February 1, 2026, to raise $45-50 billion in gross cash proceeds through a balanced mix of debt and equity, including a $20B at-the-market equity program and a one-time senior unsecured bond issuance early in 2026, to support Oracle Cloud Infrastructure growth.[1][3] Bank of America analysts noted this transparency defused key hyperscaler borrowing risks for 2026, though Oracle's stock fell over 3% after a tweet affirming unchanged financial ties with OpenAI amid its Nvidia deal.[2] Reports highlight Oracle's $100B current debt load and $250B in long-term data center leasing commitments, raising investor concerns about reliance on OpenAI, which has massive obligations but limited revenue transparency.[2] No new developments on Larry Ellison's Warner Bros Discovery acquisition, David Ellison's Paramount-Skydance merger, or Stargate contraction as of March 8, 2026.",
+      "event_classification": "COMPLIANCE",
+      "key_entities_mentioned": [
+        "Oracle",
+        "Larry Ellison",
+        "OpenAI",
+        "Stargate"
+      ],
+      "sources": [
+        "https://www.stocktitan.net/news/ORCL/oracle-announces-equity-and-debt-financing-plan-for-calendar-year-s3do958s6jxu.html",
+        "https://fortune.com/2026/02/03/oracle-debt-openai-stock-movement-key-risk-hyperscaler-market/",
+        "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-08",
+      "raw_response_length": 1718
+    },
+    "epstein_files": {
+      "node_id": "epstein_files",
+      "status": "CRITICAL",
+      "headline": "DOJ published over 3 million additional pages of Epstein files on March 7, 2026, in compliance with the Epstein Files Transparency Act, totaling nearly 3.5 million pages including 2,000 videos and 180,000 images.[1][3]",
+      "summary": "The Department of Justice released more than 3 million additional responsive pages from Epstein-related cases, including Florida and New York investigations, Maxwell case, and FBI probes, following the Act signed by President Trump on November 19, 2025.[1] Files were reviewed by over 500 attorneys with redactions limited to victim protection; notable individuals and politicians were not redacted.[1] The Epstein Library website was last updated March 7, 2026, housing all released materials.[3] NBC News reported on March 6, 2026, that the release included previously unseen files with 2019 FBI interview summaries alleging sexual assault against Trump, though credibility is unclear and Trump denies wrongdoing.[2]",
+      "event_classification": "COMPLIANCE",
+      "key_entities_mentioned": [
+        "DOJ",
+        "FBI",
+        "Epstein",
+        "Trump",
+        "Maxwell"
+      ],
+      "sources": [
+        "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files",
+        "https://www.youtube.com/watch?v=FYWi9izqqOk",
+        "https://www.justice.gov/epstein"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-08",
+      "raw_response_length": 1365
+    }
+  },
+  "convergence_note": "6 nodes active simultaneously \u2014 within the 7-day convergence window defined by the thermostat model."
+}

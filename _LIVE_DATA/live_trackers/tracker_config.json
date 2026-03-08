@@ -1,0 +1,83 @@
+{
+  "last_updated": "2026-03-08",
+  "version": "1.0",
+  "description": "Leverage node definitions for the Live Trackers. Each node maps to a documented leverage mechanism in The Regulated Friction Project.",
+  "convergence_window_days": 7,
+  "leverage_nodes": {
+    "maxwell": {
+      "name": "Maxwell Leverage Node",
+      "node_type": "information",
+      "priority": "HIGH",
+      "description": "Ghislaine Maxwell clemency negotiations and Epstein network documentation leverage",
+      "search_queries": [
+        "Ghislaine Maxwell clemency pardon 2026",
+        "Maxwell testimony House Oversight Epstein",
+        "Maxwell FPC Bryan prison legal filing"
+      ],
+      "tracked_entities": ["Ghislaine Maxwell", "House Oversight Committee", "Epstein files", "DOJ", "Pam Bondi"],
+      "source_files": ["Node_Dossiers/tier1_maxwell_leverage.md", "09_CURRENT_THREADS.md"]
+    },
+    "iran": {
+      "name": "Iran Kinetic/Cyber Node",
+      "node_type": "kinetic",
+      "priority": "CRITICAL",
+      "description": "Iran war status, succession architecture, Strait of Hormuz, CRINK coordination",
+      "search_queries": [
+        "Iran war US strikes latest March 2026",
+        "Iran supreme leader succession Assembly of Experts",
+        "Strait of Hormuz shipping oil prices today",
+        "Iran Epstein gang propaganda information warfare"
+      ],
+      "tracked_entities": ["Iran", "IRGC", "Mojtaba Khamenei", "Strait of Hormuz", "Assembly of Experts", "Ghalibaf"],
+      "source_files": ["05_CRINK_FRAMEWORK.md", "09_CURRENT_THREADS.md"]
+    },
+    "gulf_swf": {
+      "name": "Gulf SWF Capital Architecture",
+      "node_type": "capital",
+      "priority": "HIGH",
+      "description": "Gulf sovereign wealth fund positioning, Silicon Sovereignty consortium movements",
+      "search_queries": [
+        "Saudi PIF investment 2026",
+        "Mubadala GlobalFoundries CHIPS Act",
+        "UAE MGX AI investment Stargate",
+        "Gulf sovereign wealth fund US infrastructure"
+      ],
+      "tracked_entities": ["Saudi PIF", "Mubadala", "MGX", "ADIA", "QIA", "GlobalFoundries", "Affinity Partners"],
+      "source_files": ["04_CAPITAL_ARCHITECTURE.md", "Node_Dossiers/tier2_sovereign_wealth_movers.md"]
+    },
+    "oracle_ellison": {
+      "name": "Oracle/Ellison Dual Exposure",
+      "node_type": "capital",
+      "priority": "HIGH",
+      "description": "Oracle financial stress, Stargate contraction, Ellison WBD acquisition, media consolidation",
+      "search_queries": [
+        "Oracle stock price financial debt 2026",
+        "Oracle OpenAI Stargate data center",
+        "Larry Ellison Warner Bros Discovery acquisition",
+        "Paramount Skydance Ellison merger"
+      ],
+      "tracked_entities": ["Oracle", "Larry Ellison", "David Ellison", "OpenAI", "Stargate", "Warner Bros Discovery", "Paramount"],
+      "source_files": ["04_CAPITAL_ARCHITECTURE.md", "02_MEDIA_FIREWALL.md"]
+    },
+    "epstein_files": {
+      "name": "Epstein Files Documentation",
+      "node_type": "information",
+      "priority": "CRITICAL",
+      "description": "DOJ file releases, Congressional subpoenas, 302 withholding, Epstein Class counter-frame",
+      "search_queries": [
+        "DOJ Epstein files release latest 2026",
+        "Pam Bondi subpoena House Oversight Epstein",
+        "Epstein class Iran war Congress",
+        "FBI 302 Epstein Trump withheld documents"
+      ],
+      "tracked_entities": ["DOJ", "Pam Bondi", "Thomas Massie", "Ro Khanna", "House Oversight", "FBI 302"],
+      "source_files": ["09_CURRENT_THREADS.md", "11_LEVERAGE_THESIS.md"]
+    }
+  },
+  "classification_labels": {
+    "event_types": ["FRICTION", "COMPLIANCE", "ESCALATION", "DE_ESCALATION", "CONVERGENCE"],
+    "confidence_levels": ["HIGH", "MEDIUM", "LOW"],
+    "status_codes": ["ACTIVE", "CONFIRMED", "MONITORING", "RESOLVED", "CRITICAL"]
+  },
+  "framework_context": "The Regulated Friction Project documents a statistically significant correlation (r=0.6196, p=0.0004) between high-visibility friction events and institutional compliance events with a 7-day median lag. The Live Trackers monitor the 5 active leverage nodes in real time to detect convergence windows."
+}

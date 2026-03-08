@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-03-08T08:17:27Z",
+  "generated_by": "Perplexity sonar-pro (standalone)",
+  "config_version": "2026-02-28",
+  "top_3_developments": [
+    {
+      "headline": "US-Israel strikes continued on Iran as Trump vowed harder hits with no end timetable on day 9 of war",
+      "summary": "Israeli military launched new strikes on Iran early Sunday, March 8, while Iran fired missiles at Israel in retaliation. Trump stated the war is going 'very well' after knocking out Iran's navy, air force, and telecoms, demanding unconditional surrender. Iran vows no surrender, rejecting US demands.",
+      "event_type": "KINETIC",
+      "imminence": "ONGOING",
+      "source": "CBS News live updates",
+      "timestamp": "2026-03-08"
+    },
+    {
+      "headline": "Board of Peace held inaugural meeting on February 19, 2026, with executive boards fully formed",
+      "summary": "The Board of Peace, chaired by President Trump, established its founding Executive Board including Marco Rubio, Steve Witkoff, and Jared Kushner, alongside a Gaza Executive Board to oversee reconstruction under UNSCR 2803. The National Committee for the Administration of Gaza formed under Dr. Ali Sha’ath, with security led by Major General Jasper Jeffers. The mandate remains active until at least December 2027.",
+      "event_type": "POLITICAL",
+      "imminence": "ONGOING",
+      "source": "White House Statement (Jan 2026)",
+      "timestamp": "2026-03-08"
+    },
+    {
+      "headline": "DOJ released additional Epstein files alleging Trump misconduct on March 6, 2026",
+      "summary": "The Justice Department released previously unreleased documents with unsubstantiated claims from 2019 alleging sexual abuse by Epstein and Donald Trump. House Oversight Committee subpoenaed Attorney General Pam Bondi on March 4 amid scrutiny over document handling and redactions. No further major releases confirmed since January.",
+      "event_type": "INTELLIGENCE",
+      "imminence": "ONGOING",
+      "source": "Britannica timeline",
+      "timestamp": "2026-03-08"
+    }
+  ],
+  "new_alerts": [
+    {
+      "headline": "Saudi Arabia replaced Investment Minister Khalid Al Falih with PIF executive Farad Al-Safe",
+      "alert_type": "Cabinet Reshuffle",
+      "event_type": "POLITICAL",
+      "imminence": "ONGOING",
+      "relevance": "Cabinet reshuffle introduces regulatory friction in investment oversight, likely triggering compliance reviews by PIF and foreign partners with a potential 7-day lag in institutional responses.",
+      "priority": "HIGH",
+      "timestamp": "2026-02-16"
+    },
+    {
+      "headline": "Abu Dhabi announced L’IMAD sovereign wealth fund absorbing ADQ portfolio",
+      "alert_type": "Fund Restructuring",
+      "event_type": "FINANCIAL",
+      "imminence": "ONGOING",
+      "relevance": "Sovereign fund consolidation creates structural friction in asset management and partnerships, correlating with compliance adjustments across Gulf investors per the 7-day median lag pattern.",
+      "priority": "HIGH",
+      "timestamp": "2026-01"
+    }
+  ],
+  "signal_updates": [
+    {
+      "status": "ACTIVE",
+      "headline": "US-Israel strikes continue on Iran as Trump vows harder hits with no end timetable on day 9 of war",
+      "event_type": "KINETIC",
+      "imminence": "ONGOING",
+      "timestamp": "2026-03-08"
+    },
+    {
+      "status": "ACTIVE",
+      "headline": "Board of Peace fully formed with executive boards appointed and inaugural meeting scheduled for February 19, 2026",
+      "event_type": "POLITICAL",
+      "imminence": "ONGOING",
+      "timestamp": "2026-03-08"
+    },
+    {
+      "status": "ACTIVE",
+      "headline": "Gulf SWFs continue heavy global capital deployment amid Strait of Hormuz blockade and oil revenue pressures",
+      "event_type": "FINANCIAL",
+      "imminence": "ONGOING",
+      "timestamp": "2026-03-08"
+    },
+    {
+      "status": "ACTIVE",
+      "headline": "DOJ continues Epstein files releases with new documents alleging Trump misconduct as of March 6, 2026",
+      "event_type": "INTELLIGENCE",
+      "imminence": "ONGOING",
+      "timestamp": "2026-03-08"
+    },
+    {
+      "status": "ACTIVE",
+      "headline": "Russia-Ukraine peace talks stalled as Russia demands Ukrainian withdrawal from Donetsk ahead of decisive talks this week",
+      "event_type": "POLITICAL",
+      "imminence": "NEAR_TERM",
+      "timestamp": "2026-03-08"
+    }
+  ],
+  "priority_watchlist": [
+    "Iran-US military escalation and potential Iranian retaliation strikes",
+    "Russia-Ukraine negotiations outcome this week on Donetsk demands",
+    "Institutional responses to Saudi Investment Minister reshuffle (7-day lag)",
+    "Gulf SWF shifts due to Strait of Hormuz blockade persistence",
+    "Further DOJ Epstein file releases or congressional hearings"
+  ],
+  "signal_status": [
+    {
+      "status": "ACTIVE",
+      "headline": "US-Israel strikes continue on Iran as Trump vows harder hits with no end timetable on day 9 of war",
+      "summary": "Israeli military launched new strikes on Iran early Sunday, March 8, while Iran fired missiles at Israel in retaliation; Trump stated the war is going 'very well' after knocking out Iran's navy, air force, and telecoms, demanding unconditional surrender.[1][6] Iran vows no surrender, with President Pezeshkian rejecting US demands and promising decisive response to aggression.[1][7] US reports 6 service members killed thus far, hospital services halted amid ongoing operations.[2][8]",
+      "event_type": "KINETIC",
+      "imminence": "ONGOING",
+      "sources": [
+        "CBS News live updates [1]",
+        "Military Times [2]",
+        "Wikipedia [5]",
+        "Britannica [6]",
+        "WION YouTube [7]",
+        "ISW [8]"
+      ],
+      "timestamp": "2026-03-08",
+      "original_signal": "Iran-US military action",
+      "category": "KINETIC"
+    },
+    {
+      "status": "ACTIVE",
+      "headline": "Board of Peace fully formed with executive boards appointed and inaugural meeting scheduled for February 19, 2026.",
+      "summary": "The Board of Peace, chaired by President Trump, has established its founding Executive Board including Marco Rubio, Steve Witkoff, Jared Kushner, and others, alongside a Gaza Executive Board, to oversee Gaza's reconstruction and stabilization under the Comprehensive Plan endorsed by UNSCR 2803.[1][2] The National Committee for the Administration of Gaza (NCAG) has been formed under Dr. Ali Sha’ath, with security led by Major General Jasper Jeffers of the International Stabilization Force (ISF).[1] No new developments reported since January 2026; the inaugural board meeting occurred on February 19, 2026, to secure funds and troop commitments, with the mandate active until at least December 2027.[2]",
+      "event_type": "POLITICAL",
+      "imminence": "ONGOING",
+      "sources": [
+        "White House Statement (Jan 2026)",
+        "Arab Center DC Analysis",
+        "Baker Institute Report"
+      ],
+      "timestamp": "2026-03-08",
+      "original_signal": "Board of Peace developments",
+      "category": "POLITICAL"
+    },
+    {
+      "status": "ACTIVE",
+      "headline": "Gulf SWFs continue heavy global capital deployment amid Strait of Hormuz blockade and oil revenue pressures.",
+      "summary": "Gulf sovereign wealth funds deployed $13.7 billion across 43 deals in January 2026, following $119 billion in 2025 that captured 43% of global sovereign activity; however, the ongoing Strait of Hormuz closure since late February due to US-Israeli strikes on Iran is prompting potential inward shifts to domestic priorities like infrastructure if oil disruptions persist[1][2][3]. PIF, Mubadala, and others maintain strong outward investments in AI, tech, and strategic sectors despite falling current-account surpluses, with no specific new acquisitions confirmed in early March 2026[1][3][5]. Analysts note funds are absorbing shocks and could redeploy globally post-de-escalation[2].",
+      "event_type": "FINANCIAL",
+      "imminence": "ONGOING",
+      "sources": [
+        "CAIA Feb 2026: Gulf SWF architecture and Jan deployments[1]",
+        "Economic Times: Hormuz blockade impact on SWFs[2]",
+        "BNP Paribas Jan 28 2026: GCC outflows despite surplus drop[3]",
+        "UBP: Middle East capital center[4]",
+        "Deloitte: GCC SWFs forefront, Mubadala $29B in 2025[5]"
+      ],
+      "timestamp": "2026-03-08",
+      "original_signal": "Gulf SWF capital movements",
+      "category": "FINANCIAL"
+    },
+    {
+      "status": "ACTIVE",
+      "headline": "DOJ continues Epstein files releases with new documents alleging Trump misconduct as of March 6, 2026",
+      "summary": "The Justice Department released additional Epstein files in early March 2026, including previously unreleased documents with unsubstantiated claims from 2019 by a woman alleging sexual abuse by Epstein and Donald Trump when she was a young teenager; these were held back due to being incorrectly marked as duplicates.[1][2] House Oversight Committee subpoenaed Attorney General Pam Bondi on March 4, 2026, to testify on DOJ's document handling, amid ongoing congressional scrutiny and survivor complaints over redactions protecting abusers.[1] No further major releases are confirmed since the January 30 batch of 3 million pages, videos, and images, which DOJ indicated was the last significant one.[1]",
+      "event_type": "INTELLIGENCE",
+      "imminence": "ONGOING",
+      "sources": [
+        "Britannica timeline (web:1)",
+        "NBC News YouTube (web:2)",
+        "DOJ Epstein Library (web:3)"
+      ],
+      "timestamp": "2026-03-08",
+      "original_signal": "Epstein document releases",
+      "category": "INTELLIGENCE"
+    },
+    {
+      "status": "ACTIVE",
+      "headline": "Russia-Ukraine peace talks stalled as Russia demands Ukrainian withdrawal from Donetsk ahead of decisive talks this week.",
+      "summary": "Russia is considering halting U.S.-led peace talks unless Ukraine cedes the eastern Donetsk region, with planned negotiations this week potentially decisive; failure to concede could lead Russia to walk away[1]. Zelenskyy indicated early March talks in Abu Dhabi following Geneva meetings, but no confirmation of occurrence by March 8, amid ongoing territorial disputes like Donbas[2][3]. Recent prisoner exchanges occurred in early March, but political progress remains limited with Russia rejecting security guarantees[3].",
+      "event_type": "POLITICAL",
+      "imminence": "NEAR_TERM",
+      "sources": [
+        "Japan Times (Mar 1, 2026)",
+        "Moscow Times (Feb 27, 2026)",
+        "Wikipedia (Geneva meetings)",
+        "YouTube Zelenskyy address (Mar 7, 2026)",
+        "Kyiv Post"
+      ],
+      "timestamp": "2026-03-08",
+      "original_signal": "Russia-Ukraine negotiations",
+      "category": "POLITICAL"
+    }
+  ],
+  "entities_scanned": [
+    "Saudi PIF",
+    "Mubadala",
+    "ADIA",
+    "QIA",
+    "MGX",
+    "Affinity Partners",
+    "Apollo Global Management",
+    "Silver Lake",
+    "Thiel Macro LLC",
+    "Palantir",
+    "Board of Peace",
+    "DOGE",
+    "Schedule F",
+    "CFIUS",
+    "Iran",
+    "Israel",
+    "UAE",
+    "Saudi Arabia",
+    "Russia",
+    "Ukraine",
+    "Stargate",
+    "TikTok",
+    "Oracle",
+    "GlobalFoundries",
+    "Starlink",
+    "Epstein files",
+    "DOJ",
+    "SEC 13F",
+    "QXO",
+    "Executive Orders"
+  ],
+  "api_calls_made": 7,
+  "daily_budget_used": 7,
+  "daily_budget_limit": 75
+}

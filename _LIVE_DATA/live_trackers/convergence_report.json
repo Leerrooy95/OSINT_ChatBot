@@ -1,0 +1,111 @@
+{
+  "analysis_timestamp": "2026-03-08T20:15:38.164554+00:00",
+  "total_runs_analyzed": 2,
+  "window_days": 7,
+  "convergence_events": [
+    {
+      "date": "2026-03-08",
+      "active_node_count": 3,
+      "nodes": [
+        {
+          "node_id": "gulf_swf",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Saudi PIF announces plans for up to 8 subsidiary IPOs in 2026 and unveils shift to ecosystem integration at Private Sector Forum."
+        },
+        {
+          "node_id": "oracle_ellison",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Oracle announced $45-50B equity and debt financing plan for 2026 to fund cloud infrastructure expansion amid existing $100B debt load."
+        },
+        {
+          "node_id": "epstein_files",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "DOJ continues Epstein files releases with removals for victim protection and new publications totaling nearly 3.5 million pages as of early March 2026."
+        }
+      ],
+      "classification_mix": [
+        "COMPLIANCE",
+        "COMPLIANCE",
+        "COMPLIANCE"
+      ],
+      "has_friction_compliance_pair": false
+    },
+    {
+      "date": "2026-03-08",
+      "active_node_count": 4,
+      "nodes": [
+        {
+          "node_id": "maxwell",
+          "status": "ACTIVE",
+          "classification": "FRICTION",
+          "headline": "Ghislaine Maxwell prepares commutation application to Trump in exchange for Epstein-related testimony amid Democratic opposition."
+        },
+        {
+          "node_id": "gulf_swf",
+          "status": "CRITICAL",
+          "classification": "COMPLIANCE",
+          "headline": "Saudi PIF soft-launches 2026-2030 strategy shifting focus to industry, minerals, AI, and tourism while scaling back mega-projects like The Line."
+        },
+        {
+          "node_id": "oracle_ellison",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Oracle announced $45-50B equity and debt financing plan for 2026 to fund cloud infrastructure expansion amid concerns over OpenAI exposure and existing debt."
+        },
+        {
+          "node_id": "epstein_files",
+          "status": "CRITICAL",
+          "classification": "COMPLIANCE",
+          "headline": "DOJ published over 3 million additional pages of Epstein files on March 7, 2026, in compliance with the Epstein Files Transparency Act, totaling nearly 3.5 million pages including 2,000 videos and 180,000 images.[1][3]"
+        }
+      ],
+      "classification_mix": [
+        "FRICTION",
+        "COMPLIANCE",
+        "COMPLIANCE",
+        "COMPLIANCE"
+      ],
+      "has_friction_compliance_pair": true
+    }
+  ],
+  "node_activity_summary": {
+    "gulf_swf": {
+      "total_appearances": 2,
+      "active_count": 2,
+      "critical_count": 1,
+      "classifications": {
+        "COMPLIANCE": 2
+      }
+    },
+    "oracle_ellison": {
+      "total_appearances": 2,
+      "active_count": 2,
+      "critical_count": 0,
+      "classifications": {
+        "COMPLIANCE": 2
+      }
+    },
+    "epstein_files": {
+      "total_appearances": 2,
+      "active_count": 2,
+      "critical_count": 1,
+      "classifications": {
+        "COMPLIANCE": 2
+      }
+    },
+    "maxwell": {
+      "total_appearances": 1,
+      "active_count": 1,
+      "critical_count": 0,
+      "classifications": {
+        "FRICTION": 1
+      }
+    }
+  },
+  "daily_active_counts": {
+    "2026-03-08": 4
+  }
+}
