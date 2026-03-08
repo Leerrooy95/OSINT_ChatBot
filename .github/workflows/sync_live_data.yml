@@ -64,11 +64,17 @@ jobs:
 
       # ── 3. Fetch data from Live_Trackers (when available) ──────────
       - name: Fetch data from Live_Trackers
-        if: ${{ secrets.LIVE_TRACKERS_TOKEN != '' }}
         env:
           GH_TOKEN: ${{ secrets.LIVE_TRACKERS_TOKEN }}
         run: |
           set -euo pipefail
+          
+          # The security workaround: check if the secret is empty inside the bash script
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::LIVE_TRACKERS_TOKEN not set. Skipping Live_Trackers fetch."
+            exit 0
+          fi
+          
           mkdir -p _staging/live_trackers
 
           echo "Attempting to clone Live_Trackers repository..."
@@ -170,3 +176,4 @@ jobs:
           else
             echo "No new data changes to commit."
           fi
+          
