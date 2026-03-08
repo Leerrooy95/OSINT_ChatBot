@@ -1,0 +1,172 @@
+name: Sync Live Data
+
+# Runs daily at 9:00 AM UTC (1 hour after The_Regulated_Friction_Project's
+# daily_pipeline at 8:00 AM UTC, giving it time to finish first).
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Manual trigger button in GitHub Actions
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Checkout this repository ────────────────────────────────
+      - name: Checkout Personal_Chatbot
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # ── 2. Fetch live data from The_Regulated_Friction_Project ─────
+      - name: Fetch data from The_Regulated_Friction_Project
+        run: |
+          set -euo pipefail
+          mkdir -p _staging/friction_project/output
+          mkdir -p _staging/friction_project/Control_Proof
+
+          echo "::group::Fetching output/ (daily intelligence, verification, summaries)"
+          # Daily intelligence JSON
+          curl -sSfL -o _staging/friction_project/output/daily_intelligence.json \
+            "https://raw.githubusercontent.com/Leerrooy95/The_Regulated_Friction_Project/main/output/daily_intelligence.json" || true
+
+          # Live verification JSON
+          curl -sSfL -o _staging/friction_project/output/live_verification.json \
+            "https://raw.githubusercontent.com/Leerrooy95/The_Regulated_Friction_Project/main/output/live_verification.json" || true
+
+          # Latest scrape
+          curl -sSfL -o _staging/friction_project/output/latest_scrape.json \
+            "https://raw.githubusercontent.com/Leerrooy95/The_Regulated_Friction_Project/main/output/latest_scrape.json" || true
+          echo "::endgroup::"
+
+          echo "::group::Fetching Control_Proof/ (correlation datasets)"
+          curl -sSfL -o _staging/friction_project/Control_Proof/master_reflexive_correlation_data.csv \
+            "https://raw.githubusercontent.com/Leerrooy95/The_Regulated_Friction_Project/main/Control_Proof/master_reflexive_correlation_data.csv" || true
+
+          curl -sSfL -o _staging/friction_project/Control_Proof/MASTER_reflexive_control_v2.csv \
+            "https://raw.githubusercontent.com/Leerrooy95/The_Regulated_Friction_Project/main/Control_Proof/MASTER_reflexive_control_v2.csv" || true
+
+          curl -sSfL -o _staging/friction_project/Control_Proof/correlation_results.txt \
+            "https://raw.githubusercontent.com/Leerrooy95/The_Regulated_Friction_Project/main/Control_Proof/correlation_results.txt" || true
+          echo "::endgroup::"
+
+          # Remove any empty files from failed fetches
+          find _staging -type f -empty -delete
+          echo "✅ Friction Project data fetched."
+
+      # ── 3. Fetch data from Live_Trackers (when available) ──────────
+      - name: Fetch data from Live_Trackers
+        if: ${{ secrets.LIVE_TRACKERS_TOKEN != '' }}
+        env:
+          GH_TOKEN: ${{ secrets.LIVE_TRACKERS_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p _staging/live_trackers
+
+          echo "Attempting to clone Live_Trackers repository..."
+          if git clone --depth 1 \
+            "https://x-access-token:${GH_TOKEN}@github.com/Leerrooy95/Live_Trackers.git" \
+            _staging/_live_trackers_clone 2>/dev/null; then
+            # Copy all data files (md, json, csv, txt) from the clone
+            find _staging/_live_trackers_clone -maxdepth 3 \
+              \( -name "*.json" -o -name "*.csv" -o -name "*.txt" -o -name "*.md" \) \
+              ! -path "*/.git/*" \
+              -exec cp {} _staging/live_trackers/ \;
+
+            rm -rf _staging/_live_trackers_clone
+            echo "✅ Live Trackers data fetched."
+          else
+            echo "::warning::Live_Trackers repository not accessible. Skipping."
+          fi
+
+      # ── 4. Validate all fetched data ───────────────────────────────
+      - name: Validate fetched data
+        run: |
+          python scripts/validate_sync.py _staging/friction_project
+
+          # Validate Live_Trackers data if present
+          if [ -d "_staging/live_trackers" ] && [ "$(ls -A _staging/live_trackers 2>/dev/null)" ]; then
+            python scripts/validate_sync.py _staging/live_trackers
+          fi
+
+      # ── 5. Copy verified data to clean _LIVE_DATA/ folder ─────────
+      - name: Update clean _LIVE_DATA folder
+        run: |
+          set -euo pipefail
+
+          # Wipe old data to keep the folder clean
+          rm -rf _LIVE_DATA/*
+
+          # Copy verified Friction Project data
+          if [ -d "_staging/friction_project" ]; then
+            cp -r _staging/friction_project/* _LIVE_DATA/
+          fi
+
+          # Copy verified Live Trackers data into its own subfolder
+          if [ -d "_staging/live_trackers" ] && [ "$(ls -A _staging/live_trackers 2>/dev/null)" ]; then
+            mkdir -p _LIVE_DATA/live_trackers
+            cp -r _staging/live_trackers/* _LIVE_DATA/live_trackers/
+          fi
+
+          echo "✅ _LIVE_DATA/ updated with verified data."
+          echo "--- Contents ---"
+          find _LIVE_DATA -type f | head -50
+
+      # ── 6. Generate knowledge-base digest ──────────────────────────
+      - name: Generate LIVE_INTELLIGENCE_DIGEST.md
+        run: |
+          python scripts/generate_digest.py _LIVE_DATA _AI_CONTEXT_INDEX
+
+      # ── 7. Clean up staging ────────────────────────────────────────
+      - name: Clean up staging directory
+        run: rm -rf _staging
+
+      # ── 8. Commit and push ─────────────────────────────────────────
+      - name: Commit and Push Updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add _LIVE_DATA/ _AI_CONTEXT_INDEX/LIVE_INTELLIGENCE_DIGEST.md
+
+          if ! git diff --cached --quiet; then
+            git commit -m "🤖 Daily sync: live intelligence data + digest update"
+
+            # Robust push with retry (modeled after The_Regulated_Friction_Project).
+            # --strategy-option=ours keeps the runner's freshly fetched data in
+            # case of conflicts; non-conflicting remote changes are incorporated.
+            MAX_RETRIES=5
+            for i in $(seq 1 $MAX_RETRIES); do
+              echo "--- Push attempt $i of $MAX_RETRIES ---"
+
+              git fetch origin main
+
+              if ! git merge origin/main --no-edit --strategy-option=ours; then
+                echo "::warning::Merge failed on attempt $i, retrying..."
+                git merge --abort 2>/dev/null || true
+                sleep $((i * 2))
+                continue
+              fi
+
+              if git push origin main; then
+                echo "✅ Push succeeded on attempt $i"
+                exit 0
+              fi
+
+              echo "::warning::Push rejected on attempt $i. Retrying..."
+              sleep $((i * 2))
+            done
+
+            echo "::error::Failed to push after $MAX_RETRIES attempts"
+            exit 1
+          else
+            echo "No new data changes to commit."
+          fi
