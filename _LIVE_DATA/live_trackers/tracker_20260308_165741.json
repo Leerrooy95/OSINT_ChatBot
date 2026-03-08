@@ -1,0 +1,73 @@
+{
+  "run_timestamp": "2026-03-08T16:57:14.573254+00:00",
+  "run_date": "2026-03-08",
+  "nodes_queried": 3,
+  "nodes_active": 3,
+  "nodes_critical": 0,
+  "convergence_detected": true,
+  "node_statuses": {
+    "gulf_swf": {
+      "node_id": "gulf_swf",
+      "status": "ACTIVE",
+      "headline": "Saudi PIF announces plans for up to 8 subsidiary IPOs in 2026 and unveils shift to ecosystem integration at Private Sector Forum.",
+      "summary": "Saudi Arabia's Public Investment Fund (PIF) is planning to offer up to eight companies for IPOs in 2026, including ArcelorMittal Jubail, Sela, Saudi Global Ports, Alkhorayef Petroleum, CloudKitchens, Richard Attias & Associates, and Saudi Tabreed, while considering sell-downs in listed firms like Riyad Bank.[1] At the PIF-Private Sector Forum, Governor Yasir Al-Rumayyan outlined a strategic shift from launching opportunities to accelerating growth through private sector partnerships, with local content spending reaching SAR 591 billion from 2020-2024 and over 190 investment opportunities offered worth SAR 40 billion.[2] PIF is set to unveil a new 2026-2030 strategy emphasizing industry, minerals, AI, and tourism.[3] No recent developments reported on Mubadala, MGX, ADIA, QIA, GlobalFoundries, or Affinity Partners.",
+      "event_classification": "COMPLIANCE",
+      "key_entities_mentioned": [
+        "Saudi PIF"
+      ],
+      "sources": [
+        "https://www.argaam.com/en/article/articledetail/id/1872853",
+        "https://english.aawsat.com/business/5239126-saudi-arabias-pif-shifts-launching-opportunities-accelerating-growth",
+        "https://www.brecorder.com/news/40406367"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-08",
+      "raw_response_length": 1371
+    },
+    "oracle_ellison": {
+      "node_id": "oracle_ellison",
+      "status": "ACTIVE",
+      "headline": "Oracle announced $45-50B equity and debt financing plan for 2026 to fund cloud infrastructure expansion amid existing $100B debt load.",
+      "summary": "Oracle revealed plans on February 1, 2026, to raise $45-50 billion in gross cash proceeds during 2026 through a balanced mix of debt and equity, including a $20B at-the-market equity program and a one-time senior unsecured bond issuance early in the year, to support Oracle Cloud Infrastructure growth for customers like OpenAI.[1][4] The company faces scrutiny over its $100B debt and AI data center buildout tied heavily to OpenAI, with its stock down over 50% from September highs and nearly 12% in five days prior to the announcement.[2] Bondholders filed a proposed class action lawsuit alleging Oracle failed to disclose debt needs for the OpenAI deal when issuing $18B in notes in September 2025.[3]",
+      "event_classification": "COMPLIANCE",
+      "key_entities_mentioned": [
+        "Oracle",
+        "Larry Ellison",
+        "OpenAI",
+        "Stargate"
+      ],
+      "sources": [
+        "https://www.stocktitan.net/news/ORCL/oracle-announces-equity-and-debt-financing-plan-for-calendar-year-s3do958s6jxu.html",
+        "https://fortune.com/2026/02/03/oracle-debt-openai-stock-movement-key-risk-hyperscaler-market/",
+        "https://stocktwits.com/news-articles/markets/equity/oracle-draws-retail-attention-after-plan-to-raise-up-to-50b-/cZbgENgR4j1",
+        "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-08",
+      "raw_response_length": 1570
+    },
+    "epstein_files": {
+      "node_id": "epstein_files",
+      "status": "ACTIVE",
+      "headline": "DOJ continues Epstein files releases with removals for victim protection and new publications totaling nearly 3.5 million pages as of early March 2026.",
+      "summary": "The DOJ published over 3 million additional pages in compliance with the Epstein Files Transparency Act, including more than 2,000 videos and 180,000 images, bringing the total to nearly 3.5 million pages as of February 1, 2026[2]. CBS News reported that by late February 2026, the DOJ removed over 47,000 files (65,500 pages) due to concerns over survivors' personal information and explicit content, though some files are being restored[1]. The Epstein Library site was last updated March 7, 2026, with ongoing efforts to redact victim data[4]. Newly released files included previously unseen FBI interview summaries from 2019 alleging misconduct by Trump, marked as incorrectly withheld duplicates[3].",
+      "event_classification": "COMPLIANCE",
+      "key_entities_mentioned": [
+        "DOJ",
+        "FBI",
+        "Epstein Files Transparency Act",
+        "President Trump"
+      ],
+      "sources": [
+        "https://www.cbsnews.com/projects/2026/epstein-files/",
+        "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files",
+        "https://www.youtube.com/watch?v=FYWi9izqqOk",
+        "https://www.justice.gov/epstein"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-08",
+      "raw_response_length": 1360
+    }
+  },
+  "convergence_note": "3 nodes active simultaneously \u2014 within the 7-day convergence window defined by the thermostat model."
+}

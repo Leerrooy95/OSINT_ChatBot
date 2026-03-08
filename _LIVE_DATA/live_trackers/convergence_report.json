@@ -1,0 +1,66 @@
+{
+  "analysis_timestamp": "2026-03-08T16:57:53.631058+00:00",
+  "total_runs_analyzed": 1,
+  "window_days": 7,
+  "convergence_events": [
+    {
+      "date": "2026-03-08",
+      "active_node_count": 3,
+      "nodes": [
+        {
+          "node_id": "gulf_swf",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Saudi PIF announces plans for up to 8 subsidiary IPOs in 2026 and unveils shift to ecosystem integration at Private Sector Forum."
+        },
+        {
+          "node_id": "oracle_ellison",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Oracle announced $45-50B equity and debt financing plan for 2026 to fund cloud infrastructure expansion amid existing $100B debt load."
+        },
+        {
+          "node_id": "epstein_files",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "DOJ continues Epstein files releases with removals for victim protection and new publications totaling nearly 3.5 million pages as of early March 2026."
+        }
+      ],
+      "classification_mix": [
+        "COMPLIANCE",
+        "COMPLIANCE",
+        "COMPLIANCE"
+      ],
+      "has_friction_compliance_pair": false
+    }
+  ],
+  "node_activity_summary": {
+    "gulf_swf": {
+      "total_appearances": 1,
+      "active_count": 1,
+      "critical_count": 0,
+      "classifications": {
+        "COMPLIANCE": 1
+      }
+    },
+    "oracle_ellison": {
+      "total_appearances": 1,
+      "active_count": 1,
+      "critical_count": 0,
+      "classifications": {
+        "COMPLIANCE": 1
+      }
+    },
+    "epstein_files": {
+      "total_appearances": 1,
+      "active_count": 1,
+      "critical_count": 0,
+      "classifications": {
+        "COMPLIANCE": 1
+      }
+    }
+  },
+  "daily_active_counts": {
+    "2026-03-08": 3
+  }
+}

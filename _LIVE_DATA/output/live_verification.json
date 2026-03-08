@@ -1,0 +1,234 @@
+{
+  "generated_at": "2026-03-08T08:18:23Z",
+  "generated_by": "Perplexity sonar-pro (prediction verifier)",
+  "total_predictions": 15,
+  "status_summary": {
+    "monitoring": 7,
+    "unverified": 5,
+    "partial": 1,
+    "verified": 2
+  },
+  "results": [
+    {
+      "prediction": "DOGE-predicted instability",
+      "timeframe": "Q1 2026",
+      "query": "DOGE Department of Government Efficiency instability fallout Q1 2026",
+      "status": "monitoring",
+      "description": "DOGE continues to operate as of early 2026 despite rumors of disbandment in late 2025, which it denied, with its temporary organization scheduled to end on July 4, 2026. It faces ongoing opposition including lawsuits, warnings of constitutional crisis, legal challenges over its authority and data access, and conflicting savings claims from $215 billion to projected losses over $500 billion. No specific instability or fallout events resolved in Q1 2026 were identified.",
+      "source": "",
+      "citations": [
+        "https://en.wikipedia.org/wiki/Department_of_Government_Efficiency",
+        "https://doge.gov/savings",
+        "https://usafacts.org/articles/what-is-going-on-with-doge/",
+        "https://www.brookings.edu/articles/how-will-we-know-if-doge-is-succeeding/",
+        "https://www.govexec.com/management/2026/01/pushed-out-doge-former-feds-now-feel-unleashed-improving-government-efficiency/410812/"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "California TikTok investigation findings",
+      "timeframe": "Q1 2026",
+      "query": "California TikTok investigation AG findings Q1 2026",
+      "status": "monitoring",
+      "description": "The search results do not contain findings from a California TikTok investigation in Q1 2026. Instead, the results show that TikTok settled a social media addiction lawsuit on January 26, 2026, before trial began. No investigation findings or conclusions from California's Attorney General regarding TikTok have been published as of March 8, 2026.",
+      "source": "",
+      "citations": [
+        "https://gvwire.com/2026/01/27/tiktok-settles-social-media-addiction-lawsuit-before-a-landmark-trial/",
+        "https://www.beneschlaw.com/insight/californias-social-media-litigation-poses-potential-to-reshape-the-legal-landscape/",
+        "https://oag.ca.gov/news/press-releases/attorney-general-bonta-launches-investigation-xai-grok-over-undressed-sexual-ai"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "Khanna investigation findings",
+      "timeframe": "Mar 2026",
+      "query": "Ro Khanna TikTok ByteDance investigation findings March 2026",
+      "status": "unverified",
+      "description": "No evidence was found of any investigation led by Ro Khanna into TikTok or ByteDance, nor any associated findings released in March 2026. Search results discuss TikTok's US ban, Supreme Court ruling in January 2025, Trump's executive order postponing enforcement, and a subsequent divestment deal involving Oracle and new ownership structure. Khanna is mentioned in contexts like a creator rights resolution and a statement on the TikTok deal, but not linked to any investigation.",
+      "source": "",
+      "citations": [
+        "https://verfassungsblog.de/tiktoks-last-dance/",
+        "https://hls.harvard.edu/today/is-the-new-us-tiktok-safer/",
+        "https://www.businessinsider.com/rep-ro-khannas-new-resolution-proposes-creator-workforce-protections-2026-1",
+        "http://democrats-selectcommitteeontheccp.house.gov/media/press-releases/ranking-member-ro-khannas-statement-tiktok-deal"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "Arkansas PSC order text release",
+      "timeframe": "Q1 2026",
+      "query": "Arkansas Public Service Commission PSC order text release Q1 2026",
+      "status": "monitoring",
+      "description": "The Arkansas Public Service Commission approved Order No. 7 in Docket No. 25-063-R on January 14, 2026, for Wind Energy Development Rules. These rules underwent a public hearing on December 11, 2025, and are under legislative review by the Arkansas Legislative Council as of February 19, 2026. No evidence indicates public release of the order text yet, with the process ongoing in Q1 2026.",
+      "source": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F040%2F27776%2FG.2+Arkansas+Public+Service+Commission_02.01.26.pdf",
+      "citations": [
+        "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F040%2F27776%2FA.+Summary+Agenda_February+19+2026.pdf",
+        "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F040%2F27776%2FG.2+Arkansas+Public+Service+Commission_02.01.26.pdf"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "QXO further acquisitions",
+      "timeframe": "2026",
+      "query": "QXO Brad Jacobs acquisitions 2026",
+      "status": "partial",
+      "description": "QXO completed the acquisition of Beacon Roofing Supply in 2025 and announced an agreement to acquire Kodiak Building Partners for $2.25 billion on February 11, 2026, expected to close in Q2 2026. The company secured additional financing totaling $3 billion in January 2026 to support its ongoing acquisition strategy and reported an active pipeline with talks involving multiple targets. Brad Jacobs plans further deals to reach $50 billion in revenue.",
+      "source": "https://www.resiclubanalytics.com/p/brad-jacobs-qxo-building-materials-roll-up-continues-with-kodiak-purchase-homebuilding",
+      "citations": [
+        "https://www.resiclubanalytics.com/p/brad-jacobs-qxo-building-materials-roll-up-continues-with-kodiak-purchase-homebuilding",
+        "https://www.ttnews.com/articles/brad-jacobs-qxo-financing",
+        "https://www.freightwaves.com/news/jacobs-qxo-gets-big-investment-from-group-led-by-apollo",
+        "https://www.axios.com/pro/supply-chain-deals/2026/01/05/qxo-7-acquisition-targets",
+        "https://tedmag.com/qxos-brad-jacobs-expands-distribution-acquisition-strategy-ai/"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "EO 14375 legal challenge (IOIA authorization)",
+      "timeframe": "2026",
+      "query": "Executive Order 14375 legal challenge International Organizations Immunities Act 2026",
+      "status": "unverified",
+      "description": "Executive Order 14375, issued on January 22, 2026, designated the Board of Peace as a public international organization entitled to privileges and immunities under U.S. law, pursuant to the International Organizations Immunities Act (IOIA). No evidence of any legal challenges to EO 14375 or its IOIA authorization was found in search results. Other Trump executive orders faced litigation, but EO 14375 was not mentioned in those contexts.",
+      "source": "",
+      "citations": [
+        "https://www.justsecurity.org/131113/some-questions-about-trumps-executive-order-granting-privileges-and-immunities-to-the-board-of-peace/",
+        "https://www.federalregister.gov/documents/2026/01/22/2026-01271/designating-the-board-of-peace-as-a-public-international-organization-entitled-to-enjoy-certain"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "NTEU court-ordered position list disclosure",
+      "timeframe": "Feb 27, 2026",
+      "query": "NTEU National Treasury Employees Union court order DOGE position list disclosure 2026",
+      "status": "unverified",
+      "description": "No evidence was found of a court order on or around February 27, 2026, requiring NTEU or related parties to disclose a position list. NTEU filed a FOIA lawsuit on November 14, 2025, against OPM seeking disclosure of positions proposed for Schedule Policy/Career reclassification, but the case remains pending without reported court-ordered disclosure. Other NTEU litigation involves stays, appeals, and CBA disputes as of early 2026, with no resolution on position list disclosure.",
+      "source": "",
+      "citations": [
+        "https://www.fedweek.com/fedweek/nteu-sues-for-release-of-positions-recommended-for-schedule-policy-career/",
+        "https://workerslegaldefense.org/litigation-tracker",
+        "https://www.nteu.org/~/media/Files/nteu/docs/public/letters/Alexander%20Kweskin%20re%20CBA%20Termination"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "Schedule Policy/Career implementation",
+      "timeframe": "Mar 9, 2026",
+      "query": "Schedule Policy Career federal employee reclassification implementation March 2026",
+      "status": "monitoring",
+      "description": "The U.S. Office of Personnel Management finalized the Schedule Policy/Career rule on February 6, 2026, which takes effect on March 9, 2026. The rule creates a new excepted service category for policy-influencing career positions, estimated to affect around 50,000 roles, allowing for streamlined accountability while preserving merit-based hiring. As of March 8, 2026, reclassification of specific positions via executive order has not yet occurred.",
+      "source": "https://americansforprosperity.org/policy-corner/opms-final-schedule-policy-career-rule-is-published/",
+      "citations": [
+        "https://americansforprosperity.org/policy-corner/opms-final-schedule-policy-career-rule-is-published/",
+        "https://www.opm.gov/news/news-releases/opm-finalizes-schedule-policycareer-rule-to-strengthen-accountability/",
+        "https://ourpublicservice.org/blog/schedule-policy-career-webinar-recap-schedule-f-fedsupport-explainer-series/",
+        "https://www.tullylegal.com/resources/articles/what-federal-employees-need-to-know-about-the-new-schedule-policy-career-rule/",
+        "https://fedsupport.org/resources/resource-library/faq-schedule-policy-career-formerly-schedule-f/"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "Feb 11 compliance density repeat at next major hearing",
+      "timeframe": "Ongoing",
+      "query": "US Congress major hearing compliance executive order cluster 2026",
+      "status": "monitoring",
+      "description": "No evidence was found of a February 11 event involving 'compliance density' or its repetition at a major congressional hearing. Recent developments include a March 2, 2026, federal court order requiring DHS and ICE to restore unannounced congressional oversight of detention facilities, amid ongoing disputes over access denials. Upcoming events include a USSC public hearing on March 9, 2026, and recent House committee hearings on March 4, 2026, related to oversight and federal funds, but none match the prediction.",
+      "source": "https://democrats-judiciary.house.gov/media-center/press-releases/court-again-orders-trump-vance-administration-to-restore-congressional-oversight-of-ice-detention-facilities",
+      "citations": [
+        "https://democrats-judiciary.house.gov/media-center/press-releases/court-again-orders-trump-vance-administration-to-restore-congressional-oversight-of-ice-detention-facilities",
+        "https://www.ussc.gov/policymaking/meetings-hearings/public-hearing-march-9-2026",
+        "https://www.majorityleader.gov/news/documentsingle.aspx?DocumentID=5860",
+        "https://www.govinfo.gov/content/pkg/CCAL-119hcal-2026-03-04/html/CCAL-119hcal-2026-03-04-pt12.htm"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "Khanna investigation document deadline",
+      "timeframe": "Mar 1, 2026",
+      "query": "Ro Khanna ByteDance TikTok document deadline March 1 2026",
+      "status": "unverified",
+      "description": "Search results detail Rep. Ro Khanna's involvement in TikTok legislation, amicus briefs, and statements criticizing the January 2026 TikTok deal for lacking transparency, with calls for congressional investigation. No evidence mentions any specific document deadline related to a Khanna investigation on March 1, 2026. The TikTok deal closed around January 22, 2026, amid ongoing scrutiny.",
+      "source": "",
+      "citations": [
+        "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-tiktok-deal",
+        "https://www.gmanetwork.com/news/scitech/technology/973985/us-lawmakers-say-tiktok-joint-venture-deal-needs-scrutiny-from-congress/story/",
+        "https://www.americanprogress.org/article/congress-must-demand-the-full-details-of-the-tiktok-deal/",
+        "http://democrats-selectcommitteeontheccp.house.gov/media/press-releases/ranking-member-ro-khannas-statement-tiktok-deal"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "QXO 10-K annual report filing",
+      "timeframe": "2026-02-26",
+      "query": "QXO 10-K annual report filing",
+      "status": "verified",
+      "description": "QXO filed its annual report on Form 10-K for the year ended December 31, 2025, on February 27, 2026. The company had expected to file it on February 26, 2026, as announced in its fourth quarter preliminary financial information release. No 10-K filing appears on or before the exact timeframe date of February 26 based on available SEC filing lists.",
+      "source": "https://investors.qxo.com/financials/sec-filings/default.aspx",
+      "citations": [
+        "https://investors.qxo.com/financials/sec-filings/default.aspx",
+        "https://investors.qxo.com/news/news-details/2026/QXO-Announces-Fourth-Quarter-Summarized-Preliminary-Financial-Information/default.aspx",
+        "https://www.stocktitan.net/sec-filings/QXO/",
+        "https://www.marketbeat.com/stocks/NYSE/QXO/sec-filings/"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "DOGE-predicted instability tracking",
+      "timeframe": "Q1 2026",
+      "query": "DOGE-predicted instability tracking",
+      "status": "unverified",
+      "description": "No search results referenced any 'DOGE-predicted instability tracking' or related predictions about instability. All results focused on Dogecoin's price volatility, bearish technical patterns, and trading around $0.08-$0.12 in early 2026 Q1. The term appeared unrelated to any tracked instability forecasts.",
+      "source": "",
+      "citations": [
+        "https://www.ainvest.com/news/dogecoin-2026-push-rewards-card-price-reality-2602/",
+        "https://www.binance.com/en/square/post/34504489220217",
+        "https://zycrypto.com/dogecoin-doge-price-alert-0-090-floor-at-risk-whales-eye-utility-protocols-in-q1-2026/"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "EO 14375 legal challenge",
+      "timeframe": "2026",
+      "query": "EO 14375 legal challenge",
+      "status": "monitoring",
+      "description": "EO 14375, issued on January 22, 2026, designates the Board of Peace as a public international organization entitled to privileges and immunities under U.S. law. As of March 8, 2026, questions have been raised about the executive order's legal basis and implications, but no active litigation or formal legal challenge has been documented in the available search results.",
+      "source": "https://www.justsecurity.org/131113/some-questions-about-trumps-executive-order-granting-privileges-and-immunities-to-the-board-of-peace/",
+      "citations": [
+        "https://www.justsecurity.org/131113/some-questions-about-trumps-executive-order-granting-privileges-and-immunities-to-the-board-of-peace/",
+        "https://www.federalregister.gov/documents/2026/01/22/2026-01271/designating-the-board-of-peace-as-a-public-international-organization-entitled-to-enjoy-certain"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "Israel 60-day Hamas disarmament ultimatum",
+      "timeframe": "None",
+      "query": "Israel 60-day Hamas disarmament ultimatum",
+      "status": "monitoring",
+      "description": "Israel issued a 60-day ultimatum for Hamas to completely disarm on February 16, 2026, with Cabinet Secretary Yossi Fuchs stating it was requested by the US and might start around a February 19 meeting, threatening renewed war if unmet. Hamas rejected the ultimatum, stating it received no formal notification from mediators and insisting on linking any disarmament to a long-term ceasefire and political process. As of March 8, 2026, approximately 20 days later, no resolution or compliance has occurred, and the situation remains ongoing amid a US-backed ceasefire.",
+      "source": "https://en.yenisafak.com/world/israel-issues-60-day-ultimatum-for-hamas-disarmament-threatens-renewed-war-3714689",
+      "citations": [
+        "https://en.yenisafak.com/world/israel-issues-60-day-ultimatum-for-hamas-disarmament-threatens-renewed-war-3714689",
+        "https://www.presstv.ir/Detail/2026/02/17/764217/Hamas-dismisses-Israel%E2%80%99s-60-day-deadline-to-disarm-or-face-renewed-war-in-Gaza?ht-comment-id=32189893",
+        "https://www.timesofisrael.com/liveblog_entry/top-hamas-official-refuses-netanyahu-aides-60-day-disarmament-ultimatum/",
+        "https://www.dropsitenews.com/p/trump-netanyahu-demands-hamas-disarmament-gaza-board-peace-negotiations-mladenov",
+        "https://www.middleeastmonitor.com/20260216-israel-gives-60-day-ultimatum-for-hamas-to-disarm-threatens-to-return-to-war/"
+      ],
+      "date_checked": "2026-03-08"
+    },
+    {
+      "prediction": "Iran military action signals",
+      "timeframe": "None",
+      "query": "Iran military action signals",
+      "status": "verified",
+      "description": "Iran has engaged in multiple military actions and signaling since late February 2026, including ballistic missile and drone attacks against Israel, US bases, and regional targets. The US-Israeli combined force has conducted extensive air campaigns against Iranian military infrastructure, air defenses, nuclear facilities, and internal security installations. Iran's military actions represent coordinated retaliation for the joint strike campaign that began February 28, 2026.",
+      "source": "https://www.criticalthreats.org/analysis/iran-update-evening-special-report-march-2-2026",
+      "citations": [
+        "https://www.criticalthreats.org/analysis/iran-update-evening-special-report-march-2-2026",
+        "https://understandingwar.org/research/middle-east/iran-update-evening-special-report-march-6-2026/",
+        "https://www.spykmancenter.org/iran-war-2026",
+        "https://understandingwar.org/research/middle-east/iran-update-evening-special-report-march-2-2026/",
+        "https://www.stimson.org/2026/experts-react-what-the-epic-fury-iran-strikes-signal-to-the-world/"
+      ],
+      "date_checked": "2026-03-08"
+    }
+  ]
+}
