@@ -90,17 +90,17 @@ def format_verification(results: list[dict]) -> str:
 def main() -> int:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    # Files may be at top level or in output/ subdirectory depending on source
-    daily = (
-        load_json(LIVE_DATA_DIR / "output" / "daily_intelligence.json")
-        or load_json(LIVE_DATA_DIR / "daily_intelligence.json")
-    )
-    verification = (
-        load_json(LIVE_DATA_DIR / "output" / "live_verification.json")
-        or load_json(LIVE_DATA_DIR / "live_verification.json")
-    )
+    # Files may be at top level or in output/ subdirectory depending on source.
+    # Use explicit None checks rather than truthiness to avoid skipping empty dicts.
+    daily = load_json(LIVE_DATA_DIR / "output" / "daily_intelligence.json")
+    if daily is None:
+        daily = load_json(LIVE_DATA_DIR / "daily_intelligence.json")
 
-    if not daily and not verification:
+    verification = load_json(LIVE_DATA_DIR / "output" / "live_verification.json")
+    if verification is None:
+        verification = load_json(LIVE_DATA_DIR / "live_verification.json")
+
+    if daily is None and verification is None:
         print("No live data files found — skipping digest generation.")
         return 0
 

@@ -140,7 +140,9 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "🤖 Daily sync: live intelligence data + digest update"
 
-            # Robust push with retry (modeled after The_Regulated_Friction_Project)
+            # Robust push with retry (modeled after The_Regulated_Friction_Project).
+            # --strategy-option=ours keeps the runner's freshly fetched data in
+            # case of conflicts; non-conflicting remote changes are incorporated.
             MAX_RETRIES=5
             for i in $(seq 1 $MAX_RETRIES); do
               echo "--- Push attempt $i of $MAX_RETRIES ---"
