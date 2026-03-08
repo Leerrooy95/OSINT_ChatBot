@@ -1,5 +1,5 @@
 """
-The Speaker — Personal OSINT Chatbot
+The Speaker — OSINT ChatBot
 
 A Flask web application that proxies chat messages to Claude via the
 Anthropic Messages API.  At startup the app loads every Markdown file in
@@ -85,8 +85,10 @@ APP_PASSWORD = os.environ.get("APP_PASSWORD")
 if not APP_PASSWORD:
     sys.exit("FATAL: APP_PASSWORD environment variable is not set. Exiting.")
 
-# Anthropic API key
+# Anthropic API key — validate format at startup
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+if ANTHROPIC_API_KEY and not ANTHROPIC_API_KEY.startswith("sk-ant-"):
+    app.logger.warning("ANTHROPIC_API_KEY does not match expected format (sk-ant-...).")
 
 # Claude model to use (default: claude-sonnet-4-6)
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
@@ -95,10 +97,9 @@ ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
 _BASE_SYSTEM_PROMPT = os.environ.get(
     "SYSTEM_PROMPT",
     (
-        "You are The Speaker, an advanced OSINT research assistant built by "
-        "Leerrooy95. Below is your Knowledge Base — reference documents from "
-        "the _AI_CONTEXT_INDEX directory, including the developer's GitHub "
-        "Profile README (PROFILE_README.md). Prioritize Knowledge Base "
+        "You are The Speaker, an advanced OSINT research assistant. "
+        "Below is your Knowledge Base — reference documents from "
+        "the _AI_CONTEXT_INDEX directory. Prioritize Knowledge Base "
         "information first. If it lacks the answer, use training data. If "
         "neither suffices, say so. Cite your source file when applicable "
         "(e.g. '(see 01_CORE_THEORY.md)'). Be thorough but concise — "
@@ -215,9 +216,21 @@ def api_chat():
         reply_text = response.content[0].text
         return jsonify({"reply": reply_text})
 
-    except Exception as e:
+    except anthropic.AuthenticationError:
+        app.logger.error("Anthropic API authentication failed")
+        return jsonify({"error": "API authentication failed. Check server configuration."}), 500
+
+    except anthropic.RateLimitError:
+        app.logger.error("Anthropic API rate limit reached")
+        return jsonify({"error": "Rate limit reached. Please try again shortly."}), 429
+
+    except anthropic.APIError as e:
         app.logger.error("Anthropic API error: %s", e)
-        return jsonify({"error": str(e)}), 500
+        return jsonify({"error": "The AI service returned an error. Please try again."}), 502
+
+    except Exception as e:
+        app.logger.error("Unexpected error in /api/chat: %s", e)
+        return jsonify({"error": "An internal error occurred. Please try again."}), 500
 
 
 # ---------------------------------------------------------------------------
@@ -234,5 +247,5 @@ def health():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     debug = os.environ.get("FLASK_DEBUG", "").lower() in ("1", "true", "yes")
-    print(f"\n🔱  The Speaker — running on http://localhost:{port}\n")
+    print(f"\n🔱  The Speaker — OSINT ChatBot running on http://localhost:{port}\n")
     app.run(host="0.0.0.0", port=port, debug=debug)

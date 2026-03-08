@@ -1,4 +1,4 @@
-## 🔱 The Speaker — Personal OSINT Chatbot
+## 🔱 The Speaker — OSINT ChatBot
 
 A private, password-protected chat interface powered by the **Anthropic Messages API (Claude)** with a bundled Knowledge Base loaded from `_AI_CONTEXT_INDEX/`.
 
@@ -16,7 +16,7 @@ A system prompt is injected server-side to reinforce this priority order on ever
 
 ```bash
 # 1. Clone & enter the repo
-git clone <this-repo> && cd Personal_Chatbot
+git clone <this-repo> && cd OSINT_ChatBot
 
 # 2. Create a virtual environment
 python -m venv .venv && source .venv/bin/activate
@@ -54,7 +54,6 @@ Open **http://localhost:5000** and log in with your clearance code.
 ├── app.py                   # Flask application (routes + Anthropic API proxy)
 ├── knowledge_base.py        # Loads _AI_CONTEXT_INDEX/ markdown into memory
 ├── _AI_CONTEXT_INDEX/       # Knowledge Base markdown files (loaded at startup)
-│   ├── PROFILE_README.md    # Developer's GitHub profile README
 │   ├── 00_START_HERE.md     # Navigation & quick-reference
 │   ├── Node_Dossiers/       # Individual actor profiles
 │   └── sources/             # Source material & references
@@ -70,6 +69,8 @@ Open **http://localhost:5000** and log in with your clearance code.
 ### Security
 
 - The `ANTHROPIC_API_KEY` is **never** sent to the browser — all API calls go through the Flask backend.
+- API key format is validated at startup.
+- API error responses are sanitized — raw exception details and keys are never exposed to the client.
 - Session cookies are `HttpOnly`, `SameSite=Lax`, and `Secure` (HTTPS only).
 - Sessions expire automatically after 2 hours.
 - Security headers on every response: CSP, HSTS, X-Frame-Options DENY, X-Content-Type-Options nosniff, Referrer-Policy, Permissions-Policy.
