@@ -80,9 +80,11 @@ jobs:
             "https://x-access-token:${GH_TOKEN}@github.com/Leerrooy95/Live_Trackers.git" \
             _staging/_live_trackers_clone 2>/dev/null; then
             # Copy all data files (md, json, csv, txt) from the clone
+            # Exclude personal profile files so the chatbot stays user-neutral
             find _staging/_live_trackers_clone -maxdepth 3 \
               \( -name "*.json" -o -name "*.csv" -o -name "*.txt" -o -name "*.md" \) \
               ! -path "*/.git/*" \
+              ! -name "PROFILE_README.md" \
               -exec cp {} _staging/live_trackers/ \;
 
             rm -rf _staging/_live_trackers_clone

@@ -1,9 +1,12 @@
 """
-The Speaker — OSINT ChatBot
+The Speaker — OSINT ChatBot  (BYOK Edition)
 
 A Flask web application that proxies chat messages to Claude via the
-Anthropic Messages API.  At startup the app loads every Markdown file in
-the ``_AI_CONTEXT_INDEX/`` directory and injects them into the system
+Anthropic Messages API.  Users supply their own Anthropic API key
+(Bring Your Own Key) — the server never stores keys on disk.
+
+At startup the app loads every Markdown file in the
+``_AI_CONTEXT_INDEX/`` directory and injects them into the system
 prompt so the assistant can reference the Knowledge Base when answering
 questions.
 
@@ -12,8 +15,8 @@ deployed on Render (or any host) without touching the source code.
 """
 
 import os
-import hmac
-import sys
+import re
+import logging
 from datetime import timedelta
 from functools import wraps
 
@@ -27,6 +30,8 @@ from flask_wtf.csrf import CSRFProtect
 import anthropic
 
 from knowledge_base import KNOWLEDGE_BASE_TEXT
+
+log = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # App setup
@@ -79,17 +84,8 @@ def _set_security_headers(response):
 
 
 # ---------------------------------------------------------------------------
-# Configuration — all from environment variables
+# Configuration
 # ---------------------------------------------------------------------------
-APP_PASSWORD = os.environ.get("APP_PASSWORD")
-if not APP_PASSWORD:
-    sys.exit("FATAL: APP_PASSWORD environment variable is not set. Exiting.")
-
-# Anthropic API key — validate format at startup
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-if ANTHROPIC_API_KEY and not ANTHROPIC_API_KEY.startswith("sk-ant-"):
-    app.logger.warning("ANTHROPIC_API_KEY does not match expected format (sk-ant-...).")
-
 # Claude model to use (default: claude-sonnet-4-6)
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
 
@@ -118,15 +114,23 @@ if KNOWLEDGE_BASE_TEXT:
 else:
     SYSTEM_PROMPT = _BASE_SYSTEM_PROMPT
 
+# Regex for validating Anthropic API key format
+_API_KEY_PATTERN = re.compile(r"^sk-ant-[A-Za-z0-9_-]{20,}$")
+
+
+def _is_valid_api_key_format(key: str) -> bool:
+    """Return True if *key* looks like a valid Anthropic API key."""
+    return bool(_API_KEY_PATTERN.match(key))
+
 
 # ---------------------------------------------------------------------------
-# Auth helper
+# Auth helper — BYOK: session is authenticated when an API key is present
 # ---------------------------------------------------------------------------
 def login_required(f):
     """Redirect unauthenticated users to the login page."""
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if not session.get("logged_in"):
+        if not session.get("has_api_key"):
             return redirect(url_for("login"))
         return f(*args, **kwargs)
     return decorated_function
@@ -140,13 +144,16 @@ def login_required(f):
 def login():
     error = None
     if request.method == "POST":
-        password = request.form.get("password")
-        if password is not None and hmac.compare_digest(password, APP_PASSWORD):
-            session.permanent = True
-            session["logged_in"] = True
-            return redirect(url_for("chat_ui"))
+        api_key = (request.form.get("api_key") or "").strip()
+        if not api_key:
+            error = "Please enter your Anthropic API key."
+        elif not _is_valid_api_key_format(api_key):
+            error = "Invalid key format. Anthropic keys start with sk-ant-…"
         else:
-            error = "Invalid clearance code."
+            session.permanent = True
+            session["api_key"] = api_key
+            session["has_api_key"] = True
+            return redirect(url_for("chat_ui"))
     return render_template("login.html", error=error)
 
 
@@ -172,10 +179,11 @@ MAX_MESSAGE_LENGTH = 20_000      # per-message character limit
 @csrf.exempt                       # JSON endpoint; session cookie is SameSite=Lax
 def api_chat():
     """
-    Secure backend route.
+    BYOK backend route.
     Receives conversation history from the browser, prepends a system prompt,
-    sends it to Claude via the Anthropic Messages API, and returns the reply.
-    The ANTHROPIC_API_KEY is never exposed to the browser.
+    sends it to Claude via the Anthropic Messages API using the user's own
+    API key (stored in the encrypted session), and returns the reply.
+    The API key is never logged or exposed.
     """
     data = request.get_json(silent=True) or {}
     messages = data.get("messages", [])
@@ -183,8 +191,10 @@ def api_chat():
     if not messages:
         return jsonify({"error": "No messages provided."}), 400
 
-    if not ANTHROPIC_API_KEY:
-        return jsonify({"error": "ANTHROPIC_API_KEY is not configured on the server."}), 500
+    # Retrieve the user's API key from the encrypted session
+    user_api_key = session.get("api_key", "")
+    if not user_api_key:
+        return jsonify({"error": "No API key found. Please log in again."}), 401
 
     # --- Input validation ---------------------------------------------------
     validated: list[dict] = []
@@ -204,7 +214,7 @@ def api_chat():
         return jsonify({"error": "No valid messages provided."}), 400
 
     try:
-        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        client = anthropic.Anthropic(api_key=user_api_key)
 
         response = client.messages.create(
             model=ANTHROPIC_MODEL,
@@ -217,19 +227,22 @@ def api_chat():
         return jsonify({"reply": reply_text})
 
     except anthropic.AuthenticationError:
-        app.logger.error("Anthropic API authentication failed")
-        return jsonify({"error": "API authentication failed. Check server configuration."}), 500
+        log.warning("Anthropic authentication failed for a user session")
+        session.clear()
+        return jsonify({
+            "error": "API key is invalid or expired. Please log in with a valid key."
+        }), 401
 
     except anthropic.RateLimitError:
-        app.logger.error("Anthropic API rate limit reached")
+        log.warning("Anthropic rate limit reached")
         return jsonify({"error": "Rate limit reached. Please try again shortly."}), 429
 
     except anthropic.APIError as e:
-        app.logger.error("Anthropic API error: %s", e)
+        log.error("Anthropic API error: %s", e)
         return jsonify({"error": "The AI service returned an error. Please try again."}), 502
 
     except Exception as e:
-        app.logger.error("Unexpected error in /api/chat: %s", e)
+        log.error("Unexpected error in /api/chat: %s", e)
         return jsonify({"error": "An internal error occurred. Please try again."}), 500
 
 
