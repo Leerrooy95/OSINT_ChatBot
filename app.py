@@ -16,6 +16,7 @@ deployed on Render (or any host) without touching the source code.
 
 import os
 import re
+import time
 import logging
 from datetime import timedelta
 from functools import wraps
@@ -80,6 +81,9 @@ def _set_security_headers(response):
         "connect-src 'self'; "
         "frame-ancestors 'none'"
     )
+    # Prevent browser from caching pages that may reference the API key
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, private"
+    response.headers["Pragma"] = "no-cache"
     return response
 
 
@@ -126,11 +130,20 @@ def _is_valid_api_key_format(key: str) -> bool:
 # ---------------------------------------------------------------------------
 # Auth helper — BYOK: session is authenticated when an API key is present
 # ---------------------------------------------------------------------------
+# Maximum session age — enforced server-side even without a persistent cookie
+_MAX_SESSION_AGE = timedelta(hours=2).total_seconds()
+
+
 def login_required(f):
     """Redirect unauthenticated users to the login page."""
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if not session.get("has_api_key"):
+            return redirect(url_for("login"))
+        # Server-side session expiry: clear if older than _MAX_SESSION_AGE
+        created = session.get("_created", 0)
+        if time.time() - created > _MAX_SESSION_AGE:
+            session.clear()
             return redirect(url_for("login"))
         return f(*args, **kwargs)
     return decorated_function
@@ -150,9 +163,9 @@ def login():
         elif not _is_valid_api_key_format(api_key):
             error = "Invalid key format. Anthropic keys start with sk-ant-..."
         else:
-            session.permanent = True
             session["api_key"] = api_key
             session["has_api_key"] = True
+            session["_created"] = time.time()
             return redirect(url_for("chat_ui"))
     return render_template("login.html", error=error)
 
@@ -160,7 +173,17 @@ def login():
 @app.route("/logout")
 def logout():
     session.clear()
-    return redirect(url_for("login"))
+    resp = redirect(url_for("login"))
+    resp.headers["Clear-Site-Data"] = '"cookies", "storage"'
+    return resp
+
+
+@app.route("/api/beacon-logout", methods=["POST"])
+@csrf.exempt  # sendBeacon cannot include CSRF tokens; SameSite=Lax protects
+def beacon_logout():
+    """Best-effort session cleanup fired by sendBeacon on tab/window close."""
+    session.clear()
+    return "", 204
 
 
 @app.route("/")

@@ -294,6 +294,20 @@
                 inputField.focus();
             }
         }
+
+        // --- Best-effort key cleanup on tab / window close --------------------
+        // Track clicks on in-app navigation so we don't fire the beacon when
+        // the user simply clicks "New Key" (which already calls /logout).
+        let _navInternal = false;
+        document.querySelectorAll('a[href]').forEach(function (a) {
+            a.addEventListener('click', function () { _navInternal = true; });
+        });
+
+        window.addEventListener('beforeunload', function () {
+            if (!_navInternal) {
+                navigator.sendBeacon('/api/beacon-logout');
+            }
+        });
     </script>
 </body>
 </html>
