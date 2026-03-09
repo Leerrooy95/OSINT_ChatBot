@@ -1,6 +1,6 @@
 {
-  "analysis_timestamp": "2026-03-08T20:15:38.164554+00:00",
-  "total_runs_analyzed": 2,
+  "analysis_timestamp": "2026-03-09T08:33:43.690182+00:00",
+  "total_runs_analyzed": 3,
   "window_days": 7,
   "convergence_events": [
     {
@@ -69,43 +69,97 @@
         "COMPLIANCE"
       ],
       "has_friction_compliance_pair": true
+    },
+    {
+      "date": "2026-03-09",
+      "active_node_count": 5,
+      "nodes": [
+        {
+          "node_id": "maxwell",
+          "status": "ACTIVE",
+          "classification": "FRICTION",
+          "headline": "Ghislaine Maxwell's attorney publicly appealed for presidential clemency in exchange for testimony, prompting White House denial of priority and Senate opposition resolution."
+        },
+        {
+          "node_id": "iran",
+          "status": "CRITICAL",
+          "classification": "ESCALATION",
+          "headline": "US and Israel continue massive airstrikes on Iran through March 7, 2026, killing Supreme Leader Ali Khamenei and targeting nuclear sites and leadership; Iran retaliates with drone and missile strikes on US embassies and Gulf targets."
+        },
+        {
+          "node_id": "gulf_swf",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Saudi PIF unveils revised 2026-2030 strategy focusing on industry, AI, mining, and tourism while scaling back mega-projects."
+        },
+        {
+          "node_id": "oracle_ellison",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Oracle announced $45-50B equity and debt financing plan for 2026 to fund cloud infrastructure expansion amid debt scrutiny."
+        },
+        {
+          "node_id": "epstein_files",
+          "status": "ACTIVE",
+          "classification": "FRICTION",
+          "headline": "DOJ continues removing and reviewing Epstein files amid criticism, with site last updated March 7, 2026."
+        }
+      ],
+      "classification_mix": [
+        "FRICTION",
+        "ESCALATION",
+        "COMPLIANCE",
+        "COMPLIANCE",
+        "FRICTION"
+      ],
+      "has_friction_compliance_pair": true
     }
   ],
   "node_activity_summary": {
     "gulf_swf": {
-      "total_appearances": 2,
-      "active_count": 2,
+      "total_appearances": 3,
+      "active_count": 3,
       "critical_count": 1,
       "classifications": {
-        "COMPLIANCE": 2
+        "COMPLIANCE": 3
       }
     },
     "oracle_ellison": {
-      "total_appearances": 2,
-      "active_count": 2,
+      "total_appearances": 3,
+      "active_count": 3,
       "critical_count": 0,
       "classifications": {
-        "COMPLIANCE": 2
+        "COMPLIANCE": 3
       }
     },
     "epstein_files": {
-      "total_appearances": 2,
-      "active_count": 2,
+      "total_appearances": 3,
+      "active_count": 3,
       "critical_count": 1,
       "classifications": {
-        "COMPLIANCE": 2
+        "COMPLIANCE": 2,
+        "FRICTION": 1
       }
     },
     "maxwell": {
-      "total_appearances": 1,
-      "active_count": 1,
+      "total_appearances": 2,
+      "active_count": 2,
       "critical_count": 0,
       "classifications": {
-        "FRICTION": 1
+        "FRICTION": 2
+      }
+    },
+    "iran": {
+      "total_appearances": 1,
+      "active_count": 1,
+      "critical_count": 1,
+      "classifications": {
+        "ESCALATION": 1
       }
     }
   },
   "daily_active_counts": {
-    "2026-03-08": 4
+    "2026-03-08": 4,
+    "2026-03-09": 5
   }
 }

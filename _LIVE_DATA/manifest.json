@@ -14,12 +14,12 @@
       "size": 919
     },
     "output/daily_intelligence.json": {
-      "sha256": "26c093b6589be02d81c364f0b50f291d8e3c550a7a902af9816854e9b981d742",
-      "size": 11445
+      "sha256": "996d8575ca7bef5501c4cee7e072843549263f4651b56d211f7700faaf4aba2c",
+      "size": 11384
     },
     "output/live_verification.json": {
-      "sha256": "1b19766720cf3fb476899cdb0568548afb2278fd0d322fcda93802a2d29b3759",
-      "size": 18627
+      "sha256": "3f257a947f5b2a5a6856bcc981858640cb407a5b35fe4b032137d0914debe4d1",
+      "size": 17658
     }
   }
 }

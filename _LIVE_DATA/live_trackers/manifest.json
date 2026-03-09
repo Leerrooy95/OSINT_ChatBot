@@ -1,9 +1,9 @@
 {
-  "file_count": 43,
+  "file_count": 45,
   "files": {
     ".api_budget.json": {
-      "sha256": "5af96a3cd65d92da8d2dbaf408319cb5c0700bf618dce79d466677c2f04b58af",
-      "size": 65
+      "sha256": "521378cdfa7d2b113d11d6e813a5279ea6e1c43dcb46ef9c809d48a8925b6c82",
+      "size": 64
     },
     "00_START_HERE.md": {
       "sha256": "84aa2e3ac2a67557463c71d8c8032a17018d384c4d34351ec20ee09f84c83ead",
@@ -94,12 +94,12 @@
       "size": 3648
     },
     "convergence_report.json": {
-      "sha256": "1b1e8a3d58ddc77c29e095f4321af8ca877311fe1980f156bc0ce4e0d89c9abd",
-      "size": 3546
+      "sha256": "9e4c8da6ef619b400867faf7244724e4091110375abdca0157516511222ba786",
+      "size": 5552
     },
     "extracted_entities.json": {
-      "sha256": "8c1174fe3b2455d0fb3d5998eb7c2383feb492c5a1d57d12b58549fa81bf9240",
-      "size": 6409
+      "sha256": "9c2ff0708563fa5e40eba0b4b1d2ff586320fb50597a6d37c4a2a82ee710308b",
+      "size": 7118
     },
     "extraction_20260308_165753.json": {
       "sha256": "8d257447af24351d39b8a9dc556d2b128809fc41876699907b93d07d1a569710",
@@ -109,9 +109,13 @@
       "sha256": "8c1174fe3b2455d0fb3d5998eb7c2383feb492c5a1d57d12b58549fa81bf9240",
       "size": 6409
     },
+    "extraction_20260309_083343.json": {
+      "sha256": "9c2ff0708563fa5e40eba0b4b1d2ff586320fb50597a6d37c4a2a82ee710308b",
+      "size": 7118
+    },
     "node_status.json": {
-      "sha256": "9d164d4a69a7bdc0b8d3037e9dd0ae5729f1df3b78f69f8613bd5ff02a6a3334",
-      "size": 7079
+      "sha256": "4d48f0847395f9154420b543eea7652bee0ff1aaf1b374e7149b69a19c9b0baa",
+      "size": 9098
     },
     "requirements.txt": {
       "sha256": "6feae850c4e502c873e27d4ec5297030873b8d3d6bc825ef6b8b429b5ed4f2ab",
@@ -168,6 +172,10 @@
     "tracker_20260308_201523.json": {
       "sha256": "9d164d4a69a7bdc0b8d3037e9dd0ae5729f1df3b78f69f8613bd5ff02a6a3334",
       "size": 7079
+    },
+    "tracker_20260309_083329.json": {
+      "sha256": "4d48f0847395f9154420b543eea7652bee0ff1aaf1b374e7149b69a19c9b0baa",
+      "size": 9098
     },
     "tracker_config.json": {
       "sha256": "9c8dcb7a7de463267a57e90a4cdff11032fde6454e09c5a3f3b70e95dd0afb6b",
