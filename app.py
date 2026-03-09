@@ -114,8 +114,8 @@ if KNOWLEDGE_BASE_TEXT:
 else:
     SYSTEM_PROMPT = _BASE_SYSTEM_PROMPT
 
-# Regex for validating Anthropic API key format
-_API_KEY_PATTERN = re.compile(r"^sk-ant-[A-Za-z0-9_-]{20,}$")
+# Basic validation: must start with sk-ant- and have a reasonable length
+_API_KEY_PATTERN = re.compile(r"^sk-ant-.{20,}$")
 
 
 def _is_valid_api_key_format(key: str) -> bool:
@@ -148,7 +148,7 @@ def login():
         if not api_key:
             error = "Please enter your Anthropic API key."
         elif not _is_valid_api_key_format(api_key):
-            error = "Invalid key format. Anthropic keys start with sk-ant-…"
+            error = "Invalid key format. Anthropic keys start with sk-ant-..."
         else:
             session.permanent = True
             session["api_key"] = api_key

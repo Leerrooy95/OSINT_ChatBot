@@ -68,7 +68,7 @@ Exhaustive inventory of every directory and file in The Regulated Friction Proje
 
 | File | Type | Content |
 |------|------|---------|
-| `About_Me.md` | Markdown | Author biography (Austin Smith, 29, Arkansas, Army National Guard Cavalry Scout → security → research methodology). Explains "Numbers Station" concept and scout methodology origin. |
+| `About_Me.md` | Markdown | Author biography (Army veteran, Cavalry Scout → security → research methodology). Explains "Numbers Station" concept and scout methodology origin. |
 | `Copilot_Executive_Synthesis_Feb2026.md` | Markdown | AI-generated executive synthesis of repository findings as of February 2026 |
 
 **Dependencies**: References `01_Levers_and_Frictions/`, `03_Master_Framework/`  
