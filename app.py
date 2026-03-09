@@ -182,6 +182,10 @@ def logout():
 @csrf.exempt  # sendBeacon cannot include CSRF tokens; SameSite=Lax protects
 def beacon_logout():
     """Best-effort session cleanup fired by sendBeacon on tab/window close."""
+    # Defense-in-depth: reject cross-origin requests
+    fetch_site = request.headers.get("Sec-Fetch-Site", "")
+    if fetch_site and fetch_site != "same-origin":
+        return "", 403
     session.clear()
     return "", 204
 
