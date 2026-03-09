@@ -1,6 +1,6 @@
 # 📡 Live Intelligence Digest
 
-> **Auto-generated:** 2026-03-08 21:26 UTC
+> **Auto-generated:** 2026-03-09 00:26 UTC
 > **Source:** Synced daily from The_Regulated_Friction_Project
 > **Purpose:** Provides the chatbot with the latest verified intelligence data.
 > This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated daily.
@@ -138,4 +138,4 @@ Israel issued a 60-day ultimatum for Hamas to completely disarm on February 16, 
 Iran has engaged in multiple military actions and signaling since late February 2026, including ballistic missile and drone attacks against Israel, US bases, and regional targets. The US-Israeli combined force has conducted extensive air campaigns against Iranian military infrastructure, air defenses, nuclear facilities, and internal security installations. Iran's military actions represent coordinated retaliation for the joint strike campaign that began February 28, 2026.
 
 ---
-*Digest generated 2026-03-08 21:26 UTC by sync_live_data workflow.*
+*Digest generated 2026-03-09 00:26 UTC by sync_live_data workflow.*

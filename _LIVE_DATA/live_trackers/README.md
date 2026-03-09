@@ -1,8 +1,10 @@
 # Live Trackers v1.2
 
-Real-time leverage node monitoring system for The Regulated Friction Project.
+Real-time leverage node monitoring system for [The Regulated Friction Project](https://github.com/Leerrooy95/The_Regulated_Friction_Project).
 
 Tracks five active leverage nodes — Maxwell, Iran, Gulf SWFs, Oracle/Ellison, and the Epstein Files — using a three-stage pipeline: Perplexity Sonar Pro for real-time intelligence, Llama Scout 17B for structured entity extraction, and local convergence detection to flag multi-node activity windows.
+
+**Author:** Austin Smith | 19D Cavalry Scout (OSINT Methodology)
 
 ---
 

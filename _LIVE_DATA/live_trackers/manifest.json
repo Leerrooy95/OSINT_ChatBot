@@ -1,5 +1,5 @@
 {
-  "file_count": 44,
+  "file_count": 43,
   "files": {
     ".api_budget.json": {
       "sha256": "5af96a3cd65d92da8d2dbaf408319cb5c0700bf618dce79d466677c2f04b58af",
@@ -80,10 +80,6 @@
     "NODE_INDEX.md": {
       "sha256": "2bbe5fd469f6f7690809aa3e6b9e5357ffbf8226f86dae0d042cd99cc0d45c85",
       "size": 10299
-    },
-    "PROFILE_README.md": {
-      "sha256": "7315f5b4f1c6815fa6d363f7f590417e48c9ce9ce0f57a021cad3eeb6dc0b680",
-      "size": 5749
     },
     "README.md": {
       "sha256": "c7ea0edb54049e9e56dd0466cd95b5219ddad0021e8a6b3d2c41f3ea134b157b",
