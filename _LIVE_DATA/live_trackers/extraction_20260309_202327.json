@@ -1,0 +1,255 @@
+{
+  "extraction_timestamp": "2026-03-09T00:00:00Z",
+  "total_entities": 24,
+  "total_relationships": 13,
+  "nodes": {
+    "maxwell": {
+      "entities": [
+        {
+          "name": "Ghislaine Maxwell",
+          "type": "PERSON",
+          "context": "invoked Fifth Amendment in House Oversight deposition"
+        },
+        {
+          "name": "House Oversight Committee",
+          "type": "ORG",
+          "context": "conducted deposition with Ghislaine Maxwell"
+        },
+        {
+          "name": "Epstein files",
+          "type": "LEGAL",
+          "context": "related matters discussed during deposition"
+        },
+        {
+          "name": "DOJ",
+          "type": "ORG",
+          "context": "involved in Ghislaine Maxwell's case"
+        },
+        {
+          "name": "Pam Bondi",
+          "type": "PERSON",
+          "context": "mentioned in relation to Ghislaine Maxwell's case"
+        },
+        {
+          "name": "Donald Trump",
+          "type": "PERSON",
+          "context": "potential clemency discussed"
+        },
+        {
+          "name": "Jamie Raskin",
+          "type": "PERSON",
+          "context": "criticized potential clemency for Ghislaine Maxwell"
+        },
+        {
+          "name": "Jacky Rosen",
+          "type": "PERSON",
+          "context": "introduced Senate resolution opposing clemency for Ghislaine Maxwell"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Ghislaine Maxwell",
+          "to": "House Oversight Committee",
+          "type": "DEPOSITION",
+          "detail": "invoked Fifth Amendment"
+        },
+        {
+          "from": "Ghislaine Maxwell",
+          "to": "Donald Trump",
+          "type": "CLEMENCY REQUEST",
+          "detail": "attorney appealed for clemency in exchange for testimony"
+        },
+        {
+          "from": "House Oversight Committee",
+          "to": "Ghislaine Maxwell",
+          "type": "INVESTIGATION",
+          "detail": "conducted deposition"
+        }
+      ],
+      "temporal_markers": [
+        {
+          "date": "2026-02-10",
+          "event": "Ghislaine Maxwell's deposition",
+          "significance": "Fifth Amendment invoked"
+        }
+      ],
+      "event_classification": "FRICTION",
+      "cross_node_connections": [
+        {
+          "target_node": "epstein_files",
+          "connection_type": "RELATED LEGAL CASES",
+          "detail": "Epstein files mentioned in deposition"
+        }
+      ]
+    },
+    "iran": {
+      "entities": [
+        {
+          "name": "Iran",
+          "type": "LOCATION",
+          "context": "targeted by US and Israeli airstrikes"
+        },
+        {
+          "name": "IRGC",
+          "type": "ORG",
+          "context": "involved in Iranian military operations"
+        },
+        {
+          "name": "Strait of Hormuz",
+          "type": "LOCATION",
+          "context": "mentioned as a potential conflict zone"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "US",
+          "to": "Iran",
+          "type": "AIRSTRIKES",
+          "detail": "conducted extensive airstrikes on Iranian targets"
+        },
+        {
+          "from": "Israel",
+          "to": "Iran",
+          "type": "AIRSTRIKES",
+          "detail": "conducted extensive airstrikes on Iranian targets"
+        }
+      ],
+      "temporal_markers": [
+        {
+          "date": "2026-03-02",
+          "event": "US and Israeli airstrikes",
+          "significance": "escalation of conflict"
+        }
+      ],
+      "event_classification": "ESCALATION",
+      "cross_node_connections": []
+    },
+    "gulf_swf": {
+      "entities": [
+        {
+          "name": "Saudi PIF",
+          "type": "ORG",
+          "context": "soft-launched 2026-2030 strategy"
+        },
+        {
+          "name": "Yasir Al-Rumayyan",
+          "type": "PERSON",
+          "context": "announced shift in PIF strategy"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Saudi PIF",
+          "to": "Vision 2030",
+          "type": "STRATEGIC ALIGNMENT",
+          "detail": "shift in strategy aligns with Vision 2030's third phase"
+        }
+      ],
+      "temporal_markers": [
+        {
+          "date": "2026-03-09",
+          "event": "soft-launch of PIF strategy",
+          "significance": "shift in focus to AI, industry, minerals, and tourism"
+        }
+      ],
+      "event_classification": "COMPLIANCE",
+      "cross_node_connections": []
+    },
+    "oracle_ellison": {
+      "entities": [
+        {
+          "name": "Oracle",
+          "type": "ORG",
+          "context": "announced equity and debt financing plan"
+        },
+        {
+          "name": "Larry Ellison",
+          "type": "PERSON",
+          "context": "Oracle's financing plan"
+        },
+        {
+          "name": "OpenAI",
+          "type": "ORG",
+          "context": "mentioned as a customer of Oracle Cloud Infrastructure"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Oracle",
+          "to": "OpenAI",
+          "type": "BUSINESS PARTNERSHIP",
+          "detail": "provides cloud infrastructure"
+        }
+      ],
+      "temporal_markers": [
+        {
+          "date": "2026-02-01",
+          "event": "Oracle's financing plan announcement",
+          "significance": "addressed investor concerns"
+        }
+      ],
+      "event_classification": "COMPLIANCE",
+      "cross_node_connections": []
+    },
+    "epstein_files": {
+      "entities": [
+        {
+          "name": "DOJ",
+          "type": "ORG",
+          "context": "released additional Epstein files"
+        },
+        {
+          "name": "FBI",
+          "type": "ORG",
+          "context": "involved in Epstein investigation"
+        },
+        {
+          "name": "President Trump",
+          "type": "PERSON",
+          "context": "allegations mentioned in released files"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "DOJ",
+          "to": "Epstein files",
+          "type": "RELEASE OF DOCUMENTS",
+          "detail": "released over 1,000 additional files"
+        }
+      ],
+      "temporal_markers": [
+        {
+          "date": "2026-03-05",
+          "event": "release of additional Epstein files",
+          "significance": "increased transparency"
+        }
+      ],
+      "event_classification": "COMPLIANCE",
+      "cross_node_connections": [
+        {
+          "target_node": "maxwell",
+          "connection_type": "RELATED LEGAL CASES",
+          "detail": "Epstein files mentioned in deposition"
+        }
+      ]
+    }
+  },
+  "convergence_signals": [
+    {
+      "nodes_involved": [
+        "maxwell",
+        "epstein_files"
+      ],
+      "mechanism": "related legal cases",
+      "confidence": "HIGH"
+    },
+    {
+      "nodes_involved": [
+        "iran",
+        "gulf_swf"
+      ],
+      "mechanism": "regional conflict",
+      "confidence": "MEDIUM"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "file_count": 45,
+  "file_count": 49,
   "files": {
     ".api_budget.json": {
-      "sha256": "521378cdfa7d2b113d11d6e813a5279ea6e1c43dcb46ef9c809d48a8925b6c82",
+      "sha256": "c60fe4f5a663343bbe59771903408ba2b7a28a6d2f0efd39403dc66051f10436",
       "size": 64
     },
     "00_START_HERE.md": {
@@ -94,12 +94,12 @@
       "size": 3648
     },
     "convergence_report.json": {
-      "sha256": "9e4c8da6ef619b400867faf7244724e4091110375abdca0157516511222ba786",
-      "size": 5552
+      "sha256": "2f1ff8ec15068e64dc3aba556a2d7dc9d4671b2a283516ff828a6fa09718b313",
+      "size": 9167
     },
     "extracted_entities.json": {
-      "sha256": "9c2ff0708563fa5e40eba0b4b1d2ff586320fb50597a6d37c4a2a82ee710308b",
-      "size": 7118
+      "sha256": "31be9ce3db01afd095b4bb12e89e118e423f2721c71dd7c70699452ce4b6e5fd",
+      "size": 6027
     },
     "extraction_20260308_165753.json": {
       "sha256": "8d257447af24351d39b8a9dc556d2b128809fc41876699907b93d07d1a569710",
@@ -113,9 +113,17 @@
       "sha256": "9c2ff0708563fa5e40eba0b4b1d2ff586320fb50597a6d37c4a2a82ee710308b",
       "size": 7118
     },
+    "extraction_20260309_202327.json": {
+      "sha256": "1d88fc420e427845591ba04efc33f897a64a92029b29f198bf6ac092bd49a8ec",
+      "size": 6883
+    },
+    "extraction_20260310_083046.json": {
+      "sha256": "31be9ce3db01afd095b4bb12e89e118e423f2721c71dd7c70699452ce4b6e5fd",
+      "size": 6027
+    },
     "node_status.json": {
-      "sha256": "4d48f0847395f9154420b543eea7652bee0ff1aaf1b374e7149b69a19c9b0baa",
-      "size": 9098
+      "sha256": "453e4abbd0fff48281255e3b90b25276a9420c1e56d2ddaa0bbfff9492c6e542",
+      "size": 8727
     },
     "requirements.txt": {
       "sha256": "6feae850c4e502c873e27d4ec5297030873b8d3d6bc825ef6b8b429b5ed4f2ab",
@@ -176,6 +184,14 @@
     "tracker_20260309_083329.json": {
       "sha256": "4d48f0847395f9154420b543eea7652bee0ff1aaf1b374e7149b69a19c9b0baa",
       "size": 9098
+    },
+    "tracker_20260309_202306.json": {
+      "sha256": "21566fb6d1f02f25396540553992b28f8a77dccb180e2513dc00396bbe9f9bb5",
+      "size": 9001
+    },
+    "tracker_20260310_083032.json": {
+      "sha256": "453e4abbd0fff48281255e3b90b25276a9420c1e56d2ddaa0bbfff9492c6e542",
+      "size": 8727
     },
     "tracker_config.json": {
       "sha256": "9c8dcb7a7de463267a57e90a4cdff11032fde6454e09c5a3f3b70e95dd0afb6b",

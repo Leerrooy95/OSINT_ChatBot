@@ -1,139 +1,143 @@
 # 📡 Live Intelligence Digest
 
-> **Auto-generated:** 2026-03-09 09:57 UTC
+> **Auto-generated:** 2026-03-10 09:51 UTC
 > **Source:** Synced daily from The_Regulated_Friction_Project
 > **Purpose:** Provides the chatbot with the latest verified intelligence data.
 > This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated daily.
 
 ## Data Timestamp
-- **Generated:** 2026-03-09T08:31:09Z
+- **Generated:** 2026-03-10T08:27:48Z
 - **Source engine:** Perplexity sonar-pro (standalone)
 
 ## Top Developments
-### 1. Seventh U.S. service member died in ongoing U.S.-Israeli war with Iran as Mojtaba Khamenei named new supreme leader
+### 1. US-Israeli Operation Epic Fury continued into its second week with President Trump indicating possible wind-down
 **Type:** KINETIC
 
-A seventh U.S. service member died in the war that began on February 28, 2026, with Operation Epic Fury strikes killing former Supreme Leader Ali Khamenei. Iran rejected ceasefire calls and vowed continued retaliation, while President Trump demanded unconditional surrender with no timetable. Israel conducted strikes on over 3,400 targets in Iran and 600 in Lebanon, including Iran's space force headquarters in Tehran.
+US-Israeli forces maintained control over Iran's airspace, diminished its ballistic missiles, navy, and potentially nuclear program, while killing key leaders including Supreme Leader Ali Khamenei. Iran retaliated with missiles and drones, disrupting Strait of Hormuz shipping and damaging targets in over a dozen countries. On March 9, President Trump suggested US military actions may near an end, though no ceasefire is confirmed.
 
-*Source: CBS News live updates[1]*
+*Source: KTLA Trump Statement (March 9); ISW Iran Update (March 2)*
 
-### 2. PIF Governor Yasir Al-Rumayyan urged private sector to increase role in Saudi economic transformation
-**Type:** FINANCIAL
+### 2. DOJ released over 1,000 new Epstein files including documents on Trump allegations
+**Type:** INTELLIGENCE
 
-At the PIF Private Sector Forum in Riyadh, Al-Rumayyan announced PIF's shift to integrating systems and scaling growth under Vision 2030's third phase. He highlighted over 140 agreements worth SR15 billion and 190 investment opportunities exceeding SR40 billion. Al-Rumayyan called for bolder private sector participation to lead growth and achieve sustainable returns.
+The Justice Department published additional pages to the Epstein Library on March 9, 2026, addressing allegations of President Trump sexually abusing a minor. The release followed an NPR investigation on missing documents, with the library last updated March 7. Congressional subpoenas and survivor concerns over unredacted info persist.
 
-*Source: PIF Private Sector Forum[1]*
+*Source: DOJ Epstein Library release (March 9)*
 
-### 3. Russia demanded Ukrainian withdrawal from Donetsk ahead of decisive peace talks this week
+### 3. Board of Peace formed executive board and made key appointments for Gaza reconstruction
 **Type:** POLITICAL
 
-Russian officials considered halting U.S.-led peace talks unless Ukraine cedes eastern Donetsk, with negotiations planned for this week potentially decisive. Russia is ready to sign a draft memorandum if Kyiv concedes, followed by a Putin-Zelensky-Trump summit. U.S. envoy Steve Witkoff stated further progress expected in coming weeks as of March 6.
+President Trump's Board of Peace established its Executive Board with Marco Rubio, Jared Kushner, and others, appointing Major General Jasper Jeffers as ISF Commander and Nickolay Mladenov as Gaza High Representative. This advances Phase Two of the 20-point Comprehensive Plan under UNSCR 2803 via the National Committee for Gaza Administration. Efforts remain in early implementation stages.
 
-*Source: Japan Times[1]*
+*Source: White House Statement*
 
 ## New Alerts
-- **[MEDIUM]** PIF Governor Yasir Al-Rumayyan urged private sector to increase role in Saudi economic transformation at PIF Private Sector Forum
-  - PIF's strategic pivot signals reduced friction in domestic investment deployment, potentially accelerating compliance with Vision 2030 localization mandates ahead of typical 7-day lag in institutional responses.
+- **[HIGH]** Gulf SWFs projected $18 trillion in assets by 2030 with aggressive deployment pace
+  - Expansion of institutional capital deployment correlates with increased regulatory scrutiny pathways; large-scale cross-border allocations typically trigger CFIUS and foreign investment compliance reviews within 7-day assessment windows.
+- **[MEDIUM]** Saudi PIF subsidiary Jada Fund signed $200M private credit partnership with Stride Ventures
+  - Cross-border private credit expansion into emerging markets represents institutional friction point; foreign investment in credit infrastructure typically triggers secondary compliance assessments.
+- **[MEDIUM]** Mubadala concentrated $12.9B in digital and AI investments
+  - Large-scale AI/digital sector allocations by Gulf SWFs correlate with technology policy friction points; concentration holdings in strategic sectors may trigger CFIUS review mechanisms.
 
 ## Active Signals
-- **[ACTIVE]** (KINETIC) U.S.-Israeli war with Iran ongoing; 7th U.S. service member killed, Mojtaba Khamenei named new supreme leader
-- **[ACTIVE]** (POLITICAL) Board of Peace Executive Board formed and inaugural meeting held; advancing Gaza reconstruction under Trump's Comprehensive Plan
-- **[ACTIVE]** (FINANCIAL) Gulf SWFs, led by PIF and Mubadala, continue aggressive US investments and strategic reorganizations in early 2026 amid global shifts
-- **[ACTIVE]** (INTELLIGENCE) DOJ continues managing Epstein files post-January 2026 release, with ongoing removals, reviews, and congressional subpoenas
-- **[ACTIVE]** (POLITICAL) Russia-Ukraine peace talks stalled as Russia demands Ukrainian withdrawal from Donetsk ahead of decisive this-week negotiations
+- **[ACTIVE]** (KINETIC) US-Israeli Operation Epic Fury against Iran ongoing at one week, with US suggesting possible wind-down.
+- **[ACTIVE]** (POLITICAL) Board of Peace operational with executive board formed and key appointments made, advancing Trump's Gaza reconstruction plan.
+- **[ACTIVE]** (FINANCIAL) Gulf SWFs maintaining aggressive global investment pace with strategic focus shift toward tech, infrastructure, and regional priorities
+- **[ACTIVE]** (INTELLIGENCE) DOJ released additional Epstein files on March 9, 2026, including documents related to Trump allegations; Epstein Library last updated March 7.
+- **[ACTIVE]** (POLITICAL) Russia-Ukraine peace negotiations ongoing with prisoner exchange completed; territorial disputes remain unresolved
 
 ## Priority Watchlist
-- Escalation in U.S.-Israeli strikes on Iran and Iranian retaliation, including potential targeting of Khamenei's successor
-- Decisive Russia-Ukraine peace talks this week on Donetsk withdrawal
-- PIF private sector forum outcomes and Vision 2030 investment announcements
-- DOJ Epstein file adjustments and congressional testimony developments
-- Gulf SWF investment moves amid regional tensions
+- US-Israeli Operation Epic Fury wind-down confirmation or escalation signals from Trump statements
+- Further Epstein Library document releases or congressional responses to March 9 batch
+- Gulf SWF investment announcements amid Hormuz disruptions and oil price volatility
+- Russia-Ukraine negotiations progress or breakdowns post-Abu Dhabi talks
+- Board of Peace inaugural session outcomes or funding commitments for Gaza plan
 
 ## Entities Scanned
 Saudi PIF, Mubadala, ADIA, QIA, MGX, Affinity Partners, Apollo Global Management, Silver Lake, Thiel Macro LLC, Palantir, Board of Peace, DOGE, Schedule F, CFIUS, Iran, Israel, UAE, Saudi Arabia, Russia, Ukraine, Stargate, TikTok, Oracle, GlobalFoundries, Starlink, Epstein files, DOJ, SEC 13F, QXO, Executive Orders
 
 ## Live Verification Summary
 - **Total predictions tracked:** 15
-- **Monitoring:** 6
-- **Unverified:** 5
-- **Partial:** 2
-- **Verified:** 2
+- **Unverified:** 6
+- **Partial:** 1
+- **Monitoring:** 5
+- **Verified:** 3
 
 ## Prediction Tracker
 ### DOGE-predicted instability
-**Status:** monitoring | **Timeframe:** Q1 2026
-
-DOGE ceased formal centralized operations in late 2025, with its functions transferred to the Office of Personnel Management and other federal agencies. As of early 2026, DOGE's charter remains active until July 4, 2026, and it continues operating its website and social media accounts, though its organizational structure has been fundamentally restructured. No widespread instability or significant fallout events have been documented in Q1 2026 related to DOGE's transition.
-
-### California TikTok investigation findings
 **Status:** unverified | **Timeframe:** Q1 2026
 
-No evidence was found of California Attorney General investigation findings specifically on TikTok released in Q1 2026. Search results reference a multi-state lawsuit led by California AG against TikTok for exploiting young users after a 2.5-year investigation, but no specific findings from a California-only TikTok probe were identified. Recent California AG actions focused on xAI and Grok for nonconsensual deepfakes, not TikTok.
+The Department of Government Efficiency (DOGE) was established in January 2025 but ceased to exist in November 2025, with its tasks assumed by the Office of Personnel Management. It faced legal challenges, lawsuits over data access, and disputes about its costs and savings, but no evidence of predicted instability or fallout emerged in Q1 2026. DOGE's temporary organization was scheduled to end on July 4, 2026, and workforce reductions occurred earlier without reported broader instability.[1][2]
+
+### "California TikTok investigation findings"
+**Status:** unverified | **Timeframe:** Q1 2026
+
+No evidence of findings released from a California TikTok investigation in Q1 2026 was found. A two-and-a-half-year investigation by California AG Rob Bonta culminated in a lawsuit against TikTok announced in October 2024, accusing the company of exploiting young users based on internal documents showing knowledge of addictive features and harms like depression and suicidal ideation. The lawsuit remains ongoing with no reported resolution or new findings by March 10, 2026.
 
 ### Khanna investigation findings
-**Status:** monitoring | **Timeframe:** Mar 2026
+**Status:** unverified | **Timeframe:** Mar 2026
 
-Congressman Ro Khanna, as ranking member of the Select Committee on the CCP, launched an investigation into a $500 million matter related to TikTok or ByteDance, but no specific findings were reported as of March 9, 2026. Khanna has been involved in prior TikTok-related efforts, including bipartisan legislation and statements criticizing the recent TikTok divestiture deal announced in January 2026. The situation remains ongoing with no resolution or published findings on the investigation.
+No evidence was found of any investigation led by Rep. Ro Khanna into TikTok or ByteDance, nor any findings released in March 2026. Recent reports discuss a TikTok deal forming a new U.S. entity with ByteDance owning 19.9%, which Rep. Khanna addressed regarding creator uncertainty, but the House Select Committee on the CCP, chaired by Rep. Moolenaar, plans hearings on the deal. Khanna has focused on repealing the ban, protecting creators, and free speech rather than launching an investigation.
 
 ### Arkansas PSC order text release
 **Status:** unverified | **Timeframe:** Q1 2026
 
-No evidence found of any Arkansas PSC order text release in Q1 2026. Search results mention APSC rules under legislative review as of February 19, 2026, and ongoing dockets open for public comments, but no specific order texts were released. Other results cover budgets, petitions, and general commission activities without relevant order releases.
+No evidence of any specific Arkansas PSC order text release in Q1 2026 was found in the search results. References to orders exist, such as Order No. 7 in Docket No. 25-063-R issued on January 14, 2026, approving Wind Energy Development Rules, and older orders like No. 10 in Docket No. 10-101-R, but none match the prediction directly. Other results discuss rules, applications, and legislative reviews without indicating a relevant order text release.
 
 ### QXO further acquisitions
 **Status:** partial | **Timeframe:** 2026
 
-QXO completed its first acquisition of Beacon Roofing Supply in 2025 and announced an agreement to acquire Kodiak Building Partners for $2.25 billion on February 11, 2026. The company secured $3 billion in financing in January 2026 to support further acquisitions, with talks ongoing for multiple targets and a commitment to complete qualifying deals by mid-July 2026. Its acquisition pipeline remains active as it pursues a $50 billion revenue goal.
+QXO secured $3 billion in financing in January 2026 to fund its acquisition strategy and was in talks with seven targets. On February 11, 2026, QXO agreed to acquire Kodiak Building Partners for $2.25 billion, expected to close in Q2 2026. Brad Jacobs indicated an active acquisition pipeline remains post-Kodiak.
 
 ### EO 14375 legal challenge (IOIA authorization)
 **Status:** monitoring | **Timeframe:** 2026
 
-Executive Order 14375, issued on January 22, 2026, designated the Board of Peace as a public international organization entitled to privileges, exemptions, and immunities under the International Organizations Immunities Act (IOIA). No specific legal challenges directly targeting EO 14375's IOIA authorization were identified in search results. Related executive orders faced litigation, but EO 14375's status remains unaddressed in ongoing court proceedings as of March 9, 2026.
+Executive Order 14375, issued on January 22, 2026, designated the Board of Peace as a public international organization entitled to privileges, exemptions, and immunities under the International Organizations Immunities Act (IOIA). No evidence of a specific legal challenge to EO 14375's IOIA authorization was found in search results. Related executive orders faced Supreme Court challenges on other grounds, such as IEEPA authority, but EO 14375 itself shows no reported litigation as of March 10, 2026.
 
 ### NTEU court-ordered position list disclosure
-**Status:** partial | **Timeframe:** Feb 27, 2026
+**Status:** unverified | **Timeframe:** Feb 27, 2026
 
-On February 27, 2025, a federal court ordered an administrative stay in National Treasury Employees Union v. Trump and ordered disclosure of RIF (reduction in force) plans. However, the search results do not specifically confirm a court order requiring disclosure of a DOGE position list. The results show ongoing litigation over executive orders affecting federal employees and union representation, with mixed judicial outcomes including preliminary injunctions being stayed and vacated.
+No evidence was found of a court order on February 27, 2026, requiring the National Treasury Employees Union (NTEU) to disclose a position list related to DOGE. Search results detail ongoing NTEU litigation involving stays, injunctions, and motions in cases like National Treasury Employees Union v. Trump, but none mention a court-ordered disclosure of positions by NTEU on that date or involving DOGE specifically. Related activity on February 27, 2026, involved an NTEU letter contesting IRS termination of a collective bargaining agreement.
 
 ### Schedule Policy/Career implementation
-**Status:** monitoring | **Timeframe:** Mar 9, 2026
+**Status:** verified | **Timeframe:** Mar 9, 2026
 
-The OPM finalized the Schedule Policy/Career rule on February 6, 2026, with an effective date of March 9, 2026. As of March 9, 2026, the rule takes effect, allowing agencies to begin identifying positions for reclassification via presidential executive order, but no reclassifications have been reported yet. Implementation requires agency lists submitted to the White House for presidential approval.
+The U.S. Office of Personnel Management (OPM) finalized the Schedule Policy/Career rule on February 6, 2026, which took effect on March 9, 2026. This rule established a new excepted service category for approximately 50,000 policy-influencing career federal positions, allowing at-will employment while preserving merit-based hiring. As of March 10, 2026, the rule was effective, enabling agencies to begin reclassifying positions via presidential executive order.
 
 ### Feb 11 compliance density repeat at next major hearing
-**Status:** unverified | **Timeframe:** Ongoing
+**Status:** monitoring | **Timeframe:** Ongoing
 
-The search results do not contain information about a February 11 compliance density event or its repetition at subsequent hearings. While the results document several congressional oversight activities and hearings scheduled for March 2026, including DHS oversight and fraud investigations, there is no evidence of the specific prediction referenced.
+A federal court ordered DHS and ICE on March 2, 2026, to restore congressional oversight of detention facilities, addressing compliance issues with prior denials of entry linked to a DHS memo. A USSC public hearing on sentencing guidelines occurred on March 9, 2026, but no evidence links it to compliance density repeats from February 11. No major congressional hearings on executive order compliance were reported post-February 11 as of March 10, 2026.
 
 ### Khanna investigation document deadline
 **Status:** unverified | **Timeframe:** Mar 1, 2026
 
-No evidence found of any document deadline related to a Ro Khanna investigation on March 1, 2026. Search results mention Ro Khanna's past involvement in TikTok legislation and efforts to extend deadlines in early 2025, but nothing connects to a 2026 investigation or specific March 1 deadline. Recent articles discuss a TikTok deal closing around January 22, 2026, with calls for transparency, but no Khanna-led document request by that date.
+The provided search results contain no evidence of a March 1, 2026 document deadline related to Rep. Ro Khanna's investigation of ByteDance or TikTok. The search results cover Khanna's legislative efforts to extend the TikTok ban deadline and his statements on a TikTok deal announced in January 2026, but do not reference any document submission deadline in March 2026.
 
 ### QXO 10-K annual report filing
 **Status:** verified | **Timeframe:** 2026-02-26
 
-QXO filed its 10-K annual report for the year ending December 31, 2025, on February 27, 2026, one day after the predicted timeframe. The SEC EDGAR database lists this filing as the latest, confirming the event occurred. Earlier announcements indicated an expected filing date of February 26, 2026.
+QXO filed its 10-K annual report for the year ended December 31, 2025, on February 27, 2026, one day after the predicted timeframe. The SEC EDGAR database lists the filing date as February 27, 2026. Company investor relations and Stock Titan confirm the 10-K was filed on that date.
 
 ### DOGE-predicted instability tracking
-**Status:** unverified | **Timeframe:** Q1 2026
+**Status:** monitoring | **Timeframe:** Q1 2026
 
-Search results yielded no evidence of any 'DOGE-predicted instability tracking' event, metric, or development in Q1 2026. All sources focused exclusively on Dogecoin (DOGE) price predictions, market analysis, whale activity, and trading volume for the period. No mentions of instability tracking or related predictions were found.
+Dogecoin has experienced volatility in Q1 2026, with price fluctuations between approximately $0.090 and $0.152, including a recent 15.1% surge. Technical analysis shows the asset stabilizing around support levels rather than sustained instability, with whale accumulation and reduced selling pressure indicating underlying support despite short-term price pressure.
 
 ### EO 14375 legal challenge
 **Status:** monitoring | **Timeframe:** 2026
 
-Executive Order 14375 designated the Board of Peace as a public international organization entitled to privileges and immunities. It faced a legal challenge in the U.S. District Court for the Southern District of Florida (case 1:26-cv-21025-LMR), which remains pending. Related Supreme Court rulings invalidated tariffs under other EOs but did not directly resolve this challenge.
+Executive Order 14375, issued on January 22, 2026, designates the Board of Peace as a public international organization entitled to privileges and immunities under U.S. law. A legal challenge to this order has been raised, as documented in a Just Security article questioning the executive order's authority. No resolution or court ruling on this challenge has been identified in available sources as of March 10, 2026.
 
 ### Israel 60-day Hamas disarmament ultimatum
 **Status:** monitoring | **Timeframe:** None
 
-Israel issued a 60-day ultimatum in mid-February 2026 demanding Hamas disarm completely or face renewed military operations, as announced by Cabinet Secretary Yossi Fuchs. Hamas rejected the ultimatum, stating it received no formal notification from mediators and dismissing it as threats without basis in negotiations. As of March 9, 2026, approximately three weeks into the potential timeline, no resolution or compliance was reported.
+Israel issued a 60-day ultimatum for Hamas to disarm completely on February 16, 2026, with the timeline possibly starting around a February 19 meeting, threatening to resume military operations if unmet. Hamas rejected the ultimatum, stating it had not been notified and calling it baseless. As of March 10, 2026, approximately three weeks into the potential 60-day period, no resolution or compliance was reported.
 
 ### Iran military action signals
 **Status:** verified | **Timeframe:** None
 
-Iran has conducted extensive military action signaling escalation in conflict with Israel and the US-led coalition since late February 2026. Iranian forces have launched daily missile and drone attacks against Israel, US bases in the Middle East, and regional countries including Saudi Arabia and the UAE, with the IRGC declaring preparedness to sustain high-intensity warfare for at least six months.
+A US-Israeli coalition launched extensive airstrikes on Iranian military targets, including missile production sites, IRGC headquarters, air defenses, and oil refineries, starting February 28, 2026, under Operation Epic Fury. Strikes continued through March 7, with over 3,000 targets hit by US CENTCOM and 300 by IDF in recent days, significantly degrading Iran's missile and drone capabilities. Iran retaliated with missile and drone attacks on Israel, US bases, and Gulf states like Saudi Arabia.
 
 ---
-*Digest generated 2026-03-09 09:57 UTC by sync_live_data workflow.*
+*Digest generated 2026-03-10 09:51 UTC by sync_live_data workflow.*
