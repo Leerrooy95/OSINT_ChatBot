@@ -1,0 +1,117 @@
+{
+  "run_timestamp": "2026-03-10T20:22:44.687939+00:00",
+  "run_date": "2026-03-10",
+  "nodes_queried": 5,
+  "nodes_active": 5,
+  "nodes_critical": 3,
+  "convergence_detected": true,
+  "node_statuses": {
+    "maxwell": {
+      "node_id": "maxwell",
+      "status": "CRITICAL",
+      "headline": "Ghislaine Maxwell invoked Fifth Amendment in House Oversight deposition but offered testimony exonerating Trump and Clinton in exchange for clemency from President Trump.",
+      "summary": "Ghislaine Maxwell declined to answer questions during a closed-door House Oversight Committee deposition by invoking her Fifth Amendment rights, stating through her attorney that she would testify fully if granted clemency by President Trump.[1][2] Her legal team indicated she is prepared to confirm that neither Trump nor former President Bill Clinton engaged in wrongdoing related to Epstein.[2] Senator Jacky Rosen introduced a Senate resolution opposing any clemency for Maxwell, aiming to force a recorded vote or unanimous consent.[3] Reports also highlight Maxwell's recent transfer to a Texas prison camp after interviews with Deputy Attorney General Todd Blanche, amid allegations of special treatment.[1][2]",
+      "event_classification": "FRICTION",
+      "key_entities_mentioned": [
+        "Ghislaine Maxwell",
+        "House Oversight Committee",
+        "Donald Trump",
+        "Jeffrey Epstein",
+        "DOJ",
+        "Pam Bondi"
+      ],
+      "sources": [
+        "https://www.politico.com/news/2025/11/10/ghislaine-maxwell-seek-commutation-document-00644139",
+        "https://www.fox5dc.com/news/clemency-vs-pardon-ghislaine-maxwell-appeals-clemency-trump",
+        "https://www.rosen.senate.gov/2026/02/12/rosen-announces-resolution-opposing-any-clemency-from-donald-trump-for-ghislaine-maxwell/"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-10",
+      "raw_response_length": 1535
+    },
+    "iran": {
+      "node_id": "iran",
+      "status": "CRITICAL",
+      "headline": "Operation Epic Fury enters day 11 with US strikes intensifying on Iranian military, nuclear, and internal security targets amid ongoing Iranian retaliatory drone and missile attacks on Gulf states.",
+      "summary": "U.S. and Israeli forces launched Operation Epic Fury on February 28, 2026, killing Supreme Leader Ali Khamenei and conducting nearly 900 initial strikes on Iranian military infrastructure, triggering Iranian retaliation targeting U.S. embassies, bases, and oil vessels in the Strait of Hormuz.[1][2][4] By March 10, the U.S. has struck over 1,700 sites including IRGC bases, nuclear facilities like Natanz, and internal security forces suppressing protests, achieving air dominance over Tehran.[2][4] Iran has continued drone and missile strikes on U.S. facilities in Riyadh, Dubai, and Kuwait, leading to embassy closures, while delegating powers to local officials amid governance disruptions; President Trump stated objectives are nearly complete with the war to end soon.[4][5] No confirmed updates on Assembly of Experts succession for Khamenei or specific CRINK coordination, though Strait of Hormuz shipping faces threats from Iranian attacks.[1]",
+      "event_classification": "ESCALATION",
+      "key_entities_mentioned": [
+        "Iran",
+        "IRGC",
+        "Ali Khamenei",
+        "Strait of Hormuz",
+        "Assembly of Experts"
+      ],
+      "sources": [
+        "https://www.britannica.com/event/2026-Iran-Conflict",
+        "https://www.latimes.com/politics/story/2026-03-08/what-is-trumps-true-objective-in-iran-war-u-s-targets-provide-clue",
+        "https://understandingwar.org/research/middle-east/iran-update-evening-special-report-march-3-2026/",
+        "https://www.youtube.com/watch?v=xizexCH9Mh8"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-10",
+      "raw_response_length": 1789
+    },
+    "gulf_swf": {
+      "node_id": "gulf_swf",
+      "status": "ACTIVE",
+      "headline": "Saudi PIF announced its 2026-2030 strategy at the PIF Private Sector Forum in Riyadh, shifting from sector building to growth acceleration with SAR 70 billion in new opportunities.",
+      "summary": "Saudi Arabia's Public Investment Fund (PIF) soft-launched its new five-year strategy at the PIF\u2013Private Sector Forum, pivoting toward industrial execution in AI, minerals, tourism, and renewables while scaling back giga-projects like The Line.[1][2][4][5] PIF Governor Yasir Al-Rumayyan highlighted ecosystem integration, local content spending of SAR 591 billion from 2020-2024, and over 190 investment opportunities worth SAR 40 billion offered to the private sector.[1] The strategy emphasizes attracting third-party capital and public-private partnerships amid fiscal pressures, with no new developments reported on Mubadala, MGX, ADIA, QIA, GlobalFoundries, or Affinity Partners.[2]",
+      "event_classification": "COMPLIANCE",
+      "key_entities_mentioned": [
+        "Saudi PIF"
+      ],
+      "sources": [
+        "https://english.aawsat.com/business/5239126-saudi-arabias-pif-shifts-launching-opportunities-accelerating-growth",
+        "https://grbizm.com/the-strategic-realignment-of-sovereign-wealth-analyzing-saudi-arabias-public-investment-fund-2026-2030-blueprint/",
+        "https://businesstoday.me/business/the-pif-2026-2030-blueprint-a-strategic-pivot-toward-ai-industry-and-discipline/",
+        "https://gulfbusiness.com/saudi-pif-to-unveil-new-2026-2030-strategy/"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-10",
+      "raw_response_length": 1564
+    },
+    "oracle_ellison": {
+      "node_id": "oracle_ellison",
+      "status": "ACTIVE",
+      "headline": "Oracle reports Q3 FY2026 earnings with $17.2B revenue and $553B RPO amid $100B+ debt and $30B financing raised.",
+      "summary": "Oracle announced fiscal 2026 third quarter results on March 9, 2026, showing total revenue of $17.2 billion (up 22%), cloud revenue of $8.9 billion (up 44%), and remaining performance obligations of $553 billion (up 325% YoY), driven by large AI contracts.[1][2] The company raised $30 billion in financing through bonds and mandatory convertible preferred stock as part of a $45-50 billion plan for 2026, while facing over $100 billion in debt, negative free cash flow, and ongoing layoffs under a $1.6 billion restructuring plan.[1][2][3] Stock has declined about 20% in 2026 despite strong top-line growth, with reaffirmed FY2026 revenue guidance at $67 billion and capex at $50 billion.[1][2] No new developments reported on Stargate contraction, Ellison WBD acquisition, or Paramount-Skydance merger.",
+      "event_classification": "COMPLIANCE",
+      "key_entities_mentioned": [
+        "Oracle",
+        "Larry Ellison"
+      ],
+      "sources": [
+        "https://fortune.com/2026/03/09/oracle-earnings-layoffs-debt-cloud/",
+        "https://www.stocktitan.net/news/ORCL/oracle-announces-fiscal-year-2026-third-quarter-financial-5jomaooaqou7.html",
+        "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-10",
+      "raw_response_length": 1504
+    },
+    "epstein_files": {
+      "node_id": "epstein_files",
+      "status": "CRITICAL",
+      "headline": "DOJ released previously withheld FBI 302 documents from Epstein files alleging sexual assault by Trump on March 10, 2026.",
+      "summary": "The Justice Department released three FBI interview summaries (302s) relating to Donald Trump that were previously withheld, describing allegations of sexual assault on a girl aged 13-15 in the 1980s introduced by Epstein.[1] This follows the publication of over 3 million additional pages, including 2,000 videos and 180,000 images, in compliance with the Epstein Files Transparency Act, bringing the total to nearly 3.5 million pages.[2] DOJ stated the omissions were due to mistaken duplicate coding but did not explain selective withholding of Trump-related files; they dismissed the claims as unfounded and false, possibly submitted pre-2020 election.[1][2] More than a dozen additional files related to Trump allegations were also released after an NPR investigation.[3]",
+      "event_classification": "FRICTION",
+      "key_entities_mentioned": [
+        "DOJ",
+        "FBI 302",
+        "Trump",
+        "Epstein"
+      ],
+      "sources": [
+        "https://www.democracynow.org/2026/3/10/headlines/fbi_releases_previously_withheld_documents_from_epstein_files_alleging_sexual_assault_by_trump",
+        "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files",
+        "https://www.klcc.org/2026-03-09/doj-releases-additional-epstein-files-related-to-trump",
+        "https://www.justice.gov/epstein"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-10",
+      "raw_response_length": 1507
+    }
+  },
+  "convergence_note": "8 nodes active simultaneously \u2014 within the 7-day convergence window defined by the thermostat model."
+}

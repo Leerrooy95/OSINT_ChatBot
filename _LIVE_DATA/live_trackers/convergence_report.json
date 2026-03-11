@@ -1,6 +1,6 @@
 {
-  "analysis_timestamp": "2026-03-10T08:30:46.877857+00:00",
-  "total_runs_analyzed": 5,
+  "analysis_timestamp": "2026-03-11T08:29:55.692686+00:00",
+  "total_runs_analyzed": 7,
   "window_days": 7,
   "convergence_events": [
     {
@@ -201,54 +201,137 @@
         "FRICTION"
       ],
       "has_friction_compliance_pair": true
+    },
+    {
+      "date": "2026-03-10",
+      "active_node_count": 5,
+      "nodes": [
+        {
+          "node_id": "maxwell",
+          "status": "CRITICAL",
+          "classification": "FRICTION",
+          "headline": "Ghislaine Maxwell invoked Fifth Amendment in House Oversight deposition but offered testimony exonerating Trump and Clinton in exchange for clemency from President Trump."
+        },
+        {
+          "node_id": "iran",
+          "status": "CRITICAL",
+          "classification": "ESCALATION",
+          "headline": "Operation Epic Fury enters day 11 with US strikes intensifying on Iranian military, nuclear, and internal security targets amid ongoing Iranian retaliatory drone and missile attacks on Gulf states."
+        },
+        {
+          "node_id": "gulf_swf",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Saudi PIF announced its 2026-2030 strategy at the PIF Private Sector Forum in Riyadh, shifting from sector building to growth acceleration with SAR 70 billion in new opportunities."
+        },
+        {
+          "node_id": "oracle_ellison",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Oracle reports Q3 FY2026 earnings with $17.2B revenue and $553B RPO amid $100B+ debt and $30B financing raised."
+        },
+        {
+          "node_id": "epstein_files",
+          "status": "CRITICAL",
+          "classification": "FRICTION",
+          "headline": "DOJ released previously withheld FBI 302 documents from Epstein files alleging sexual assault by Trump on March 10, 2026."
+        }
+      ],
+      "classification_mix": [
+        "FRICTION",
+        "ESCALATION",
+        "COMPLIANCE",
+        "COMPLIANCE",
+        "FRICTION"
+      ],
+      "has_friction_compliance_pair": true
+    },
+    {
+      "date": "2026-03-11",
+      "active_node_count": 4,
+      "nodes": [
+        {
+          "node_id": "maxwell",
+          "status": "CRITICAL",
+          "classification": "FRICTION",
+          "headline": "Ghislaine Maxwell refused to testify before House Oversight Committee unless granted clemency by President Trump, invoking Fifth Amendment in February 2026 hearing.[1][2]"
+        },
+        {
+          "node_id": "gulf_swf",
+          "status": "CRITICAL",
+          "classification": "COMPLIANCE",
+          "headline": "Saudi PIF soft-launched its 2026-2030 strategy on March 9, 2026, shifting focus to industry, minerals, AI, and tourism while scaling back mega projects."
+        },
+        {
+          "node_id": "oracle_ellison",
+          "status": "ACTIVE",
+          "classification": "FRICTION",
+          "headline": "Oracle announced $45-50B equity and debt financing plan for 2026 to fund cloud infrastructure expansion amid debt scrutiny and bondholder lawsuit."
+        },
+        {
+          "node_id": "epstein_files",
+          "status": "CRITICAL",
+          "classification": "FRICTION",
+          "headline": "DOJ released previously withheld FBI documents from Epstein files alleging sexual assault by Trump on March 10, 2026."
+        }
+      ],
+      "classification_mix": [
+        "FRICTION",
+        "COMPLIANCE",
+        "FRICTION",
+        "FRICTION"
+      ],
+      "has_friction_compliance_pair": true
     }
   ],
   "node_activity_summary": {
     "gulf_swf": {
-      "total_appearances": 5,
-      "active_count": 5,
-      "critical_count": 2,
+      "total_appearances": 7,
+      "active_count": 7,
+      "critical_count": 3,
       "classifications": {
-        "COMPLIANCE": 5
+        "COMPLIANCE": 7
       }
     },
     "oracle_ellison": {
-      "total_appearances": 5,
-      "active_count": 5,
+      "total_appearances": 7,
+      "active_count": 7,
       "critical_count": 0,
       "classifications": {
-        "COMPLIANCE": 5
+        "COMPLIANCE": 6,
+        "FRICTION": 1
       }
     },
     "epstein_files": {
-      "total_appearances": 5,
-      "active_count": 5,
-      "critical_count": 1,
+      "total_appearances": 7,
+      "active_count": 7,
+      "critical_count": 3,
       "classifications": {
         "COMPLIANCE": 3,
-        "FRICTION": 2
-      }
-    },
-    "maxwell": {
-      "total_appearances": 4,
-      "active_count": 4,
-      "critical_count": 0,
-      "classifications": {
         "FRICTION": 4
       }
     },
-    "iran": {
-      "total_appearances": 3,
-      "active_count": 3,
-      "critical_count": 3,
+    "maxwell": {
+      "total_appearances": 6,
+      "active_count": 6,
+      "critical_count": 2,
       "classifications": {
-        "ESCALATION": 3
+        "FRICTION": 6
+      }
+    },
+    "iran": {
+      "total_appearances": 4,
+      "active_count": 4,
+      "critical_count": 4,
+      "classifications": {
+        "ESCALATION": 4
       }
     }
   },
   "daily_active_counts": {
     "2026-03-08": 4,
     "2026-03-09": 5,
-    "2026-03-10": 5
+    "2026-03-10": 5,
+    "2026-03-11": 4
   }
 }
