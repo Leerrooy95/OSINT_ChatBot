@@ -1,0 +1,126 @@
+{
+  "run_timestamp": "2026-03-11T20:24:15.310425+00:00",
+  "run_date": "2026-03-11",
+  "nodes_queried": 5,
+  "nodes_active": 5,
+  "nodes_critical": 4,
+  "convergence_detected": true,
+  "node_statuses": {
+    "maxwell": {
+      "node_id": "maxwell",
+      "status": "CRITICAL",
+      "headline": "Ghislaine Maxwell invoked Fifth Amendment in February 2026 House Oversight deposition, conditioning testimony on Trump clemency which lawmakers rejected.[1][2][5]",
+      "summary": "In February 2026, Ghislaine Maxwell refused to testify before the House Oversight Committee during a virtual deposition from FPC Bryan prison, invoking her Fifth Amendment rights unless granted clemency by President Trump; her attorney stated she would provide full testimony exonerating Trump and Clinton if clemency is granted.[2][4][5] Lawmakers from both parties, including Chairman James Comer and Rep. Ro Khanna, rejected the offer, with Comer denying immunity and Rep. Anna Paulina Luna opposing clemency publicly.[2][4] Senator Rosen announced a nonbinding Senate resolution opposing any clemency for Maxwell.[6] No clemency petition has been publicly filed, and her legal challenges, including a January 2026 habeas corpus denial and Supreme Court appeal rejection, remain exhausted.[1]",
+      "event_classification": "FRICTION",
+      "key_entities_mentioned": [
+        "Ghislaine Maxwell",
+        "House Oversight Committee",
+        "Epstein files",
+        "DOJ",
+        "Pam Bondi",
+        "President Trump",
+        "James Comer",
+        "David Oscar Markus",
+        "Senator Rosen"
+      ],
+      "sources": [
+        "https://epsteinislands.com/blog/ghislaine-maxwell-2026-updates",
+        "https://www.washingtontimes.com/news/2026/feb/9/clemency-work-ghislaine-maxwell-gambit-puts-presidential-pardon-power/",
+        "https://www.politico.com/news/2025/11/10/ghislaine-maxwell-seek-commutation-document-00644139",
+        "https://www.wusf.org/2026-02-10/ghislaine-maxwell-appeals-for-clemency-from-trump-as-she-declines-to-answer-questions",
+        "https://www.latimes.com/world-nation/story/2026-02-09/ghislaine-maxwell-declined-to-answer-questions-from-house-committee-citing-5th-amendment-rights",
+        "https://www.rosen.senate.gov/2026/02/12/rosen-announces-resolution-opposing-any-clemency-from-donald-trump-for-ghislaine-maxwell/"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-11",
+      "raw_response_length": 1980
+    },
+    "iran": {
+      "node_id": "iran",
+      "status": "CRITICAL",
+      "headline": "US conducted its most intense day of airstrikes on Iran on March 10, 2026, targeting naval vessels and internal security forces amid ongoing Iranian retaliation.",
+      "summary": "The US and Israel continued joint airstrikes on Iranian ballistic missile infrastructure, air defenses, and naval assets, with the US releasing footage of strikes destroying 16 Iranian minelayers and other vessels. Strikes have increasingly targeted IRGC bases, Basij militia, and regional police to suppress dissent, achieving success in degrading military capabilities while Iran retains 100-200 missile launchers. Iran retaliated with missiles and drones against US bases, Gulf states, Israel, and tankers, including threats to block the Strait of Hormuz, but attack frequency has declined. US casualties rose to 7 killed and 150 wounded; no new developments on supreme leader succession or Assembly of Experts.",
+      "event_classification": "ESCALATION",
+      "key_entities_mentioned": [
+        "Iran",
+        "IRGC",
+        "Strait of Hormuz",
+        "US",
+        "Israel"
+      ],
+      "sources": [
+        "https://www.latimes.com/politics/story/2026-03-08/what-is-trumps-true-objective-in-iran-war-u-s-targets-provide-clue",
+        "https://understandingwar.org/research/middle-east/iran-update-evening-special-report-march-6-2026/",
+        "https://en.wikipedia.org/wiki/2026_Iran_war",
+        "https://www.youtube.com/watch?v=zWLo__wXubc",
+        "https://www.euronews.com/video/2026/03/11/us-military-releases-footage-of-strikes-on-iranian-naval-vessels"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-11",
+      "raw_response_length": 1528
+    },
+    "gulf_swf": {
+      "node_id": "gulf_swf",
+      "status": "CRITICAL",
+      "headline": "Saudi PIF announced new 2026-2030 strategy at Riyadh forum, pivoting to industrial execution, AI, minerals, and private sector partnerships worth SAR 70 billion.",
+      "summary": "Saudi Arabia's Public Investment Fund (PIF) soft-launched its 2026-2030 strategy during the PIF-Private Sector Forum in Riyadh, shifting from building sectors to accelerating growth through ecosystem integration and private sector collaboration.[1][2][3] PIF offered over 190 investment opportunities valued at SAR 40 billion and plans SAR 70 billion in new opportunities, with local content spending reaching SAR 591 billion from 2020-2024.[1][3] The strategy emphasizes industry, mining, AI, tourism, and renewable energy like green hydrogen, while scaling back giga-projects such as The Line and Mukaab to align with fiscal realities.[2][4][5] No new developments reported on Mubadala, MGX, ADIA, QIA, GlobalFoundries, or Affinity Partners in recent coverage.",
+      "event_classification": "COMPLIANCE",
+      "key_entities_mentioned": [
+        "Saudi PIF"
+      ],
+      "sources": [
+        "https://english.aawsat.com/business/5239126-saudi-arabias-pif-shifts-launching-opportunities-accelerating-growth",
+        "https://grbizm.com/the-strategic-realignment-of-sovereign-wealth-analyzing-saudi-arabias-public-investment-fund-2026-2030-blueprint/",
+        "https://businesstoday.me/business/the-pif-2026-2030-blueprint-a-strategic-pivot-toward-ai-industry-and-discipline/",
+        "https://gulfbusiness.com/saudi-pif-to-unveil-new-2026-2030-strategy/",
+        "https://www.binance.com/en/square/post/290267568834049"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-11",
+      "raw_response_length": 1684
+    },
+    "oracle_ellison": {
+      "node_id": "oracle_ellison",
+      "status": "ACTIVE",
+      "headline": "Oracle announced $45-50B financing plan for 2026 debt needs, but stock dropped over 12% amid OpenAI exposure concerns after Nvidia-OpenAI deal tweet.",
+      "summary": "Oracle announced on Sunday a plan to raise $45-50 billion in gross cash proceeds for 2026 via balanced debt and equity financing, including a $25 billion bond deal, which Bank of America analysts called a defusing of key hyperscaler debt risks.[1][2] However, Oracle's stock erased gains and fell over 3% on Tuesday after tweeting confidence in OpenAI despite a Nvidia-OpenAI deal, amid worries over Oracle's $100B debt, $250B leasing commitments, and heavy reliance on opaque private customer OpenAI.[1] No new developments reported on Stargate contraction, Ellison WBD acquisition, or Paramount-Skydance mergers as of March 11, 2026.",
+      "event_classification": "FRICTION",
+      "key_entities_mentioned": [
+        "Oracle",
+        "Larry Ellison",
+        "OpenAI",
+        "Nvidia"
+      ],
+      "sources": [
+        "https://fortune.com/2026/02/03/oracle-debt-openai-stock-movement-key-risk-hyperscaler-market/",
+        "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx",
+        "https://www.aol.com/oracle-defused-key-risk-going-204912444.html"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-11",
+      "raw_response_length": 1327
+    },
+    "epstein_files": {
+      "node_id": "epstein_files",
+      "status": "CRITICAL",
+      "headline": "DOJ published over 3 million additional pages of Epstein files on March 11, 2026, in compliance with the Epstein Files Transparency Act, including uncorroborated allegations against Trump.",
+      "summary": "The Department of Justice released more than 3 million pages, over 2,000 videos, and 180,000 images from Epstein-related cases, bringing the total to nearly 3.5 million pages, sourced from Florida and New York investigations, FBI probes, and others.[2] These files include previously withheld FBI 302 interviews with a survivor alleging abuse by Trump, described by DOJ as uncorroborated, sensationalist, and baseless claims submitted before the 2020 election.[1][2][3][4] No new prosecutions resulted, as a 2019 DOJ memo confirmed insufficient evidence against potential co-conspirators beyond Epstein and Maxwell.[1] Redactions protected victims, with certification by USAO-SDNY ensuring no unredacted victim info.[2]",
+      "event_classification": "COMPLIANCE",
+      "key_entities_mentioned": [
+        "DOJ",
+        "FBI 302",
+        "Trump"
+      ],
+      "sources": [
+        "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files",
+        "https://www.politico.com/news/magazine/2026/03/11/epstein-files-justice-department-no-prosecutions-column-00821127",
+        "https://www.youtube.com/watch?v=_ufiXhjoI4U",
+        "https://www.klcc.org/2026-03-09/doj-releases-additional-epstein-files-related-to-trump"
+      ],
+      "confidence": "HIGH",
+      "timestamp": "2026-03-11",
+      "raw_response_length": 1492
+    }
+  },
+  "convergence_note": "9 nodes active simultaneously \u2014 within the 7-day convergence window defined by the thermostat model."
+}

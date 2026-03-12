@@ -1,6 +1,6 @@
 {
-  "analysis_timestamp": "2026-03-11T08:29:55.692686+00:00",
-  "total_runs_analyzed": 7,
+  "analysis_timestamp": "2026-03-12T08:32:25.582061+00:00",
+  "total_runs_analyzed": 10,
   "window_days": 7,
   "convergence_events": [
     {
@@ -282,49 +282,205 @@
         "FRICTION"
       ],
       "has_friction_compliance_pair": true
+    },
+    {
+      "date": "2026-03-11",
+      "active_node_count": 5,
+      "nodes": [
+        {
+          "node_id": "maxwell",
+          "status": "CRITICAL",
+          "classification": "FRICTION",
+          "headline": "Ghislaine Maxwell invoked Fifth Amendment in February 2026 House Oversight deposition, conditioning testimony on Trump clemency which lawmakers rejected.[1][2][5]"
+        },
+        {
+          "node_id": "iran",
+          "status": "CRITICAL",
+          "classification": "ESCALATION",
+          "headline": "US conducted its most intense day of airstrikes on Iran on March 10, 2026, targeting naval vessels and internal security forces amid ongoing Iranian retaliation."
+        },
+        {
+          "node_id": "gulf_swf",
+          "status": "CRITICAL",
+          "classification": "COMPLIANCE",
+          "headline": "Saudi PIF announced new 2026-2030 strategy at Riyadh forum, pivoting to industrial execution, AI, minerals, and private sector partnerships worth SAR 70 billion."
+        },
+        {
+          "node_id": "oracle_ellison",
+          "status": "ACTIVE",
+          "classification": "FRICTION",
+          "headline": "Oracle announced $45-50B financing plan for 2026 debt needs, but stock dropped over 12% amid OpenAI exposure concerns after Nvidia-OpenAI deal tweet."
+        },
+        {
+          "node_id": "epstein_files",
+          "status": "CRITICAL",
+          "classification": "COMPLIANCE",
+          "headline": "DOJ published over 3 million additional pages of Epstein files on March 11, 2026, in compliance with the Epstein Files Transparency Act, including uncorroborated allegations against Trump."
+        }
+      ],
+      "classification_mix": [
+        "FRICTION",
+        "ESCALATION",
+        "COMPLIANCE",
+        "FRICTION",
+        "COMPLIANCE"
+      ],
+      "has_friction_compliance_pair": true
+    },
+    {
+      "date": "2026-03-11",
+      "active_node_count": 5,
+      "nodes": [
+        {
+          "node_id": "iran",
+          "status": "CRITICAL",
+          "classification": "ESCALATION",
+          "headline": "Strait of Hormuz shipping traffic remains near standstill for over a week, with only Iran-linked vessels transiting amid ongoing conflict."
+        },
+        {
+          "node_id": "gulf_swf",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Saudi PIF unveils revised 2026-2030 strategy, pivoting to industry, minerals, AI, and tourism amid low oil prices, scaling back mega-projects like The Line."
+        },
+        {
+          "node_id": "israel",
+          "status": "CRITICAL",
+          "classification": "ESCALATION",
+          "headline": "Israel conducts ongoing airstrikes on Iran and Hezbollah targets amid full-scale war started February 28, 2026, destroying hundreds of Iranian missile launchers and striking 60 Hezbollah sites in Lebanon on March 3."
+        },
+        {
+          "node_id": "epstein_files",
+          "status": "CRITICAL",
+          "classification": "FRICTION",
+          "headline": "DOJ released three previously withheld 2019 FBI 302 reports alleging Trump abused a minor, amid accusations of improper withholding."
+        },
+        {
+          "node_id": "arkansas_datacenter",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "AVAIO Digital announced $6B initial investment in AI-ready data center hub in Pulaski County, Arkansas, on January 12, 2026, with construction starting Q1 2026."
+        }
+      ],
+      "classification_mix": [
+        "ESCALATION",
+        "COMPLIANCE",
+        "ESCALATION",
+        "FRICTION",
+        "COMPLIANCE"
+      ],
+      "has_friction_compliance_pair": true
+    },
+    {
+      "date": "2026-03-12",
+      "active_node_count": 6,
+      "nodes": [
+        {
+          "node_id": "maxwell",
+          "status": "ACTIVE",
+          "classification": "FRICTION",
+          "headline": "Ghislaine Maxwell invoked Fifth Amendment in February 2026 House Oversight deposition, with attorney offering testimony conditional on Trump clemency; habeas corpus petition denied January 2026."
+        },
+        {
+          "node_id": "iran",
+          "status": "CRITICAL",
+          "classification": "ESCALATION",
+          "headline": "Strait of Hormuz commercial shipping near-total collapse with only Iran-linked vessels transiting; multiple merchant vessel strikes reported; Iranian mine deployment preparations underway"
+        },
+        {
+          "node_id": "gulf_swf",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "Saudi PIF soft-launches 2026-2030 strategy, shifting focus to AI, industry, minerals, and tourism while scaling back mega-projects like The Line amid fiscal pressures."
+        },
+        {
+          "node_id": "israel",
+          "status": "CRITICAL",
+          "classification": "ESCALATION",
+          "headline": "Israel and US conducted over 1,600 IAF sorties into Iran by March 10, destroying 300+ missile launchers and striking Tehran command centers amid ongoing Hezbollah attacks from Lebanon."
+        },
+        {
+          "node_id": "epstein_files",
+          "status": "ACTIVE",
+          "classification": "FRICTION",
+          "headline": "DOJ released three previously withheld FBI 302 reports naming Trump in uncorroborated Epstein allegations on March 5, 2026, amid accusations of withholding."
+        },
+        {
+          "node_id": "arkansas_datacenter",
+          "status": "ACTIVE",
+          "classification": "COMPLIANCE",
+          "headline": "AVAIO Digital announced $6B initial investment for AI-ready data center campus in Pulaski County, Arkansas, on January 12, 2026, with construction starting Q1 2026."
+        }
+      ],
+      "classification_mix": [
+        "FRICTION",
+        "ESCALATION",
+        "COMPLIANCE",
+        "ESCALATION",
+        "FRICTION",
+        "COMPLIANCE"
+      ],
+      "has_friction_compliance_pair": true
     }
   ],
   "node_activity_summary": {
     "gulf_swf": {
-      "total_appearances": 7,
-      "active_count": 7,
-      "critical_count": 3,
+      "total_appearances": 10,
+      "active_count": 10,
+      "critical_count": 4,
       "classifications": {
-        "COMPLIANCE": 7
+        "COMPLIANCE": 10
       }
     },
     "oracle_ellison": {
-      "total_appearances": 7,
-      "active_count": 7,
+      "total_appearances": 10,
+      "active_count": 8,
       "critical_count": 0,
       "classifications": {
         "COMPLIANCE": 6,
-        "FRICTION": 1
+        "FRICTION": 2,
+        "NEUTRAL": 2
       }
     },
     "epstein_files": {
-      "total_appearances": 7,
-      "active_count": 7,
-      "critical_count": 3,
+      "total_appearances": 10,
+      "active_count": 10,
+      "critical_count": 5,
       "classifications": {
-        "COMPLIANCE": 3,
-        "FRICTION": 4
-      }
-    },
-    "maxwell": {
-      "total_appearances": 6,
-      "active_count": 6,
-      "critical_count": 2,
-      "classifications": {
+        "COMPLIANCE": 4,
         "FRICTION": 6
       }
     },
-    "iran": {
-      "total_appearances": 4,
-      "active_count": 4,
-      "critical_count": 4,
+    "maxwell": {
+      "total_appearances": 8,
+      "active_count": 8,
+      "critical_count": 3,
       "classifications": {
-        "ESCALATION": 4
+        "FRICTION": 8
+      }
+    },
+    "iran": {
+      "total_appearances": 7,
+      "active_count": 7,
+      "critical_count": 7,
+      "classifications": {
+        "ESCALATION": 7
+      }
+    },
+    "israel": {
+      "total_appearances": 2,
+      "active_count": 2,
+      "critical_count": 2,
+      "classifications": {
+        "ESCALATION": 2
+      }
+    },
+    "arkansas_datacenter": {
+      "total_appearances": 2,
+      "active_count": 2,
+      "critical_count": 0,
+      "classifications": {
+        "COMPLIANCE": 2
       }
     }
   },
@@ -332,6 +488,7 @@
     "2026-03-08": 4,
     "2026-03-09": 5,
     "2026-03-10": 5,
-    "2026-03-11": 4
+    "2026-03-11": 5,
+    "2026-03-12": 6
   }
 }

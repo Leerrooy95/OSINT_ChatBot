@@ -1,0 +1,252 @@
+{
+  "extraction_timestamp": "2026-03-11T00:00:00Z",
+  "total_entities": 24,
+  "total_relationships": 14,
+  "nodes": {
+    "iran": {
+      "entities": [
+        {
+          "name": "Iran",
+          "type": "ORG",
+          "context": "Country"
+        },
+        {
+          "name": "Strait of Hormuz",
+          "type": "LOCATION",
+          "context": "Strategic waterway"
+        },
+        {
+          "name": "IRGC",
+          "type": "ORG",
+          "context": "Islamic Revolutionary Guard Corps"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Iran",
+          "to": "Strait of Hormuz",
+          "type": "controls",
+          "detail": "Shipping traffic"
+        }
+      ],
+      "temporal_markers": [
+        {
+          "date": "2026-02-28",
+          "event": "Attacks on merchant vessels",
+          "significance": "Escalation"
+        },
+        {
+          "date": "2026-03-08",
+          "event": "One Iran-linked bulk carrier exited the Persian Gulf",
+          "significance": "Shipping halt"
+        }
+      ],
+      "event_classification": "ESCALATION",
+      "cross_node_connections": [
+        {
+          "target_node": "israel",
+          "connection_type": "conflict",
+          "detail": "Ongoing airstrikes"
+        }
+      ]
+    },
+    "gulf_swf": {
+      "entities": [
+        {
+          "name": "Saudi PIF",
+          "type": "ORG",
+          "context": "Public Investment Fund"
+        },
+        {
+          "name": "NEOM",
+          "type": "ORG",
+          "context": "Megaproject"
+        },
+        {
+          "name": "Vision 2030",
+          "type": "LEGAL",
+          "context": "Economic plan"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Saudi PIF",
+          "to": "NEOM",
+          "type": "funds",
+          "detail": "Revised strategy"
+        }
+      ],
+      "temporal_markers": [
+        {
+          "date": "2026-03-11",
+          "event": "Revised strategy announcement",
+          "significance": "Compliance"
+        }
+      ],
+      "event_classification": "COMPLIANCE",
+      "cross_node_connections": [
+        {
+          "target_node": "iran",
+          "connection_type": "economic impact",
+          "detail": "Low oil prices"
+        }
+      ]
+    },
+    "israel": {
+      "entities": [
+        {
+          "name": "Israel",
+          "type": "ORG",
+          "context": "Country"
+        },
+        {
+          "name": "IDF",
+          "type": "ORG",
+          "context": "Military"
+        },
+        {
+          "name": "Hezbollah",
+          "type": "ORG",
+          "context": "Militant group"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Israel",
+          "to": "IDF",
+          "type": "military",
+          "detail": "Airstrikes"
+        }
+      ],
+      "temporal_markers": [
+        {
+          "date": "2026-02-28",
+          "event": "Operation Roaring Lion",
+          "significance": "Escalation"
+        },
+        {
+          "date": "2026-03-03",
+          "event": "Airstrikes on Hezbollah targets",
+          "significance": "Escalation"
+        }
+      ],
+      "event_classification": "ESCALATION",
+      "cross_node_connections": [
+        {
+          "target_node": "iran",
+          "connection_type": "conflict",
+          "detail": "Ongoing airstrikes"
+        }
+      ]
+    },
+    "oracle_ellison": {
+      "entities": [
+        {
+          "name": "Oracle",
+          "type": "ORG",
+          "context": "Technology company"
+        }
+      ],
+      "relationships": [],
+      "temporal_markers": [
+        {
+          "date": "2026-03-11",
+          "event": "Stock price",
+          "significance": "Neutral"
+        }
+      ],
+      "event_classification": "NEUTRAL",
+      "cross_node_connections": []
+    },
+    "epstein_files": {
+      "entities": [
+        {
+          "name": "DOJ",
+          "type": "ORG",
+          "context": "Department of Justice"
+        },
+        {
+          "name": "FBI",
+          "type": "ORG",
+          "context": "Federal Bureau of Investigation"
+        },
+        {
+          "name": "Donald Trump",
+          "type": "PERSON",
+          "context": "Former President"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "DOJ",
+          "to": "FBI",
+          "type": "released documents",
+          "detail": "FBI 302 reports"
+        }
+      ],
+      "temporal_markers": [
+        {
+          "date": "2026-03-05",
+          "event": "Release of FBI 302 reports",
+          "significance": "Friction"
+        }
+      ],
+      "event_classification": "FRICTION",
+      "cross_node_connections": []
+    },
+    "arkansas_datacenter": {
+      "entities": [
+        {
+          "name": "AVAIO Digital",
+          "type": "ORG",
+          "context": "Technology company"
+        },
+        {
+          "name": "Governor Sarah Huckabee Sanders",
+          "type": "PERSON",
+          "context": "Governor of Arkansas"
+        },
+        {
+          "name": "Entergy Arkansas",
+          "type": "ORG",
+          "context": "Energy company"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "AVAIO Digital",
+          "to": "Entergy Arkansas",
+          "type": "contract",
+          "detail": "Power supply"
+        }
+      ],
+      "temporal_markers": [
+        {
+          "date": "2026-01-12",
+          "event": "Initial investment announcement",
+          "significance": "Compliance"
+        }
+      ],
+      "event_classification": "COMPLIANCE",
+      "cross_node_connections": []
+    }
+  },
+  "convergence_signals": [
+    {
+      "nodes_involved": [
+        "iran",
+        "israel"
+      ],
+      "mechanism": "conflict escalation",
+      "confidence": "HIGH"
+    },
+    {
+      "nodes_involved": [
+        "gulf_swf",
+        "iran"
+      ],
+      "mechanism": "economic impact",
+      "confidence": "MEDIUM"
+    }
+  ]
+}

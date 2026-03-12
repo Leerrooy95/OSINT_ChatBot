@@ -1,8 +1,8 @@
-# Live Trackers v1.2
+# Live Trackers v1.3
 
 Real-time leverage node monitoring system for [The Regulated Friction Project](https://github.com/Leerrooy95/The_Regulated_Friction_Project).
 
-Tracks five active leverage nodes — Maxwell, Iran, Gulf SWFs, Oracle/Ellison, and the Epstein Files — using a three-stage pipeline: Perplexity Sonar Pro for real-time intelligence, Llama Scout 17B for structured entity extraction, and local convergence detection to flag multi-node activity windows.
+Tracks seven active leverage nodes — Maxwell, Iran, Gulf SWFs, Israel, Oracle/Ellison, Epstein Files, and Arkansas Datacenter Nexus — using a three-stage pipeline: Perplexity Sonar Pro for real-time intelligence, Llama Scout 17B for structured entity extraction, and local convergence detection to flag multi-node activity windows.
 
 **Author:** Austin Smith | 19D Cavalry Scout (OSINT Methodology)
 
@@ -32,11 +32,13 @@ Tracks five active leverage nodes — Maxwell, Iran, Gulf SWFs, Oracle/Ellison, 
 
 | Node | Type | What It Tracks |
 |------|------|----------------|
-| `maxwell` | Information | Clemency negotiations, House Oversight, Epstein network documentation |
-| `iran` | Kinetic | War status, succession architecture, Strait of Hormuz, CRINK coordination |
-| `gulf_swf` | Capital | PIF, Mubadala, MGX positioning, Silicon Sovereignty consortium |
-| `oracle_ellison` | Capital | Oracle financial stress, Stargate contraction, WBD acquisition |
-| `epstein_files` | Information | DOJ releases, Congressional subpoenas, 302 withholding, Epstein Class counter-frame |
+| `maxwell` | Information | Clemency negotiations, House Oversight, 5th Amendment invocation, habeas corpus petition |
+| `iran` | Kinetic | US-Iran war status, Khamenei succession, Strait of Hormuz closure, Iran retaliation, energy crisis |
+| `gulf_swf` | Capital | PIF, Mubadala, MGX positioning under wartime stress, Strait of Hormuz energy impact on $4.9T AUM |
+| `israel` | Kinetic | Cyber/intelligence operations, Lebanon front, Abraham Accords capital bridge, Board of Peace |
+| `oracle_ellison` | Capital | Oracle financial stress ($45-50B raise), Stargate contraction, Ellison WBD guarantee |
+| `epstein_files` | Information | DOJ releases, FBI 302 interview summaries, Congressional subpoenas, Clinton depositions |
+| `arkansas_datacenter` | Capital | State-level preemption (Good Day Farm), $17B+ datacenter deployment, utility rate capture |
 
 ---
 
