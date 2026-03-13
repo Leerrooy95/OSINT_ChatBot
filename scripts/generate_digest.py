@@ -1,8 +1,8 @@
 """
 Generate a Markdown knowledge-base digest from verified live data.
 
-Reads the daily_intelligence.json and live_verification.json files from
-the _LIVE_DATA/ directory and produces a single Markdown file at
+Reads the JSON output files synced from the Live_Trackers pipeline and
+produces a single Markdown file at
 _AI_CONTEXT_INDEX/LIVE_INTELLIGENCE_DIGEST.md that the knowledge-base
 loader picks up automatically via rglob("*.md").
 
@@ -26,6 +26,14 @@ def load_json(path: Path) -> dict | list | None:
             return json.load(f)
     except (json.JSONDecodeError, OSError):
         return None
+
+
+def _resolve(filename: str) -> dict | list | None:
+    """Try output/ subdirectory first, then top level."""
+    data = load_json(LIVE_DATA_DIR / "output" / filename)
+    if data is None:
+        data = load_json(LIVE_DATA_DIR / filename)
+    return data
 
 
 def format_developments(items: list[dict]) -> str:
@@ -87,20 +95,105 @@ def format_verification(results: list[dict]) -> str:
     return "\n".join(lines)
 
 
+def format_node_status(data: dict) -> str:
+    """Format node_status.json into a digest section."""
+    lines = []
+    nodes = data.get("nodes", data.get("results", []))
+    if isinstance(nodes, list):
+        for node in nodes:
+            name = node.get("node", node.get("name", "N/A"))
+            status = node.get("status", "unknown")
+            summary = node.get("summary", "")
+            lines.append(f"- **{name}** — `{status}`")
+            if summary:
+                lines.append(f"  - {summary}")
+    elif isinstance(nodes, dict):
+        for name, info in nodes.items():
+            status = info.get("status", "unknown") if isinstance(info, dict) else info
+            lines.append(f"- **{name}** — `{status}`")
+    gen = data.get("generated_at", "")
+    if gen:
+        lines.append(f"\n*Node scan: {gen}*")
+    return "\n".join(lines)
+
+
+def format_convergence(data: dict) -> str:
+    """Format convergence_report.json into a digest section."""
+    lines = []
+    score = data.get("convergence_score", data.get("score", ""))
+    if score:
+        lines.append(f"- **Convergence score:** {score}")
+    level = data.get("alert_level", data.get("level", ""))
+    if level:
+        lines.append(f"- **Alert level:** {level}")
+    clusters = data.get("clusters", data.get("convergence_clusters", []))
+    if isinstance(clusters, list):
+        for cl in clusters:
+            if isinstance(cl, dict):
+                label = cl.get("label", cl.get("name", "Cluster"))
+                nodes = cl.get("nodes", cl.get("members", []))
+                lines.append(f"- **{label}:** {', '.join(str(n) for n in nodes)}")
+            else:
+                lines.append(f"- {cl}")
+    gen = data.get("generated_at", "")
+    if gen:
+        lines.append(f"\n*Convergence analysis: {gen}*")
+    return "\n".join(lines)
+
+
+def format_fact_check(data: dict) -> str:
+    """Format fact_check.json into a digest section."""
+    lines = []
+    results = data.get("results", data.get("checks", []))
+    if isinstance(results, list):
+        for item in results:
+            claim = item.get("claim", item.get("statement", "N/A"))
+            verdict = item.get("verdict", item.get("result", ""))
+            confidence = item.get("confidence", "")
+            lines.append(f"- **{verdict}** — {claim}")
+            if confidence:
+                lines.append(f"  - Confidence: {confidence}")
+    gen = data.get("generated_at", "")
+    if gen:
+        lines.append(f"\n*Fact-check run: {gen}*")
+    return "\n".join(lines)
+
+
+def format_entities(data: dict) -> str:
+    """Format extracted_entities.json into a digest section."""
+    lines = []
+    entities = data.get("entities", data.get("results", []))
+    if isinstance(entities, list):
+        names = []
+        for ent in entities:
+            if isinstance(ent, dict):
+                names.append(ent.get("name", ent.get("entity", str(ent))))
+            else:
+                names.append(str(ent))
+        if names:
+            lines.append(", ".join(names))
+    elif isinstance(entities, dict):
+        for category, items in entities.items():
+            if isinstance(items, list):
+                lines.append(f"**{category}:** {', '.join(str(i) for i in items)}")
+    gen = data.get("generated_at", "")
+    if gen:
+        lines.append(f"\n*Entity extraction: {gen}*")
+    return "\n".join(lines)
+
+
 def main() -> int:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    # Files may be at top level or in output/ subdirectory depending on source.
     # Use explicit None checks rather than truthiness to avoid skipping empty dicts.
-    daily = load_json(LIVE_DATA_DIR / "output" / "daily_intelligence.json")
-    if daily is None:
-        daily = load_json(LIVE_DATA_DIR / "daily_intelligence.json")
+    daily = _resolve("daily_intelligence.json")
+    verification = _resolve("live_verification.json")
+    node_status = _resolve("node_status.json")
+    convergence = _resolve("convergence_report.json")
+    fact_check = _resolve("fact_check.json")
+    entities = _resolve("extracted_entities.json")
 
-    verification = load_json(LIVE_DATA_DIR / "output" / "live_verification.json")
-    if verification is None:
-        verification = load_json(LIVE_DATA_DIR / "live_verification.json")
-
-    if daily is None and verification is None:
+    if all(d is None for d in [daily, verification, node_status, convergence, fact_check, entities]):
         print("No live data files found — skipping digest generation.")
         return 0
 
@@ -108,15 +201,15 @@ def main() -> int:
     sections.append("# 📡 Live Intelligence Digest")
     sections.append("")
     sections.append(f"> **Auto-generated:** {now}")
-    sections.append("> **Source:** Synced daily from The_Regulated_Friction_Project")
+    sections.append("> **Source:** Synced twice daily from the Live_Trackers pipeline")
     sections.append("> **Purpose:** Provides the chatbot with the latest verified intelligence data.")
-    sections.append("> This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated daily.")
+    sections.append("> This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated each sync cycle.")
     sections.append("")
 
     if daily and isinstance(daily, dict):
         gen_at = daily.get("generated_at", "unknown")
         gen_by = daily.get("generated_by", "unknown")
-        sections.append(f"## Data Timestamp")
+        sections.append("## Data Timestamp")
         sections.append(f"- **Generated:** {gen_at}")
         sections.append(f"- **Source engine:** {gen_by}")
         sections.append("")
@@ -144,10 +237,42 @@ def main() -> int:
             sections.append(format_watchlist(watchlist))
             sections.append("")
 
-        entities = daily.get("entities_scanned", [])
-        if entities:
+        daily_entities = daily.get("entities_scanned", [])
+        if daily_entities:
             sections.append("## Entities Scanned")
-            sections.append(", ".join(entities))
+            sections.append(", ".join(daily_entities))
+            sections.append("")
+
+    # Node Status (from node_tracker.py)
+    if node_status and isinstance(node_status, dict):
+        text = format_node_status(node_status)
+        if text.strip():
+            sections.append("## Node Status")
+            sections.append(text)
+            sections.append("")
+
+    # Convergence Detection (from convergence_detector.py)
+    if convergence and isinstance(convergence, dict):
+        text = format_convergence(convergence)
+        if text.strip():
+            sections.append("## Convergence Report")
+            sections.append(text)
+            sections.append("")
+
+    # Extracted Entities (from entity_extractor.py)
+    if entities and isinstance(entities, dict):
+        text = format_entities(entities)
+        if text.strip():
+            sections.append("## Extracted Entities")
+            sections.append(text)
+            sections.append("")
+
+    # Fact Check (from fact_checker.py)
+    if fact_check and isinstance(fact_check, dict):
+        text = format_fact_check(fact_check)
+        if text.strip():
+            sections.append("## Fact Check Results")
+            sections.append(text)
             sections.append("")
 
     if verification and isinstance(verification, dict):
