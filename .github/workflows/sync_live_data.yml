@@ -47,27 +47,30 @@ jobs:
           find _staging -type f -empty -delete
           echo "✅ Live Trackers data fetched."
 
-      # ── 3. Fetch static data from The_Regulated_Friction_Project ───
-      - name: Fetch Control_Proof from The_Regulated_Friction_Project
+      # ── 3. Fetch _AI_CONTEXT_INDEX from The_Regulated_Friction_Project ──
+      - name: Fetch _AI_CONTEXT_INDEX from The_Regulated_Friction_Project
         run: |
           set -euo pipefail
-          BASE="https://raw.githubusercontent.com/Leerrooy95/The_Regulated_Friction_Project/main"
-          mkdir -p _staging/live_trackers/Control_Proof
 
-          echo "::group::Fetching Control_Proof/ (static correlation datasets)"
-          curl -sSfL -o _staging/live_trackers/Control_Proof/master_reflexive_correlation_data.csv \
-            "$BASE/Control_Proof/master_reflexive_correlation_data.csv" || true
-
-          curl -sSfL -o _staging/live_trackers/Control_Proof/MASTER_reflexive_control_v2.csv \
-            "$BASE/Control_Proof/MASTER_reflexive_control_v2.csv" || true
-
-          curl -sSfL -o _staging/live_trackers/Control_Proof/correlation_results.txt \
-            "$BASE/Control_Proof/correlation_results.txt" || true
+          echo "::group::Cloning The_Regulated_Friction_Project (depth=1)"
+          git clone --depth=1 \
+            https://github.com/Leerrooy95/The_Regulated_Friction_Project.git \
+            /tmp/rfp_clone
           echo "::endgroup::"
 
-          # Remove any empty files from failed fetches
-          find _staging -type f -empty -delete
-          echo "✅ Control_Proof data fetched."
+          echo "::group::Syncing _AI_CONTEXT_INDEX/ (baseline knowledge files)"
+          # Copy all files from source, excluding the locally-generated digest
+          rsync -a \
+            --exclude='LIVE_INTELLIGENCE_DIGEST.md' \
+            --exclude='PROFILE_README.md' \
+            /tmp/rfp_clone/_AI_CONTEXT_INDEX/ \
+            _AI_CONTEXT_INDEX/
+          echo "::endgroup::"
+
+          rm -rf /tmp/rfp_clone
+          echo "✅ _AI_CONTEXT_INDEX updated from The_Regulated_Friction_Project."
+          echo "--- Top-level files ---"
+          ls _AI_CONTEXT_INDEX/*.md 2>/dev/null | head -20 || echo "No markdown files found in _AI_CONTEXT_INDEX"
 
       # ── 4. Validate all fetched data ───────────────────────────────
       - name: Validate fetched data
@@ -106,7 +109,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add _LIVE_DATA/ _AI_CONTEXT_INDEX/LIVE_INTELLIGENCE_DIGEST.md
+          git add _LIVE_DATA/ _AI_CONTEXT_INDEX/
 
           if ! git diff --cached --quiet; then
             git commit -m "🤖 Twice-daily sync: live intelligence data + digest update"

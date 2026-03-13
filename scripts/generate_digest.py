@@ -98,7 +98,7 @@ def format_verification(results: list[dict]) -> str:
 def format_node_status(data: dict) -> str:
     """Format node_status.json into a digest section."""
     lines = []
-    nodes = data.get("nodes", data.get("results", []))
+    nodes = data.get("nodes", data.get("node_statuses", data.get("results", [])))
     if isinstance(nodes, list):
         for node in nodes:
             name = node.get("node", node.get("name", "N/A"))
@@ -110,8 +110,11 @@ def format_node_status(data: dict) -> str:
     elif isinstance(nodes, dict):
         for name, info in nodes.items():
             status = info.get("status", "unknown") if isinstance(info, dict) else info
+            summary = info.get("summary", "") if isinstance(info, dict) else ""
             lines.append(f"- **{name}** — `{status}`")
-    gen = data.get("generated_at", "")
+            if summary:
+                lines.append(f"  - {summary}")
+    gen = data.get("generated_at", data.get("run_timestamp", ""))
     if gen:
         lines.append(f"\n*Node scan: {gen}*")
     return "\n".join(lines)
@@ -135,7 +138,16 @@ def format_convergence(data: dict) -> str:
                 lines.append(f"- **{label}:** {', '.join(str(n) for n in nodes)}")
             else:
                 lines.append(f"- {cl}")
-    gen = data.get("generated_at", "")
+    events = data.get("convergence_events", [])
+    if isinstance(events, list) and events:
+        lines.append(f"- **Convergence events detected:** {len(events)}")
+        for ev in events[:3]:
+            if isinstance(ev, dict):
+                date = ev.get("date", "")
+                count = ev.get("active_node_count", "")
+                if date and count:
+                    lines.append(f"  - {date}: {count} active nodes")
+    gen = data.get("generated_at", data.get("analysis_timestamp", ""))
     if gen:
         lines.append(f"\n*Convergence analysis: {gen}*")
     return "\n".join(lines)
@@ -144,16 +156,16 @@ def format_convergence(data: dict) -> str:
 def format_fact_check(data: dict) -> str:
     """Format fact_check.json into a digest section."""
     lines = []
-    results = data.get("results", data.get("checks", []))
+    results = data.get("results", data.get("corrections_applied", data.get("checks", [])))
     if isinstance(results, list):
         for item in results:
-            claim = item.get("claim", item.get("statement", "N/A"))
-            verdict = item.get("verdict", item.get("result", ""))
+            claim = item.get("claim", item.get("corrected_headline", item.get("statement", "N/A")))
+            verdict = item.get("verdict", item.get("result", item.get("finding", "")))
             confidence = item.get("confidence", "")
             lines.append(f"- **{verdict}** — {claim}")
             if confidence:
                 lines.append(f"  - Confidence: {confidence}")
-    gen = data.get("generated_at", "")
+    gen = data.get("generated_at", data.get("checked_at", ""))
     if gen:
         lines.append(f"\n*Fact-check run: {gen}*")
     return "\n".join(lines)
@@ -240,7 +252,10 @@ def main() -> int:
         daily_entities = daily.get("entities_scanned", [])
         if daily_entities:
             sections.append("## Entities Scanned")
-            sections.append(", ".join(daily_entities))
+            if isinstance(daily_entities, list):
+                sections.append(", ".join(daily_entities))
+            else:
+                sections.append(str(daily_entities))
             sections.append("")
 
     # Node Status (from node_tracker.py)
