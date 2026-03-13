@@ -33,6 +33,21 @@ REQUIRED_VERIFICATION_FIELDS = {
     "results",
 }
 
+REQUIRED_NODE_STATUS_FIELDS = {
+    "generated_at",
+    "nodes",
+}
+
+REQUIRED_CONVERGENCE_FIELDS = {
+    "generated_at",
+    "convergence_score",
+}
+
+REQUIRED_FACT_CHECK_FIELDS = {
+    "generated_at",
+    "results",
+}
+
 errors: list[str] = []
 manifest: dict[str, dict] = {}
 
@@ -105,6 +120,12 @@ def main() -> int:
                 required = REQUIRED_DAILY_INTEL_FIELDS
             elif fpath.name == "live_verification.json":
                 required = REQUIRED_VERIFICATION_FIELDS
+            elif fpath.name == "node_status.json":
+                required = REQUIRED_NODE_STATUS_FIELDS
+            elif fpath.name == "convergence_report.json":
+                required = REQUIRED_CONVERGENCE_FIELDS
+            elif fpath.name == "fact_check.json":
+                required = REQUIRED_FACT_CHECK_FIELDS
 
             if fpath.stat().st_size >= MIN_JSON_SIZE:
                 result = validate_json(fpath, required)

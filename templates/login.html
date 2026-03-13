@@ -10,7 +10,8 @@
     <div class="bg-slate-800 p-8 rounded-xl shadow-2xl w-[28rem] max-w-full border border-slate-700">
         <div class="text-center mb-6">
             <h1 class="text-3xl font-bold text-emerald-400 mb-2">🔱 OSINT ChatBot</h1>
-            <p class="text-sm text-slate-400">Bring Your Own Key — enter your Anthropic API key to begin</p>
+            <p class="text-sm text-slate-400">Open Source Intelligence Research Assistant</p>
+            <p class="text-xs text-slate-500 mt-1">Bring Your Own Key — enter your Anthropic API key to begin</p>
         </div>
         {% if error %}
             <div class="mb-4 text-sm text-red-400 bg-red-900/30 p-3 rounded border border-red-800">{{ error }}</div>
@@ -33,6 +34,14 @@
                 Connect
             </button>
         </form>
+        <div class="mt-4 p-3 bg-slate-900/50 rounded border border-slate-700">
+            <p class="text-xs text-slate-500 leading-relaxed">
+                <span class="text-emerald-400 font-semibold">Ethical Use:</span>
+                This tool is for lawful open-source intelligence research only.
+                All data is derived from publicly available sources. Do not use
+                this tool for doxxing, harassment, or illegal surveillance.
+            </p>
+        </div>
     </div>
 </body>
 </html>
