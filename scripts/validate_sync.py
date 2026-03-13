@@ -35,14 +35,17 @@ REQUIRED_VERIFICATION_FIELDS = {
 
 REQUIRED_NODE_STATUS_FIELDS = {
     "generated_at",
+    "nodes",
 }
 
 REQUIRED_CONVERGENCE_FIELDS = {
     "generated_at",
+    "convergence_score",
 }
 
 REQUIRED_FACT_CHECK_FIELDS = {
     "generated_at",
+    "results",
 }
 
 errors: list[str] = []
