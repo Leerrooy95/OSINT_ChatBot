@@ -70,7 +70,7 @@ jobs:
           rm -rf /tmp/rfp_clone
           echo "✅ _AI_CONTEXT_INDEX updated from The_Regulated_Friction_Project."
           echo "--- Top-level files ---"
-          ls _AI_CONTEXT_INDEX/*.md 2>/dev/null | head -20 || true
+          ls _AI_CONTEXT_INDEX/*.md 2>/dev/null | head -20 || echo "No markdown files found in _AI_CONTEXT_INDEX"
 
       # ── 4. Validate all fetched data ───────────────────────────────
       - name: Validate fetched data

@@ -98,7 +98,7 @@ def format_verification(results: list[dict]) -> str:
 def format_node_status(data: dict) -> str:
     """Format node_status.json into a digest section."""
     lines = []
-    nodes = data.get("nodes", data.get("node_statuses", data.get("results", {})))
+    nodes = data.get("nodes", data.get("node_statuses", data.get("results", [])))
     if isinstance(nodes, list):
         for node in nodes:
             name = node.get("node", node.get("name", "N/A"))
