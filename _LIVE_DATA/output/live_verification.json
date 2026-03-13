@@ -1,17 +1,16 @@
 {
-  "generated_at": "2026-03-13T08:33:18Z",
+  "generated_at": "2026-03-13T20:26:23Z",
   "generated_by": "Live Trackers daily_intelligence.py (prediction verifier)",
   "total_predictions": 10,
   "status_summary": {
-    "monitoring": 9,
-    "partial": 1
+    "monitoring": 10
   },
   "results": [
     {
       "prediction": "Maxwell clemency decision by Trump DOJ",
       "timeframe": "2026",
       "status": "monitoring",
-      "description": "No search results contain information about a Ghislaine Maxwell clemency petition, pardon decision, or DOJ action as of March 13, 2026. The provided search results focus on Gaza peace negotiations, federal workforce reclassifications, and cryptocurrency prediction markets, with no coverage of Maxwell clemency proceedings or DOJ decisions on this matter.",
+      "description": "No information found on any Ghislaine Maxwell clemency petition, pardon request, or decision by the Trump DOJ or Attorney General Pam Bondi as of March 13, 2026. Search results contain no relevant updates on this specific prediction. The prediction remains unresolved within the 2026 timeframe.",
       "source": "",
       "citations": [],
       "date_checked": "2026-03-13"
@@ -19,11 +18,14 @@
     {
       "prediction": "Iran war ceasefire or major escalation",
       "timeframe": "Ongoing",
-      "status": "partial",
-      "description": "Search results confirm major escalation has occurred: Operation Epic Fury, a US-Israel joint military operation, conducted airstrikes on Iran targeting nuclear sites, missile programs, and leadership, resulting in the death of Supreme Leader Ali Khamenei. This operation was ongoing as of March 2026[2]. However, no ceasefire negotiations or diplomatic resolution efforts are documented in available search results, leaving the ceasefire component unverified.",
+      "status": "monitoring",
+      "description": "No reports of Iran-US ceasefire negotiations or new major escalations as of March 13, 2026. Ongoing US-Israel strikes on Iran, including those on February 28, 2026, continue to impact related efforts like the Board of Peace and Gaza reconstruction plans, with negotiations described as frozen or on pause due to the war.[3][8][12][14] Polymarket bets reflect speculation on further strikes, such as on Iran's Fordow facility by end of March, but no confirmed developments.",
       "source": "https://cybernews.com/tech/polymarket-pro-trump-investors/",
       "citations": [
-        "https://cybernews.com/tech/polymarket-pro-trump-investors/"
+        "https://cybernews.com/tech/polymarket-pro-trump-investors/",
+        "https://www.politico.com/news/2026/03/10/iran-war-threatens-board-of-peace-00821415",
+        "https://thearabweekly.com/iran-war-casts-shadow-over-trumps-gaza-reconstruction-plans",
+        "https://www.thetimes.com/us/american-politics/article/the-board-of-peace-trump-iran-cc8fqqz5b"
       ],
       "date_checked": "2026-03-13"
     },
@@ -31,7 +33,7 @@
       "prediction": "Strait of Hormuz full shipping restoration",
       "timeframe": "Ongoing",
       "status": "monitoring",
-      "description": "No search results provide information on the current status of Strait of Hormuz oil shipping, tanker disruptions, or mine-clearing operations as of March 2026. The prediction remains unresolved with no evidence of full restoration or ongoing disruptions reported in available sources. Monitoring continues for relevant developments.",
+      "description": "No search results provide any information on the current status of Strait of Hormuz oil shipping, tanker disruptions, or mine-clearing operations as of March 2026. The prediction remains unresolved with no evidence of full shipping restoration or ongoing disruptions reported. Monitoring continues for relevant developments.",
       "source": "",
       "citations": [],
       "date_checked": "2026-03-13"
@@ -40,7 +42,7 @@
       "prediction": "Oracle Stargate financial restructuring or default",
       "timeframe": "2026",
       "status": "monitoring",
-      "description": "No reports of Oracle Stargate financial restructuring, debt default, bond issues, or related lawsuits as of March 13, 2026. Search results contain no relevant information on Oracle's $100B+ debt, $45-50B capital raise, Stargate AI venture, or Ohio Carpenters Pension lawsuit. Current state shows no developments tied to the prediction.",
+      "description": "No reports of Oracle Stargate financial restructuring, debt default, bond issues, or related lawsuits as of March 13, 2026. Search results contain no relevant information on Oracle's debt, Stargate project, or financial stress. Current background includes Oracle's tracked financial leverage with $100B+ existing debt and $45-50B new capital raise in early 2026, per entity disambiguation.",
       "source": "",
       "citations": [],
       "date_checked": "2026-03-13"
@@ -58,7 +60,7 @@
       "prediction": "Epstein associate indicted or named in new documents",
       "timeframe": "2026",
       "status": "monitoring",
-      "description": "The Epstein Files Transparency Act has led to the release of nearly 3.5 million pages of documents by March 2026, including FBI 302 interview summaries, via the DOJ Epstein library as a live repository. No search results indicate any Epstein associate has been indicted or newly named in these 2026 documents relevant to the prediction. Status remains monitoring for potential new batches or developments.",
+      "description": "No new 2026 developments report any Epstein associate being indicted or named in fresh documents or FBI 302 releases. The Epstein Files Transparency Act has led to nearly 3.5 million pages released by March 2026 via the DOJ Epstein library, but search results contain no relevant updates on this prediction. Status remains under monitoring for potential new batches or legal actions.",
       "source": "",
       "citations": [],
       "date_checked": "2026-03-13"
@@ -67,16 +69,19 @@
       "prediction": "Gulf SWF emergency capital reallocation from US markets",
       "timeframe": "Ongoing",
       "status": "monitoring",
-      "description": "No evidence found of Gulf sovereign wealth funds, such as Saudi PIF or UAE's MGX, engaging in emergency capital reallocation or withdrawal from US markets as of March 2026. Search results focus on unrelated topics including Gaza reconstruction pledges via the Board of Peace, federal employee reclassifications under Schedule Policy, and Polymarket investments by pro-Trump VCs like 1789 Capital. The prediction remains unconfirmed amid ongoing geopolitical tensions.",
+      "description": "No evidence found of Gulf sovereign wealth funds, such as Saudi PIF or UAE's MGX, engaging in emergency capital reallocation or withdrawal from US markets as of March 2026. Search results instead highlight UAE, Saudi Arabia, Qatar, Bahrain, and Kuwait pledging funds toward Gaza reconstruction via the Board of Peace, indicating continued regional investment commitments rather than divestment from the US.[1][4]",
       "source": "",
-      "citations": [],
+      "citations": [
+        "https://www.scrippsnews.com/us-news/trump-commits-10-billion-for-board-of-peace-as-others-pledge-7-billion-for-gaza-relief",
+        "https://www.bleedingheartland.com/2026/03/11/is-the-board-of-peace-another-trump-development-company/"
+      ],
       "date_checked": "2026-03-13"
     },
     {
       "prediction": "TikTok US ownership deal finalized",
       "timeframe": "2026",
       "status": "monitoring",
-      "description": "No information found on a finalized TikTok US ownership deal involving MGX, Oracle, ByteDance divestiture, or any buyer as of March 13, 2026. Search results contain no relevant updates on the prediction. Current background indicates ongoing monitoring for any divestiture announcements.",
+      "description": "As of March 13, 2026, no search results confirm that a TikTok US ownership deal has been finalized. The search results provided contain no information about TikTok divestiture, MGX involvement, Oracle negotiations, or ByteDance transactions. The prediction remains unresolved and requires current web search to determine status.",
       "source": "",
       "citations": [],
       "date_checked": "2026-03-13"
@@ -85,12 +90,14 @@
       "prediction": "Schedule Policy/Career legal challenge succeeds or fails",
       "timeframe": "2026",
       "status": "monitoring",
-      "description": "Schedule Policy/Career reclassification of ~50,000 federal positions took effect in March 2026, despite union opposition and public comments, with no reported federal court injunction or ruling on lawsuits as of March 13, 2026.[1][3][5] Agencies are now posting jobs under Schedule Policy (SP) and Schedule Career (SC) designations and conducting reclassification audits, amid criticism from lawmakers and advocates but without judicial intervention mentioned.[1][3] The policy is actively implemented as a 2026 compromise evolving from Schedule F.[1]",
-      "source": "",
+      "description": "Federal employee unions revived their lawsuit against Schedule Policy/Career on March 5, 2026, in U.S. District Court for Maryland, seeking to block the reclassification of ~50,000 positions to at-will status. The case is pending before Judge Paula Xinis, with plaintiffs due to respond by March 13, 2026, to a government motion to dismiss. OPM's final rule took effect, enabling potential conversions as early as March 9, 2026, amid ongoing challenges in multiple courts.",
+      "source": "https://dailyfed.com/2026/03/federal-employee-unions-revive-lawsuit-to-halt-schedule-policy-career-plan/",
       "citations": [
-        "https://www.collegerecruiter.com/blog/2026/03/10/schedule-f-vs-schedule-policy-what-the-new-federal-reclassifications-mean-for-your-job-security",
+        "https://dailyfed.com/2026/03/federal-employee-unions-revive-lawsuit-to-halt-schedule-policy-career-plan/",
         "https://www.insidehighered.com/news/government/science-research-policy/2026/03/12/federal-grant-makers-may-lose-job-protections-5",
-        "https://www.quiverquant.com/news/Press+Release:+Rep.+Suhas+Subramanyam+Voices+Concerns+Over+New+OPM+Rule+Affecting+Federal+Workforce"
+        "https://www.bleedingheartland.com/2026/03/11/is-the-board-of-peace-another-trump-development-company/",
+        "https://www.quiverquant.com/news/Press+Release:+Rep.+Suhas+Subramanyam+Voices+Concerns+Over+New+OPM+Rule+Affecting+Federal+Workforce",
+        "https://www.tullylegal.com/our-firm/news/federal-workers-get-tougher-reviews-fewer-job-protections/"
       ],
       "date_checked": "2026-03-13"
     },
@@ -98,7 +105,7 @@
       "prediction": "Mojtaba Khamenei confirmed as Supreme Leader of Iran",
       "timeframe": "2026",
       "status": "monitoring",
-      "description": "No search results confirm Mojtaba Khamenei as Supreme Leader of Iran or any decision by Iran's Assembly of Experts in 2026. The query timeframe remains open as of March 13, 2026, following the death of Supreme Leader Ali Khamenei in Operation Epic Fury. Current state shows no resolution on successor amid ongoing US-Israel military actions against Iran.",
+      "description": "No search results confirm that Mojtaba Khamenei has been confirmed as Supreme Leader of Iran by the Assembly of Experts. Following the death of Supreme Leader Ali Khamenei during Operation Epic Fury, the succession process remains unresolved as of March 13, 2026. The prediction is being monitored for developments within the 2026 timeframe.",
       "source": "",
       "citations": [],
       "date_checked": "2026-03-13"

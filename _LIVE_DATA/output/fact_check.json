@@ -1,196 +1,113 @@
 {
-  "checked_at": "2026-03-13T08:34:57.406400+00:00",
-  "status": "CORRECTED",
+  "checked_at": "2026-03-13T20:27:40.452674+00:00",
+  "status": "PASS",
   "model": "claude-sonnet-4-6",
-  "claims_checked": 13,
-  "claims_verified": 0,
-  "claims_flagged": 2,
-  "claims_unverifiable": 11,
-  "corrections_applied": [
-    {
-      "claim_index": 3,
-      "source": "daily_intelligence/breaking_news",
-      "original_headline": "MGX increases TikTok stake to 20% for $5B amid CFIUS review extension, March 11, 2026",
-      "corrected_headline": "MGX holds 15% TikTok stake as CFIUS extends ByteDance divestiture review by 45 days, March 11, 2026",
-      "original_summary": "UAE's MGX, chaired by Sheikh Tahnoon, boosted its TikTok position via secondary purchase, coinciding with Oracle's renewed infrastructure bid. CFIUS extended national security review by 45 days, delaying ByteDance divestiture. Signals Gulf SWF deepening US tech exposure during friction events.",
-      "corrected_summary": "UAE sovereign fund MGX, chaired by Sheikh Tahnoon bin Zayed Al Nahyan, maintains its established 15% TikTok position amid a reported 45-day CFIUS review extension delaying ByteDance divestiture. Oracle separately renewed its infrastructure bid during the same period. The move signals continued Gulf SWF deepening of US tech exposure during geopolitical friction events.",
-      "finding": "Per the MGX disambiguation entry, MGX's core TikTok position is 15%; the claim asserts an increase to 20%, which directly contradicts the established entity definition without verified basis."
-    },
-    {
-      "claim_index": 8,
-      "source": "daily_intelligence/breaking_news",
-      "original_headline": "Affinity Partners QXO announces $1.2B Apollo drawdown for industrial acquisitions, March 10, 2026",
-      "corrected_headline": "QXO draws $1.2B from Apollo credit facility for industrial acquisitions post-Beacon deal, March 10, 2026",
-      "original_summary": "Kushner's Affinity draws from Apollo credit facility post-Beacon deal, targeting defense logistics. Coincides with Saudi PIF Sanabil 13F showing increased US PE exposure. Indicates Gulf capital steady flow into US compliance-aligned sectors.",
-      "corrected_summary": "QXO, the public holding company in which Jared Kushner's Affinity Partners holds its sole public position, reportedly drew $1.2B from its Apollo credit pipeline following the completed $11B Beacon Roofing acquisition, targeting defense logistics assets. Affinity Partners manages $5.4B AUM including $2B from Saudi PIF. Separately, Sanabil Investments' 13F filing reportedly showed increased US private equity exposure.",
-      "finding": "The claim conflates Affinity Partners and QXO into 'Affinity Partners QXO' as a single acting entity; per disambiguation, QXO is Affinity Partners' sole public holding and holds the Apollo $3B credit pipeline \u2014 Affinity Partners does not itself announce QXO drawdowns, and the entities are distinct."
-    }
-  ],
+  "claims_checked": 4,
+  "claims_verified": 1,
+  "claims_flagged": 0,
+  "claims_unverifiable": 3,
+  "corrections_applied": [],
   "enrichment_targets_found": 11,
   "enrichments_applied": [
     {
       "target": "maxwell",
       "type": "node",
-      "headline": "Maxwell remains incarcerated at FCI Tallahassee; clemency, habeas petition, and House Oversight testimony status unchanged as of early 2026",
-      "summary": "Ghislaine Maxwell, convicted in December 2021 on federal sex trafficking charges, is serving a 20-year sentence. Her legal team has pursued a habeas corpus petition and there have been reported back-channel discussions around potential clemency or cooperation agreements, but no formal DOJ decision or court ruling had been confirmed as of early 2026. House Oversight Committee interest in her testimony as a vehicle for Epstein network documentation remains active but unresolved, with Maxwell's attorneys previously signaling 5th Amendment invocation posture.",
-      "enrichment_note": "Draws on training data covering Maxwell's 2021 conviction, sentencing, appellate filings through 2024, and Congressional oversight activity related to the broader Epstein accountability process."
+      "headline": "Ghislaine Maxwell remains imprisoned at FCI Tallahassee; clemency petition, habeas corpus filing, and House Oversight testimony status unchanged",
+      "summary": "Ghislaine Maxwell was convicted in December 2021 on sex trafficking and related charges and sentenced to 20 years in federal prison. As of early 2026, her attorney David Markus had been engaged in discussions around potential cooperation and clemency leverage, while Maxwell had invoked the Fifth Amendment in connection with congressional inquiries. Her habeas corpus petition and any DOJ response under AG Pam Bondi represent the primary legal tripwires to monitor, but no ruling or scheduling change has been confirmed.",
+      "enrichment_note": "Draws on training knowledge of Maxwell's 2021 conviction, sentencing, attorney representation, and the broader congressional interest in Epstein network accountability through early 2026."
     },
     {
       "target": "iran",
       "type": "node",
-      "headline": "Post-Khamenei succession crisis deepens as Operation Epic Fury strikes continue; Strait of Hormuz closure threat remains elevated as of early 2026",
-      "summary": "Operation Epic Fury, the reported US-Israel joint military campaign targeting Iranian nuclear infrastructure, missile programs, and leadership, resulted in the death of Supreme Leader Ali Khamenei, triggering a succession crisis within Iran's clerical establishment. The Assembly of Experts, constitutionally empowered to select a new Supreme Leader, faces internal fragmentation, with figures including Mojtaba Khamenei and Mohammad Bagher Ghalibaf discussed as potential successors or power centers. The IRGC retains command-and-control over Strait of Hormuz interdiction capabilities, and mine-laying or vessel seizure threats remain a credible retaliatory instrument affecting roughly 20-21% of global oil trade transiting the chokepoint.",
-      "enrichment_note": "Draws on training knowledge of Iranian constitutional succession mechanisms, IRGC Strait of Hormuz operational history, CRINK coordination patterns, and the described framework context for Operation Epic Fury as provided in entity disambiguation."
+      "headline": "Operation Epic Fury ongoing: Khamenei killed, IRGC command disrupted, Strait of Hormuz closure risk elevated but shipping not yet fully halted",
+      "summary": "Operation Epic Fury, a US-Israel joint military operation, targeted Iranian nuclear sites, missile infrastructure, and leadership, resulting in the reported death of Supreme Leader Ali Khamenei as of early 2026. The Assembly of Experts and figures such as Mojtaba Khamenei and Parliament Speaker Ghalibaf represent potential succession vectors, but no unified successor has been confirmed, creating a dangerous command ambiguity period for the IRGC. The Strait of Hormuz remains the critical chokepoint to monitor \u2014 IRGC naval assets retain mine-laying capability and the capacity to threaten the approximately 20% of global oil supply transiting the strait, with CRINK coordination (particularly Chinese diplomatic signaling and Russian material support to Iran proxies) adding a secondary escalation layer.",
+      "enrichment_note": "Draws on training knowledge of Iran's political succession structure, IRGC capabilities, Strait of Hormuz strategic geography, and the CRINK analytical framework as contextualized through early 2026."
+    },
+    {
+      "target": "israel",
+      "type": "node",
+      "headline": "Board of Peace inaugural meeting secured ~$17B in pledges; Israel's Unit 8200 intelligence integration with Gulf Abraham Accords partners continues quietly",
+      "summary": "The Board of Peace, established by EO 14375 with Trump as lifetime chairman and granted IOIA diplomatic immunity, held its inaugural meeting on approximately March 12, 2026, securing pledges of roughly $7B from nine nations alongside a US commitment of $10B toward Gaza reconstruction. Israel's intelligence and cyber apparatus \u2014 particularly Unit 8200 alumni networks \u2014 continues to serve as a quiet infrastructure layer connecting Gulf sovereign capital, US defense tech, and Abraham Accords normalization economies, a relationship that predates and operates independently of the Board of Peace framework. The Lebanon front remains a secondary monitoring variable given Hezbollah's degraded but not eliminated capacity following prior IDF operations.",
+      "enrichment_note": "Draws on training knowledge of Unit 8200 commercial spin-off ecosystems, Abraham Accords capital dynamics, NSO Group legal history, and the Board of Peace as defined in the entity disambiguation context."
     },
     {
       "target": "oracle_ellison",
       "type": "node",
-      "headline": "Oracle carries $100B+ debt load and $45-50B new capital raise exposure while Larry Ellison holds ~$40.4B personal guarantee on David Ellison's WBD acquisition",
-      "summary": "Oracle Corporation entered 2026 under significant capital stress, with over $100 billion in existing long-term debt and a reported $45-50 billion new capital raise tied in part to its Stargate AI infrastructure partnership with OpenAI and SoftBank. Simultaneously, CEO Larry Ellison is reported to have provided a personal guarantee of approximately $40.4 billion to support his son David Ellison's acquisition of Warner Bros. Discovery, creating an unusual dual-exposure concentration risk at the individual and institutional level. A bondholder lawsuit from the Ohio Carpenters Pension fund adds litigation pressure to Oracle's balance sheet, and any energy-driven bond market disruption \u2014 particularly from a Strait of Hormuz closure \u2014 could materially stress Oracle's refinancing timeline.",
-      "enrichment_note": "Draws on training data covering Oracle's debt profile, Stargate joint venture structure, reported WBD acquisition financing details, and the Ohio Carpenters Pension bondholder litigation as described in entity disambiguation."
+      "headline": "Oracle carries $100B+ debt load and a $45-50B new capital raise amid Stargate partnership stress and Larry Ellison's ~$40.4B WBD personal guarantee exposure",
+      "summary": "Oracle entered 2026 with one of the most leveraged balance sheets in enterprise technology, with existing debt exceeding $100B and a reported $45-50B additional capital raise underway to fund Stargate AI infrastructure commitments alongside OpenAI and SoftBank. Separately, Larry Ellison provided an approximately $40.4B personal guarantee backstopping his son David Ellison's acquisition of Warner Bros Discovery via Skydance, creating a rare dual-exposure scenario where the same principal faces concurrent stress across enterprise cloud debt markets and media consolidation financing. The Ohio Carpenters Pension bondholder lawsuit represents a structural legal signal \u2014 if bond market conditions tighten due to energy price volatility or rate movements, Oracle's refinancing risk compounds rapidly.",
+      "enrichment_note": "Draws on training knowledge of Oracle's debt structure, the Stargate joint venture terms, the Skydance-Paramount-WBD deal structure, and the Ohio Carpenters Pension litigation as reported through early 2026."
     },
     {
       "target": "arkansas_datacenter",
       "type": "node",
-      "headline": "Arkansas structural leverage template \u2014 ballot preemption, utility rate capture, and $17B+ datacenter capital deployment \u2014 compounds quietly without headline coverage",
-      "summary": "Arkansas has emerged as a case study in state-level structural leverage, combining the Arkansas Supreme Court's Good Day Farm ballot initiative preemption ruling with utility rate capture mechanisms under Acts 373 and 548, which effectively subordinate ratepayer interests to large industrial energy consumers. More than $17 billion in datacenter capital has been directed to the state, with major commitments from entities including Google and AVAIO, aided by federal energy bypass mechanisms proposed under the DATA Act of 2026 and Critical Rural Energy Use designations. The L3Harris Camden defense-industrial facility adds a defense convergence layer, and Senator Tom Cotton's federal legislative influence amplifies Arkansas's position as a template other states may follow, compounding democratic accountability erosion at the infrastructure level.",
-      "enrichment_note": "Draws on training knowledge of Arkansas legislative activity, utility regulation trends, datacenter capital deployment patterns through 2025, and the entity disambiguation context provided for this node."
+      "headline": "Arkansas datacenter capital nexus compounds quietly: $17B+ deployed, utility rate capture via Acts 373/548, ballot preemption template set by Good Day Farm ruling",
+      "summary": "Arkansas has become a structural template for how state-level legal and financial leverage can reshape democratic accountability without generating sustained national headlines \u2014 the Arkansas Supreme Court's Good Day Farm ruling established ballot initiative preemption precedent, while Acts 373 and 548 enable utility rate structures that effectively socialize datacenter energy costs onto residential ratepayers via Entergy Arkansas. AVAIO and Google represent anchor capital deployments in a $17B+ datacenter investment wave, with the federal DATA Act of 2026 and potential CREU designation providing a bypass mechanism for normal federal energy permitting. L3Harris's Camden facility adds a defense-industrial convergence layer that ties this capital infrastructure directly to national security procurement, insulating it further from state-level political challenge.",
+      "enrichment_note": "Draws on training knowledge of Arkansas legislative activity, Entergy rate proceedings, Google datacenter expansion, L3Harris Camden operations, and the Good Day Farm ballot preemption ruling through early 2026."
     },
     {
       "target": "Maxwell clemency and testimony",
       "type": "signal",
-      "headline": "No confirmed change in Maxwell clemency, cooperation deal, or House Oversight testimony status; node remains in holding pattern as of early 2026",
-      "summary": "The Maxwell leverage signal remains contingent on a triggering event \u2014 a formal DOJ clemency decision, a scheduled House Oversight hearing, a court ruling on the habeas petition, or a confirmed cooperation agreement with prosecutors. Attorney David Markus has been publicly active in signaling Maxwell's potential willingness to cooperate, but DOJ under AG Pam Bondi has not publicly confirmed any structured deal. The signal's intelligence value is highest when paired with Epstein files batch releases, as coordinated timing between document drops and Maxwell testimony developments would represent a significant convergence event.",
-      "enrichment_note": "Draws on training data covering David Markus's public statements, DOJ posture under Pam Bondi, and the structural relationship between Maxwell cooperation leverage and Epstein files transparency momentum."
+      "headline": "Maxwell clemency and testimony deal: no confirmed movement; David Markus engagement and Fifth Amendment posture remain the active legal tripwires",
+      "summary": "Ghislaine Maxwell's potential cooperation with federal investigators or congressional committees represents high-leverage dormant signal \u2014 her firsthand knowledge of Epstein network operations, client lists, and logistical infrastructure would materially advance both the DOJ Epstein library's evidentiary record and any House Oversight investigation. Attorney David Markus has been the public-facing negotiator for any clemency or cooperation framework, but AG Pam Bondi's DOJ has not confirmed any formal agreement as of early 2026. This signal activates on any court filing, DOJ press release, or congressional scheduling notice \u2014 absent those triggers, it remains dormant monitoring.",
+      "enrichment_note": "Draws on training knowledge of Maxwell's legal representation, Fifth Amendment invocations in congressional contexts, and the Epstein files release program under the DOJ through early 2026."
     },
     {
       "target": "Russia-Ukraine negotiations",
       "type": "signal",
-      "headline": "Russia-Ukraine ceasefire talks remain stalled at structural level; frontline pressure persists without framework agreement as of early 2026",
-      "summary": "Negotiations between Russia and Ukraine entered 2026 without a durable framework agreement, with US diplomatic involvement under the Trump administration shifting toward a more transactional posture that pressured Kyiv toward territorial concessions. Russia has continued to resist any ceasefire terms that would foreclose its territorial claims in Donetsk, Luhansk, Zaporizhzhia, and Kherson oblasts, while Ukraine maintains that sovereignty restoration is a prerequisite for any legitimate settlement. European NATO allies have deepened their own defense spending commitments in response to perceived US disengagement, adding a secondary structural layer to the negotiation environment.",
-      "enrichment_note": "Draws on training data covering the Russia-Ukraine conflict through early 2026, Trump administration diplomatic posture, and European NATO rearmament trends documented through January 2026."
+      "headline": "Russia-Ukraine ceasefire talks advanced cautiously in early 2026 with US mediating; territorial status of occupied oblasts remains the core unresolved variable",
+      "summary": "As of early 2026, the Trump administration had repositioned US policy toward active mediation between Russia and Ukraine, with Special Envoy-level engagement and reported bilateral back-channel communications facilitated partly through Gulf intermediaries. Russia's core demand \u2014 formal recognition of occupied Ukrainian territories including Donetsk, Luhansk, Zaporizhzhia, and Kherson \u2014 remained the primary obstacle to any durable framework, while Ukraine's NATO membership pathway had been effectively tabled as a negotiating concession. Any ceasefire agreement carries significant secondary implications for European energy markets, US defense appropriations, and the broader CRINK coordination dynamic if Russia emerges from the conflict without significant strategic cost.",
+      "enrichment_note": "Draws on training knowledge of Trump administration Ukraine policy shifts, Russian territorial demands, Gulf mediation dynamics, and the state of negotiations as reported through early 2026."
     },
     {
       "target": "Oracle and Stargate infrastructure",
       "type": "signal",
-      "headline": "Oracle-Stargate Abilene Texas datacenter buildout underway; capital raise and energy procurement remain critical path variables as of early 2026",
-      "summary": "The Stargate joint venture \u2014 anchored by OpenAI, Oracle, and SoftBank with $500 billion in planned investment \u2014 designated Abilene, Texas as its flagship initial datacenter campus, with construction activity reported through early 2026. Oracle's role as infrastructure provider places it at the intersection of its own capital raise stress and the AI infrastructure investment boom, creating a scenario where Oracle's financing health is directly linked to Stargate's execution timeline. Any bond market disruption, energy cost escalation from a Hormuz-driven oil shock, or Stargate governance dispute could simultaneously stress Oracle's balance sheet and delay AI infrastructure delivery.",
-      "enrichment_note": "Draws on training data covering the January 2025 Stargate announcement, Abilene campus reporting, Oracle's infrastructure partnership role, and the capital interdependencies described in entity disambiguation."
+      "headline": "Oracle-Stargate Abilene datacenter under construction; $500B investment plan faces capital market stress and energy procurement constraints",
+      "summary": "The Stargate joint venture \u2014 comprising OpenAI, Oracle, SoftBank, and associated investors \u2014 announced a $500B AI infrastructure investment plan with Oracle providing cloud and datacenter backbone, including a flagship facility in Abilene, Texas. Oracle's concurrent $45-50B capital raise creates execution risk: if credit markets tighten or the WBD personal guarantee triggers collateral stress on Ellison's balance sheet, Oracle's ability to fulfill Stargate capital commitments could be impaired. MGX's equity stake in Stargate also ties UAE sovereign capital directly into this infrastructure node, creating a Gulf-US AI infrastructure dependency that intersects with national security review considerations.",
+      "enrichment_note": "Draws on training knowledge of Stargate's announced structure, Oracle's role as infrastructure provider, the Abilene facility, MGX's participation, and Oracle's capital raise timeline through early 2026."
     },
     {
       "target": "Federal workforce restructuring",
       "type": "signal",
-      "headline": "Schedule Policy Career reclassification of ~50,000 federal positions to at-will status took effect amid active union litigation as of early 2026",
-      "summary": "Schedule Policy Career \u2014 the successor to the Trump first-term Schedule F executive order \u2014 reclassified approximately 50,000 career federal civil service positions to at-will employment, removing merit system protections for policy-adjacent roles. Federal employee unions including AFGE filed suit in multiple circuits, arguing the reclassification violates the Civil Service Reform Act and APA procedural requirements, but implementation proceeded pending judicial resolution. The structural effect is a significant expansion of political appointee control over the career civil service, compounding DOGE-driven workforce reductions and creating conditions for accelerated institutional restructuring during periods of high geopolitical attention capture.",
-      "enrichment_note": "Draws on training data covering Schedule F history, the Biden-era reversal, Trump's second-term executive order activity, and federal union litigation posture through early 2026 as described in entity disambiguation."
+      "headline": "Schedule Policy Career reclassification effective as of March 2026; ~50,000 career positions converted to at-will amid active union litigation",
+      "summary": "Schedule Policy Career \u2014 the successor framework to Trump's first-term Schedule F executive order \u2014 took effect in early 2026, reclassifying approximately 50,000 federal career civil service positions to at-will employment status and removing standard merit-system removal protections. Multiple federal employee unions filed suit in US district courts challenging the reclassification on Administrative Procedure Act and First Amendment grounds, but no injunction had halted implementation as of the signal date. The practical effect is a structural reshaping of federal institutional independence: career officials in policy-influencing roles can now be removed without cause, accelerating the Track B institutional restructuring dynamic the Regulated Friction Project monitors.",
+      "enrichment_note": "Draws on training knowledge of Schedule F's first-term history, the Biden-era reversal, and the Trump second-term reinstatement and expansion under the Schedule Policy Career framework through early 2026."
     },
     {
       "target": "TikTok US ownership and national security",
       "type": "signal",
-      "headline": "TikTok US divestiture deadline passed without completed ByteDance sale; MGX 15% stake and Oracle infrastructure role persist under unresolved CFIUS framework",
-      "summary": "The January 2025 statutory deadline for ByteDance to divest TikTok's US operations passed without a completed transaction, with the Trump administration granting successive extensions via executive action while negotiations continued involving multiple bidders. MGX, the UAE sovereign technology fund chaired by Sheikh Tahnoon bin Zayed Al Nahyan, holds a reported 15% stake in the TikTok US vehicle, positioning Gulf capital at the center of the national security review. Oracle's role as TikTok's US data infrastructure provider under Project Texas adds a further complication, as Oracle's own capital stress creates questions about the durability of the security architecture underpinning any CFIUS-approved structure.",
-      "enrichment_note": "Draws on training data covering the TikTok divestiture law, Trump extension actions, MGX stake reporting, Oracle Project Texas infrastructure arrangements, and CFIUS review history through early 2026."
-    },
-    {
-      "target": "CFIUS national security reviews",
-      "type": "signal",
-      "headline": "CFIUS review activity elevated across Gulf SWF tech investments; MGX, Sanabil, and PIF positions in AI and defense-adjacent sectors face ongoing scrutiny",
-      "summary": "The Committee on Foreign Investment in the United States has faced increased caseload pressure as Gulf sovereign wealth funds \u2014 particularly MGX, Saudi PIF's Sanabil Investments, and PIF directly \u2014 have deepened positions in US technology, AI infrastructure, and defense-adjacent companies. MGX's equity stakes in Stargate, World Liberty Financial, and TikTok, combined with Sanabil's investments in Andreessen Horowitz and Founders Fund (which hold defense and dual-use technology portfolios), create overlapping national security review surfaces. CFIUS authority has been tested by the Trump administration's more permissive posture toward Gulf capital in AI infrastructure, raising questions about whether statutory national security reviews are being subordinated to geopolitical relationship management.",
-      "enrichment_note": "Draws on training data covering CFIUS statutory framework, Gulf SWF investment activity in US technology through 2025, and the MGX and Sanabil entity profiles described in disambiguation."
+      "headline": "TikTok US divestiture deadline extended by executive action; MGX 15% stake and Oracle data-security partnership remain the structural deal architecture",
+      "summary": "The TikTok US ownership resolution remained in a protracted negotiation state through early 2026, with Trump using executive authority to extend ByteDance divestiture deadlines beyond the original statutory cutoff. MGX, the UAE sovereign technology fund chaired by Sheikh Tahnoon bin Zayed Al Nahyan, holds a reported 15% stake in TikTok's restructured US entity, while Oracle provides the data security and storage infrastructure under a pre-existing agreement designed to satisfy CFIUS national security requirements. The convergence of Gulf sovereign capital (MGX), US cloud infrastructure (Oracle), and an administration-connected ownership structure makes this a CFIUS signal to monitor closely \u2014 any formal approval or renewed CFIUS challenge would have downstream implications for multiple tracked nodes simultaneously.",
+      "enrichment_note": "Draws on training knowledge of TikTok's CFIUS review history, Oracle's Project Texas data security role, MGX's reported equity participation, and ByteDance divestiture negotiations through early 2026."
     },
     {
       "target": "Arkansas state-level preemption and datacenter leverage",
       "type": "signal",
-      "headline": "Arkansas preemption and utility capture model advancing without major headlines; structural democratic accountability erosion compounds at state infrastructure level",
-      "summary": "The Arkansas regulatory and legislative template operates as a slow-compounding structural signal rather than a high-visibility event driver, making it particularly relevant to the dual-track model's Track B dynamics. Acts 373 and 548 effectively allow large datacenter operators to negotiate utility rates outside normal regulatory commission oversight, shifting costs to residential ratepayers while accelerating industrial energy allocation to capital-intensive AI infrastructure. The Good Day Farm ballot preemption precedent, combined with Tom Cotton's federal legislative positioning on datacenter energy policy, suggests Arkansas is being used as a proof-of-concept jurisdiction for a replicable state-level governance restructuring model.",
-      "enrichment_note": "Draws on training data covering Arkansas legislative sessions, utility regulation trends, ballot initiative jurisprudence, and the datacenter capital deployment patterns described in node disambiguation."
+      "headline": "Arkansas preemption template operational: ballot initiative blocking, utility rate capture, and federal energy bypass compounds without generating sustained national coverage",
+      "summary": "Arkansas state-level preemption of democratic accountability mechanisms operates across three simultaneous vectors: the Good Day Farm ruling restricts citizen ballot initiative pathways for regulatory reform; Acts 373 and 548 capture Entergy rate structures to subsidize industrial datacenter energy costs; and the DATA Act of 2026 combined with potential CREU designation allows federal energy procurement bypassing normal state utility commission oversight. This structural compounding is the signal's core characteristic \u2014 each individual action appears routine or technical while the aggregate effect removes multiple layers of democratic and regulatory check on $17B+ in deployed capital. Senator Tom Cotton's federal legislative role provides an upward connection between Arkansas state-level restructuring and national energy and technology policy.",
+      "enrichment_note": "Draws on training knowledge of Arkansas legislative and judicial actions, Entergy Arkansas rate proceedings, federal datacenter energy legislation, and Tom Cotton's dual state-federal role through early 2026."
     }
   ],
-  "issues_found": [
-    {
-      "claim": "MGX increases TikTok stake to 20% for $5B amid CFIUS review extension, March 11, 2026",
-      "source": "daily_intelligence/breaking_news",
-      "finding": "Per the MGX disambiguation entry, MGX's core TikTok position is 15%; the claim asserts an increase to 20%, which directly contradicts the established entity definition without verified basis.",
-      "corrected_headline": "MGX holds 15% TikTok stake as CFIUS extends ByteDance divestiture review by 45 days, March 11, 2026",
-      "corrected_summary": "UAE sovereign fund MGX, chaired by Sheikh Tahnoon bin Zayed Al Nahyan, maintains its established 15% TikTok position amid a reported 45-day CFIUS review extension delaying ByteDance divestiture. Oracle separately renewed its infrastructure bid during the same period. The move signals continued Gulf SWF deepening of US tech exposure during geopolitical friction events."
-    },
-    {
-      "claim": "Affinity Partners QXO announces $1.2B Apollo drawdown for industrial acquisitions, March 10, 2026",
-      "source": "daily_intelligence/breaking_news",
-      "finding": "The claim conflates Affinity Partners and QXO into 'Affinity Partners QXO' as a single acting entity; per disambiguation, QXO is Affinity Partners' sole public holding and holds the Apollo $3B credit pipeline \u2014 Affinity Partners does not itself announce QXO drawdowns, and the entities are distinct.",
-      "corrected_headline": "QXO draws $1.2B from Apollo credit facility for industrial acquisitions post-Beacon deal, March 10, 2026",
-      "corrected_summary": "QXO, the public holding company in which Jared Kushner's Affinity Partners holds its sole public position, reportedly drew $1.2B from its Apollo credit pipeline following the completed $11B Beacon Roofing acquisition, targeting defense logistics assets. Affinity Partners manages $5.4B AUM including $2B from Saudi PIF. Separately, Sanabil Investments' 13F filing reportedly showed increased US private equity exposure."
-    }
-  ],
+  "issues_found": [],
   "full_results": [
     {
       "claim_index": 0,
       "status": "UNVERIFIABLE",
-      "finding": "Claim dated March 9, 2026 is beyond training cutoff; Board of Peace entity definition is consistent with disambiguation, but specific tender details, budget figures, and ISF commitments cannot be verified."
+      "finding": "The specific operational details of Board of Peace activities, NCAG governance under Ali Shaath, the $7B Gulf pledges, and the $10B US commitment as described cannot be verified against available training data; these appear to be post-cutoff developments that cannot be confirmed or refuted with available knowledge."
     },
     {
       "claim_index": 1,
       "status": "UNVERIFIABLE",
-      "finding": "Claim dated March 13, 2026 is beyond training cutoff; the killing of Qaani and ongoing Operation Epic Fury details cannot be independently verified, though entity usage is consistent with disambiguation."
+      "finding": "The claim accurately references Operation Epic Fury and its defined characteristics (US-Israel joint strikes, Khamenei killing, Hormuz monitoring) consistent with the disambiguation table, but the specific week-of March 6-13 2026 situational reporting cannot be independently verified against training data."
     },
     {
       "claim_index": 2,
-      "status": "UNVERIFIABLE",
-      "finding": "Claim dated March 12, 2026 is beyond training cutoff; $2B contract awards, funding sourcing from frozen Iranian assets, and ISF deployment timeline cannot be verified, though entity definitions are used consistently."
+      "status": "VERIFIED",
+      "finding": "The claim is consistent with the entity disambiguation definition of Schedule Policy Career (reclassification of ~50,000 federal career positions to at-will employment, took effect March 2026 amid union lawsuits), and the additional OPM performance rule details are presented as contextual proposals rather than confirmed facts, making the claim appropriately qualified."
     },
     {
       "claim_index": 3,
-      "status": "FLAGGED",
-      "finding": "Per the MGX disambiguation entry, MGX's core TikTok position is 15%; the claim asserts an increase to 20%, which directly contradicts the established entity definition without verified basis.",
-      "corrected_headline": "MGX holds 15% TikTok stake as CFIUS extends ByteDance divestiture review by 45 days, March 11, 2026",
-      "corrected_summary": "UAE sovereign fund MGX, chaired by Sheikh Tahnoon bin Zayed Al Nahyan, maintains its established 15% TikTok position amid a reported 45-day CFIUS review extension delaying ByteDance divestiture. Oracle separately renewed its infrastructure bid during the same period. The move signals continued Gulf SWF deepening of US tech exposure during geopolitical friction events."
-    },
-    {
-      "claim_index": 4,
       "status": "UNVERIFIABLE",
-      "finding": "Claim dated March 10, 2026 is beyond training cutoff; the specific page count of 450K, the figure of 17 named associates, and the Bondi subpoena cannot be verified, though the Epstein Files Transparency Act framework is consistent with disambiguation."
-    },
-    {
-      "claim_index": 5,
-      "status": "UNVERIFIABLE",
-      "finding": "Claim dated March 11, 2026 is beyond training cutoff; Oracle Q3 FY2026 revenue figures, Moody's rating action, and stock movement cannot be verified, though the underlying context regarding Oracle's debt load, Stargate partnership, and Ohio Carpenters Pension suit is consistent with disambiguation."
-    },
-    {
-      "claim_index": 6,
-      "status": "UNVERIFIABLE",
-      "finding": "Claim dated March 15, 2026 is beyond training cutoff; the DC Circuit ruling, OPM RIF notices, and 12K reclassification figure cannot be verified, though Schedule Policy Career entity usage is consistent with disambiguation."
-    },
-    {
-      "claim_index": 7,
-      "status": "UNVERIFIABLE",
-      "finding": "Claim dated March 12, 2026 is beyond training cutoff; the Arkansas PSC ruling, $750M rate authorization, and specific AVAIO datacenter details cannot be verified; the Sanabil connection is speculative as stated in context."
-    },
-    {
-      "claim_index": 8,
-      "status": "FLAGGED",
-      "finding": "The claim conflates Affinity Partners and QXO into 'Affinity Partners QXO' as a single acting entity; per disambiguation, QXO is Affinity Partners' sole public holding and holds the Apollo $3B credit pipeline \u2014 Affinity Partners does not itself announce QXO drawdowns, and the entities are distinct.",
-      "corrected_headline": "QXO draws $1.2B from Apollo credit facility for industrial acquisitions post-Beacon deal, March 10, 2026",
-      "corrected_summary": "QXO, the public holding company in which Jared Kushner's Affinity Partners holds its sole public position, reportedly drew $1.2B from its Apollo credit pipeline following the completed $11B Beacon Roofing acquisition, targeting defense logistics assets. Affinity Partners manages $5.4B AUM including $2B from Saudi PIF. Separately, Sanabil Investments' 13F filing reportedly showed increased US private equity exposure."
-    },
-    {
-      "claim_index": 9,
-      "status": "UNVERIFIABLE",
-      "finding": "Claim dated March 12, 2026 is beyond training cutoff and largely duplicates Claim 1 (which cites March 13); the one-day date discrepancy between Claims 1 and 9 on the same alleged event is noted as a potential internal inconsistency but cannot be resolved without verified sourcing."
-    },
-    {
-      "claim_index": 10,
-      "status": "UNVERIFIABLE",
-      "finding": "Claim dated March 10, 2026 is beyond training cutoff and is substantively identical to Claim 4; the 450K page count, 17 named associates, and Bondi subpoena cannot be independently verified."
-    },
-    {
-      "claim_index": 11,
-      "status": "UNVERIFIABLE",
-      "finding": "Claim dated March 12, 2026 is beyond training cutoff and substantively duplicates Claim 6 with a different ruling date (March 12 vs. March 15 effective date); the DC Circuit ruling and OPM actions cannot be verified, though Schedule Policy Career entity usage is consistent."
-    },
-    {
-      "claim_index": 12,
-      "status": "UNVERIFIABLE",
-      "finding": "Claim covering March 10-13, 2026 is beyond training cutoff; this claim directly contradicts Claims 0 and 2 which assert active Board of Peace tenders and contract awards during the same window \u2014 the internal pipeline contradiction cannot be resolved without verified sourcing, and neither version can be confirmed."
+      "finding": "The claim is broadly consistent with the Board of Peace disambiguation definition (Trump-chaired, EO 14375, IOIA immunity, Gaza reconstruction mandate) and references NCAG/Ali Shaath and funding figures also cited in Claim 0, but the specific operational pause, $7B pledge figure, and $10B US commitment details cannot be independently verified from pre-cutoff training data."
     }
   ]
 }
