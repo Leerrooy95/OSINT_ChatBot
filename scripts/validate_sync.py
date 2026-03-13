@@ -34,18 +34,18 @@ REQUIRED_VERIFICATION_FIELDS = {
 }
 
 REQUIRED_NODE_STATUS_FIELDS = {
-    "generated_at",
-    "nodes",
+    "run_timestamp",
+    "node_statuses",
 }
 
 REQUIRED_CONVERGENCE_FIELDS = {
-    "generated_at",
-    "convergence_score",
+    "analysis_timestamp",
+    "convergence_events",
 }
 
 REQUIRED_FACT_CHECK_FIELDS = {
-    "generated_at",
-    "results",
+    "checked_at",
+    "corrections_applied",
 }
 
 errors: list[str] = []
