@@ -2,28 +2,28 @@
   "file_count": 6,
   "files": {
     "output/convergence_report.json": {
-      "sha256": "eb431cc6fe81b6a366cfe9deddbfab22b13a0ddc3d2c645ab2ba637542a7ceed",
-      "size": 21117
+      "sha256": "0d7a71096782880c555687ffc67bab0c0cbb7bb1cfb17dc64e46d357ade2d691",
+      "size": 21138
     },
     "output/daily_intelligence.json": {
-      "sha256": "472080b94bc1dfcbd0aed683175db8979e6e996384cd51e4e4010ffe433218e5",
-      "size": 35351
+      "sha256": "2329fc8d8d51f24a5b3e4645629c3a57f7949af58ac604fd61c592166b053182",
+      "size": 35505
     },
     "output/extracted_entities.json": {
-      "sha256": "924b927788e7647e26ece7115fb747348d69e6be68799da0534346b6cce685fe",
-      "size": 5028
+      "sha256": "b2a94174afb9f5baed7ad483549e8f2ad0612c7ec614e6971b6a5c9e790065ec",
+      "size": 6940
     },
     "output/fact_check.json": {
-      "sha256": "a8b44c6900d2f90028213bf2760429f9d0759c773e7ea6356d642a97f43bca38",
-      "size": 16069
+      "sha256": "600f801482fb4ceced03642d818c12834fe686b60387cdd1ef7c6e4df1722582",
+      "size": 18855
     },
     "output/live_verification.json": {
-      "sha256": "2ecd3428cd29a6a9db0d9864f2d6bb0dc33fb5234a240eb3bdd34a95410fb8df",
-      "size": 7791
+      "sha256": "4899dc1091d82e0d83606112b0edaa0c35546d089f6de2226d63ef05cc200afe",
+      "size": 7776
     },
     "output/node_status.json": {
-      "sha256": "b76dd57bbccd131de39b064ca5d2676b2a74df50debe44bcdcb6147553fb9afe",
-      "size": 13392
+      "sha256": "176bae5a481a4babead662f2044b1f24a8a6e5b5df4ea536add9c648a901a680",
+      "size": 7582
     }
   }
 }

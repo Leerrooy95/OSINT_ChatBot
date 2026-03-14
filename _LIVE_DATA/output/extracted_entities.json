@@ -1,64 +1,74 @@
 {
-  "extraction_timestamp": "2026-03-13T00:00:00",
-  "total_entities": 23,
-  "total_relationships": 14,
+  "extraction_timestamp": "2026-03-14T00:00:00Z",
+  "total_entities": 24,
+  "total_relationships": 15,
   "nodes": {
-    "maxwell": {
-      "entities": [
-        {
-          "name": "Ghislaine Maxwell",
-          "type": "PERSON",
-          "context": "incarcerated at FCI Tallahassee"
-        }
-      ],
-      "relationships": [],
-      "temporal_markers": [],
-      "event_classification": "NEUTRAL",
-      "cross_node_connections": []
-    },
     "iran": {
       "entities": [
         {
           "name": "Iran",
           "type": "LOCATION",
-          "context": ""
+          "context": "Country"
         },
         {
-          "name": "Board of Peace",
+          "name": "IRGC",
           "type": "ORG",
-          "context": "Trump-created international organization"
+          "context": "Islamic Revolutionary Guard Corps"
         },
         {
-          "name": "Trump",
+          "name": "Mojtaba Khamenei",
           "type": "PERSON",
-          "context": "Chairman of Board of Peace"
+          "context": "Son of Ali Khamenei"
         },
         {
-          "name": "Gaza",
+          "name": "Strait of Hormuz",
           "type": "LOCATION",
-          "context": ""
+          "context": "Critical oil shipping chokepoint"
         },
         {
-          "name": "Muslim nations",
-          "type": "GROUP",
-          "context": ""
+          "name": "Assembly of Experts",
+          "type": "ORG",
+          "context": "Iranian government body"
+        },
+        {
+          "name": "CENTCOM",
+          "type": "ORG",
+          "context": "US Central Command"
         }
       ],
       "relationships": [
         {
-          "from": "Board of Peace",
+          "from": "Iran",
+          "to": "IRGC",
+          "type": "administrative control",
+          "detail": ""
+        },
+        {
+          "from": "Mojtaba Khamenei",
+          "to": "Assembly of Experts",
+          "type": "membership",
+          "detail": ""
+        },
+        {
+          "from": "Strait of Hormuz",
           "to": "Iran",
-          "type": "affected by",
-          "detail": "on pause during Iran war"
+          "type": "geographic proximity",
+          "detail": ""
         }
       ],
-      "temporal_markers": [],
+      "temporal_markers": [
+        {
+          "date": "early March 2026",
+          "event": "Operation Epic Fury ongoing",
+          "significance": "Escalation of Iran conflict"
+        }
+      ],
       "event_classification": "NEUTRAL",
       "cross_node_connections": [
         {
-          "target_node": "israel",
-          "connection_type": "related conflict",
-          "detail": ""
+          "target_node": "gulf_swf",
+          "connection_type": "regional conflict impact",
+          "detail": "Strait of Hormuz tensions affecting Gulf SWF investments"
         }
       ]
     },
@@ -67,140 +77,180 @@
         {
           "name": "Saudi PIF",
           "type": "ORG",
-          "context": ""
+          "context": "Saudi Public Investment Fund"
         },
         {
           "name": "MGX",
           "type": "ORG",
-          "context": ""
-        },
-        {
-          "name": "QIA",
-          "type": "ORG",
-          "context": ""
-        },
-        {
-          "name": "ADIA",
-          "type": "ORG",
-          "context": ""
+          "context": "UAE sovereign technology investment fund"
         },
         {
           "name": "Mubadala",
           "type": "ORG",
-          "context": ""
+          "context": "UAE sovereign investment fund"
+        },
+        {
+          "name": "ADIA",
+          "type": "ORG",
+          "context": "Abu Dhabi Investment Authority"
+        },
+        {
+          "name": "QIA",
+          "type": "ORG",
+          "context": "Qatar Investment Authority"
+        },
+        {
+          "name": "Affinity Partners",
+          "type": "ORG",
+          "context": "Jared Kushner's investment firm"
         }
       ],
       "relationships": [
         {
           "from": "Saudi PIF",
-          "to": "Gulf SWF",
-          "type": "part of",
+          "to": "MGX",
+          "type": "investment partnership",
           "detail": ""
+        },
+        {
+          "from": "Mubadala",
+          "to": "GlobalFoundries",
+          "type": "ownership",
+          "detail": "81.5% ownership"
         }
       ],
       "temporal_markers": [
         {
-          "date": "March 12, 2026",
-          "event": "Gulf nations pledge $7B for Gaza reconstruction",
-          "significance": ""
+          "date": "2026-2030",
+          "event": "PIF strategy shift",
+          "significance": "Investment focus on AI, minerals, tourism"
         }
       ],
       "event_classification": "NEUTRAL",
       "cross_node_connections": [
         {
-          "target_node": "israel",
-          "connection_type": "related conflict",
-          "detail": ""
+          "target_node": "iran",
+          "connection_type": "regional conflict impact",
+          "detail": "Iran war stress and Strait of Hormuz tensions affecting Gulf SWF investments"
         }
       ]
     },
     "israel": {
       "entities": [
         {
+          "name": "Israel",
+          "type": "LOCATION",
+          "context": "Country"
+        },
+        {
+          "name": "IDF",
+          "type": "ORG",
+          "context": "Israeli Defense Forces"
+        },
+        {
+          "name": "Unit 8200",
+          "type": "ORG",
+          "context": "Israeli military intelligence unit"
+        },
+        {
+          "name": "Hezbollah",
+          "type": "ORG",
+          "context": "Lebanese militant group"
+        },
+        {
+          "name": "NSO Group",
+          "type": "ORG",
+          "context": "Israeli cyber intelligence firm"
+        },
+        {
           "name": "Board of Peace",
           "type": "ORG",
           "context": "Trump-created international organization"
         },
         {
-          "name": "Israel",
-          "type": "LOCATION",
-          "context": ""
-        },
-        {
-          "name": "Hamas",
+          "name": "Abraham Accords",
           "type": "ORG",
-          "context": ""
-        },
-        {
-          "name": "IDF",
-          "type": "ORG",
-          "context": ""
-        },
-        {
-          "name": "Trump",
-          "type": "PERSON",
-          "context": "Chairman of Board of Peace"
+          "context": "Gulf-Israel peace agreements"
         }
       ],
       "relationships": [
         {
-          "from": "Board of Peace",
-          "to": "Israel",
-          "type": "related to",
+          "from": "Israel",
+          "to": "IDF",
+          "type": "administrative control",
+          "detail": ""
+        },
+        {
+          "from": "Unit 8200",
+          "to": "IDF",
+          "type": "operational component",
           "detail": ""
         }
       ],
       "temporal_markers": [
         {
-          "date": "March 12, 2026",
-          "event": "Board of Peace inaugural meeting",
-          "significance": ""
+          "date": "prior reporting",
+          "event": "Board of Peace $17B Gaza pledges",
+          "significance": "Economic commitment to Gaza reconstruction"
         }
       ],
-      "event_classification": "FRICTION",
+      "event_classification": "NEUTRAL",
       "cross_node_connections": [
         {
           "target_node": "iran",
-          "connection_type": "related conflict",
-          "detail": ""
+          "connection_type": "regional conflict",
+          "detail": "US-Israel Operation Epic Fury airstrikes on Iran"
         }
       ]
     },
-    "oracle_ellison": {
+    "arkansas_datacenter": {
       "entities": [
         {
-          "name": "Oracle",
+          "name": "AVAIO",
           "type": "ORG",
-          "context": ""
+          "context": "Datacenter company"
         },
         {
-          "name": "Larry Ellison",
+          "name": "Entergy Arkansas",
+          "type": "ORG",
+          "context": "Utility company"
+        },
+        {
+          "name": "Tom Cotton",
           "type": "PERSON",
-          "context": ""
+          "context": "US Senator"
+        },
+        {
+          "name": "DATA Act",
+          "type": "LEGAL",
+          "context": "Legislation"
+        },
+        {
+          "name": "Huckabee Sanders",
+          "type": "PERSON",
+          "context": "Arkansas Governor"
+        },
+        {
+          "name": "L3Harris Camden",
+          "type": "ORG",
+          "context": "Technology company"
         }
       ],
-      "relationships": [],
-      "temporal_markers": [],
-      "event_classification": "NEUTRAL",
-      "cross_node_connections": []
-    },
-    "epstein_files": {
-      "entities": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "from": "AVAIO",
+          "to": "Entergy Arkansas",
+          "type": "business partnership",
+          "detail": "Datacenter construction and investment"
+        }
+      ],
       "temporal_markers": [
         {
-          "date": "March 7, 2026",
-          "event": "last DOJ update",
-          "significance": ""
+          "date": "January 2026",
+          "event": "AVAIO announcement and PSC approvals",
+          "significance": "Datacenter project development"
         }
       ],
-      "event_classification": "NEUTRAL",
-      "cross_node_connections": []
-    },
-    "arkansas_datacenter": {
-      "entities": [],
-      "relationships": [],
-      "temporal_markers": [],
       "event_classification": "NEUTRAL",
       "cross_node_connections": []
     }
@@ -209,18 +259,19 @@
     {
       "nodes_involved": [
         "iran",
+        "gulf_swf",
         "israel"
       ],
-      "mechanism": "related conflict",
+      "mechanism": "regional conflict escalation",
       "confidence": "HIGH"
     },
     {
       "nodes_involved": [
         "gulf_swf",
-        "israel"
+        "arkansas_datacenter"
       ],
-      "mechanism": "related conflict",
-      "confidence": "HIGH"
+      "mechanism": "investment flow",
+      "confidence": "MEDIUM"
     }
   ]
 }
