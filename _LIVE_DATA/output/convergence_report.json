@@ -1,6 +1,6 @@
 {
-  "analysis_timestamp": "2026-03-14T08:23:56.894068+00:00",
-  "total_runs_analyzed": 19,
+  "analysis_timestamp": "2026-03-21T08:21:23.078368+00:00",
+  "total_runs_analyzed": 36,
   "window_days": 7,
   "convergence_events": [
     {
@@ -482,71 +482,74 @@
   ],
   "node_activity_summary": {
     "gulf_swf": {
-      "total_appearances": 18,
-      "active_count": 10,
+      "total_appearances": 31,
+      "active_count": 11,
       "critical_count": 4,
       "classifications": {
         "COMPLIANCE": 10,
-        "NEUTRAL": 7,
-        "ESCALATION": 1
+        "NEUTRAL": 18,
+        "ESCALATION": 1,
+        "DE_ESCALATION": 1,
+        "FRICTION": 1
       }
     },
     "oracle_ellison": {
-      "total_appearances": 18,
+      "total_appearances": 30,
       "active_count": 8,
       "critical_count": 0,
       "classifications": {
         "COMPLIANCE": 6,
         "FRICTION": 2,
-        "NEUTRAL": 10
+        "NEUTRAL": 22
       }
     },
     "epstein_files": {
-      "total_appearances": 16,
+      "total_appearances": 30,
       "active_count": 10,
       "critical_count": 5,
       "classifications": {
         "COMPLIANCE": 4,
         "FRICTION": 6,
-        "NEUTRAL": 6
+        "NEUTRAL": 20
       }
     },
     "maxwell": {
-      "total_appearances": 15,
+      "total_appearances": 29,
       "active_count": 8,
       "critical_count": 3,
       "classifications": {
         "FRICTION": 8,
-        "NEUTRAL": 7
+        "NEUTRAL": 21
       }
     },
     "iran": {
-      "total_appearances": 16,
+      "total_appearances": 29,
       "active_count": 8,
       "critical_count": 7,
       "classifications": {
         "ESCALATION": 8,
-        "NEUTRAL": 8
+        "NEUTRAL": 21
       }
     },
     "israel": {
-      "total_appearances": 9,
-      "active_count": 3,
+      "total_appearances": 23,
+      "active_count": 5,
       "critical_count": 2,
       "classifications": {
         "ESCALATION": 2,
-        "NEUTRAL": 5,
+        "NEUTRAL": 16,
         "COMPLIANCE": 1,
-        "FRICTION": 1
+        "FRICTION": 3,
+        "DE_ESCALATION": 1
       }
     },
     "arkansas_datacenter": {
-      "total_appearances": 11,
+      "total_appearances": 22,
       "active_count": 2,
       "critical_count": 0,
       "classifications": {
         "COMPLIANCE": 2,
-        "NEUTRAL": 9
+        "NEUTRAL": 20
       }
     }
   },
@@ -557,6 +560,13 @@
     "2026-03-11": 5,
     "2026-03-12": 1,
     "2026-03-13": 0,
-    "2026-03-14": 0
+    "2026-03-14": 0,
+    "2026-03-15": 0,
+    "2026-03-16": 0,
+    "2026-03-17": 2,
+    "2026-03-18": 0,
+    "2026-03-19": 0,
+    "2026-03-20": 0,
+    "2026-03-21": 1
   }
 }

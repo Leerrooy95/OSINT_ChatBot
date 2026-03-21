@@ -6,7 +6,7 @@
 
 ## Active Leverage Nodes (February 2026)
 
-**Purpose**: Tracking primary entities exercising or subject to information/capital leverage in current geopolitical dynamics.
+**Purpose**: Tracking primary entities exercising or subject to information/capital leverage in current geopolitical dynamics. 12 nodes tracked.
 
 ### Node 1: G. Maxwell (Information → Clemency)
 
@@ -307,6 +307,42 @@
 - Feb 25-26: Treasury allows limited Venezuelan oil resale
 
 **Sources**: <a href="https://www.aljazeera.com/news/2026/2/25/cuban-border-agents-fire-upon-florida-tagged-speedboat-killing-four">Al Jazeera</a>, <a href="https://www.npr.org/2026/02/25/g-s1-111529/cuba-florida-speedboat">NPR</a>, <a href="https://www.cnn.com/2026/02/26/americas/cuba-speedboat-shooting-what-we-know-intl-latam">CNN</a>, <a href="https://time.com/7381346/cuba-florida-speedboat-shooting-terrorism-oil-energy-crisis-rubio-us/">TIME</a>, <a href="https://en.wikipedia.org/wiki/2026_Cuban_crisis">Wikipedia</a>
+
+#### March 14–21 Escalation
+
+| Detail | Information |
+|--------|-------------|
+| **Morón protests (Mar 14)** | Protesters attacked Communist Party headquarters in Morón — ransacked building, attempted to set it on fire. Chants of "Libertad!" and "Patria y vida!" Video captured apparent gunfire. State media denied injuries; 5 arrested. | ✅ <a href="https://www.usnews.com/news/world/articles/2026-03-14/protesters-in-cuba-attack-communist-party-office-in-rare-riot-over-blackouts">Reuters via US News</a>, <a href="https://www.aljazeera.com/news/2026/3/14/protests-erupt-in-cuba-as-us-restrictions-spark-food-energy-shortages">Al Jazeera</a>, <a href="https://www.foxnews.com/world/protesters-attack-communist-party-hq-cuba-video-appears-capture-gunfire">Fox News</a> |
+| **Third grid collapse (Mar 16)** | Complete island-wide blackout affecting all 11 million people. 29-hour duration. Third in four months (Dec 2025, early Mar, Mar 16). | ✅ <a href="https://www.npr.org/2026/03/16/nx-s1-5749457/cuba-blackout-sanctions-oil">NPR</a>, <a href="https://www.cnn.com/2026/03/16/americas/cuba-power-grid-collapse-intl-latam">CNN</a>, <a href="https://www.cbsnews.com/news/cuba-national-energy-grid-nationwide-blackout/">CBS News</a> |
+| **Trump on Cuba (Mar 16)** | "Taking Cuba in some form… whether I free it, take it, I think I can do anything I want with it… They're a very weakened nation right now." | ✅ <a href="https://www.cnn.com/2026/03/16/americas/cuba-power-grid-collapse-intl-latam">CNN</a>, <a href="https://www.aljazeera.com/news/2026/3/16/cuba-electric-grid-collapses-amid-us-oil-blockade-causing-national-blackout">Al Jazeera</a> |
+| **Kremlin response (Mar 17)** | Peskov: Russia discussing "possible options for assisting Cuba." Russian Embassy confirms expected oil and petroleum shipments as "humanitarian aid." | ✅ <a href="https://www.themoscowtimes.com/2026/03/18/russia-sends-oil-and-gas-tankers-to-crisis-hit-cuba-defying-us-blockade-ft-a92264">Moscow Times</a> |
+| **Treasury amendment (Mar 20)** | Sanctions waiver amended — specifically adds Cuba and North Korea to exclusion list (original waiver only excluded Iran). Russian oil deliveries to Cuba now explicitly prohibited. Waiver expires April 11. | ✅ <a href="https://www.themoscowtimes.com/2026/03/20/us-tightens-sanctions-waiver-on-russian-oil-after-tanker-reportedly-delivers-fuel-to-cuba-a92279">Moscow Times</a>, <a href="https://www.thehindu.com/news/international/us-issues-new-30-day-waiver-for-sale-of-russian-oil-adding-cuba-north-korea-exceptions/article70763197.ece">The Hindu</a> |
+| **SOUTHCOM testimony (Mar 20)** | Gen. Francis Donovan testifies: tracking Russian destroyer + oil replenishment ship scheduled for Cuba port call. Command NOT rehearsing military intervention; focus is Embassy and Guantanamo Bay protection. | ✅ <a href="https://www.npr.org/2026/03/20/g-s1-114535/cuba-readies-for-first-russian-oil-shipment-of-the-year-as-energy-crisis-deepens">NPR</a>, <a href="https://www.straitstimes.com/world/us-military-not-preparing-for-cuba-invasion-senior-us-general-says">Straits Times</a> |
+| **Embassy diesel refused (Mar 21)** | Cuba refuses U.S. Embassy request to import diesel for generators. Cuban Foreign Ministry calls it "shameless." State Department weighing staff reduction at Havana embassy. | ✅ <a href="https://abcnews.com/US/wireStory/cuba-refuses-us-embassy-havana-import-diesel-generators-131273345">AP via ABC News</a>, <a href="https://thehill.com/policy/energy-environment/5794480-us-embassy-cuba-diesel-fuel-iran-conflict/">The Hill</a> |
+| **Russian tanker Anatoly Kolodkin** | Sanctioned (U.S., EU, UK); ~730,000 barrels crude; departed Primorsk Mar 8; ETA Cuba ~March 23 (updated from earlier ~April 4 estimate). Fallout from arrival/interception may extend into April convergence window. | ✅ <a href="https://www.euronews.com/2026/03/20/cuba-readies-for-first-russian-oil-shipment-of-the-year-as-energy-crisis-deepens">Euronews</a>, <a href="https://www.bloomberg.com/news/articles/2026-03-17/cuba-s-worst-fuel-crisis-in-decades-may-get-relief-from-russia">Bloomberg</a> |
+| **Sea Horse delivery & diversion** | Early March Cuba delivery: ⚠️ PARTIALLY VERIFIED — Hong Kong-flagged tanker "likely" delivered ~190,000 barrels Russian diesel in early March (per Windward/Kpler maritime intelligence; no official confirmation). T&T diversion: ✅ VERIFIED — after March 20 Treasury amendment added Cuba to exclusion list, vessel updated declared destination to Trinidad and Tobago (Bloomberg, US News, Maritime Professional, gCaptain — March 20). Subsequently rerouted to Puerto Cabello, Venezuela (MarineTraffic, March 21, ETA ~March 23). ✅ **Documented regulatory friction event**: March 20 Treasury amendment directly caused Sea Horse to stand down from Cuba delivery — one of two inbound vessels successfully repelled. | ✅/⚠️ <a href="https://www.bloomberg.com/news/articles/2026-03-20/tanker-of-russian-fuel-veers-away-from-cuba-as-us-tweaks-rules">Bloomberg</a>, <a href="https://www.usnews.com/news/top-news/articles/2026-03-20/tanker-carrying-fuel-originally-bound-for-cuba-diverts-to-trinidad-shipping-data-shows">US News</a>, <a href="https://gcaptain.com/tanker-carrying-fuel-originally-bound-for-cuba-diverts-to-trinidad/">gCaptain</a>, <a href="https://www.themoscowtimes.com/2026/03/19/tanker-likely-delivered-russian-diesel-to-fuel-starved-cuba-a92275">Moscow Times</a> |
+
+#### Skipper/Operation Southern Spear Seizure Chain (Cross-reference: Venezuela normalization above)
+
+| Detail | Information |
+|--------|-------------|
+| Skipper seizure | Dec 10, 2025 — USCG + Marines boarded and seized M/T Skipper on high seas near Venezuela. Vessel spoofing location, flying false Guyanese flag. ~1.8M barrels crude; 1.1M destined for Cubametales (Cuba state oil). | ✅ <a href="https://www.justice.gov/usao-dc/pr/us-unseals-warrant-tanker-seized-coast-guard-coast-venezuela">DOJ</a>, <a href="https://www.pbs.org/newshour/world/seizure-of-rogue-oil-tanker-off-venezuela-signals-new-u-s-crackdown-on-shadow-fleet">PBS</a> |
+| DOJ forfeiture complaint | Mar 2026 — DOJ files civil forfeiture for Skipper. Alleges vessel supported IRGC/IRGC-QF. Connects all four CRINK nodes through single vessel: **Iran** (docked in Iran ≥2x since July 2025), **Venezuela** (loaded at José Terminal/PdVSA), **Cuba** (1.1M barrels for Cubametales), **Russia** (Marinera — Russian tanker seized Jan 7 — operated in same networks). | ✅ <a href="https://www.justice.gov/opa/pr/united-states-seeks-forfeiture-oil-tanker-and-18m-barrels-crude-oil-supported-iran-and">DOJ</a>, <a href="https://gcaptain.com/u-s-moves-to-permanently-seize-sanctioned-tanker-skipper-and-150m-oil-cargo/">gCaptain</a> |
+| Additional seizures | Dec 20: Centuries (~2M barrels Venezuelan crude for China). Jan 7: Marinera (Russian) + M Sophia (Panama-flagged). 16 tankers fled Venezuelan ports post-Maduro capture. | ✅ <a href="https://www.aljazeera.com/news/2025/12/20/us-seizes-second-oil-vessel-off-venezuela-coast-officials-say">Al Jazeera</a>, <a href="https://en.wikipedia.org/wiki/United_States_seizure_of_the_oil_tanker_Skipper">Wikipedia</a> |
+| **CRINK nexus** | The Skipper DOJ complaint connects all four CRINK nodes (Iran-Venezuela-Cuba-Russia) through a single vessel and its operational network — the CRINK framework operating as a physical supply chain, not just a geopolitical alignment. |
+| **April window connection** | Russian tanker arrival (~March 23) or confrontation aftermath serves as fifth distraction mechanism for April 12–20 convergence window. See `10_Real-Time_Updates_and_Tasks/2026_March/April_2026_Convergence_Window.md`. |
+
+**March Key Dates**:
+- Mar 7: Trump tells Latin American leaders Cuba is "at the end of the line"
+- Mar 14: Morón protests (Communist Party HQ attacked)
+- Mar 16: Third island-wide blackout (29 hours); Trump: "Taking Cuba in some form"
+- Mar 17: Kremlin announces assistance discussions
+- Mar 20: Treasury amends sanctions waiver (adds Cuba/NK exclusion); SOUTHCOM confirms tracking Russian vessels
+- Mar 21: Cuba refuses embassy diesel
+
+**Sources**: <a href="https://www.npr.org/2026/03/16/nx-s1-5749457/cuba-blackout-sanctions-oil">NPR (grid collapse)</a>, <a href="https://www.cnn.com/2026/03/16/americas/cuba-power-grid-collapse-intl-latam">CNN (grid/Trump)</a>, <a href="https://abcnews.com/US/wireStory/cuba-refuses-us-embassy-havana-import-diesel-generators-131273345">AP/ABC News (embassy)</a>, <a href="https://www.themoscowtimes.com/2026/03/20/us-tightens-sanctions-waiver-on-russian-oil-after-tanker-reportedly-delivers-fuel-to-cuba-a92279">Moscow Times (Treasury)</a>, <a href="https://www.npr.org/2026/03/20/g-s1-114535/cuba-readies-for-first-russian-oil-shipment-of-the-year-as-energy-crisis-deepens">NPR (SOUTHCOM)</a>, <a href="https://www.justice.gov/opa/pr/united-states-seeks-forfeiture-oil-tanker-and-18m-barrels-crude-oil-supported-iran-and">DOJ (Skipper)</a>
+
+→ Full analysis: `10_Real-Time_Updates_and_Tasks/2026_March/Cuba_Crisis_Escalation_March_2026.md`
 
 ### El Mencho CJNG Operation (Feb 22, 2026)
 
@@ -723,6 +759,9 @@
 | Mar 6 | China dispatches envoy Zhai Jun to mediate | CRINK response pattern |
 | Mar 6 | Oil prices up ~20% to ~$80/barrel; "biggest energy crisis since 1970s" | Capital architecture stress test |
 | Mar 6 | UK deploying RAF fighters over Bahrain | NATO ally drawn into conflict |
+| **Mar 11** | **Richard Kahn** (Epstein's accountant, estate co-executor) deposed — confirmed funds from Wexner, Dubin, Sinofsky, Black, Rothschilds; Ehud Barak financial ties to Epstein | **Epstein estate financial architecture; deposition (✅ [AP](https://apnews.com/article/jeffrey-epstein-accountant-richard-kahn-408bd7342060174bd456eb08bdd13488))** |
+| **~Mar 17** | **NM state investigators begin physical search of Zorro Ranch** (San Rafael Ranch) — with cooperation of Huffines family; first documented physical search of the property | **✅ VERIFIED — [AP](https://apnews.com/article/jeffrey-epstein-sex-abuse-trafficking-new-mexico-98ee07a273865c1cfc2b034ef182171a)** |
+| **Mar 19** | **Darren Indyke** (Epstein's attorney ~20 years, estate co-executor) deposed — denied knowledge; Comer confirms committee reviewed 40,000+ documents from JPMorgan/Deutsche Bank; 64+ Epstein business entities | **Epstein estate accountability (✅ [AP](https://apnews.com/article/jeffrey-epstein-darren-indyke-congress-08641aacbcbf705b7b7f51862e09f7c2))** |
 
 ### March 2026
 | Date | Event |
@@ -735,6 +774,9 @@
 | **Mar 5** | **Trump fires Kristi Noem; names Sen. Markwayne Mullin (R-OK) as replacement. Pentagon officially designates Anthropic as "supply chain risk." DOJ publishes 16 additional Epstein pages (NPR investigation). House votes 212-219 against war powers measure. Azerbaijan struck by Iranian drones. TikTok deal lawsuit filed.** |
 | **Mar 6** | **Iran war Day 7: 1,300+ killed (Iranian Red Crescent). UAE intercepts 109 drones + 9 ballistic missiles. Iran strikes Bahrain, Qatar. Israel strikes Beirut. Trump: "unconditional surrender" or nothing. China dispatches envoy Zhai Jun. Oil up ~20%.** |
 | **Mar 8** | **Schedule P/C takes effect (~50,000 positions to at-will)** |
+| **Mar 11** | **Richard Kahn (Epstein accountant, estate co-executor) deposed by House Oversight Committee** |
+| **~Mar 17** | **NM state investigators begin physical search of Zorro Ranch / San Rafael Ranch with Huffines cooperation** |
+| **Mar 19** | **Darren Indyke (Epstein personal attorney, estate co-executor) deposed by House Oversight Committee; committee reviewed 40,000+ documents (JPMorgan + Deutsche Bank); 64+ Epstein business entities confirmed** |
 | Mar 14 | TSA workers miss first full paycheck if DHS shutdown continues |
 | Mar 17 | Maduro next court date |
 
@@ -773,7 +815,11 @@ This clustering pattern is consistent with Thermostat model predictions.
 | Date | Event | Relevance |
 |------|-------|-----------|
 | Feb 14 | DHS shutdown begins | Institutional friction |
+| Feb 17 | NM legislature votes unanimously to create truth commission (subpoena power, $2M+ budget) — 4-member bipartisan panel | Epstein/Zorro Ranch accountability; NM-level investigation begins |
+| Feb 18 | NM truth commission first meeting; chair Romero: "enablers must be held accountable, including the state itself" | Epstein/Zorro Ranch accountability |
 | Feb 19 | Prince Andrew arrested (first royal arrest in modern UK history) | Epstein leverage; convergence with BoP/UFO |
+| Feb 19 | **NM AG Torrez reopens criminal Zorro Ranch investigation** — same day as Andrew arrest + Wexner deposition video release | **Three Epstein-track events on single day; NM investigation reopened after 7-year closure** |
+| Feb 19 | Les Wexner deposition video released | Epstein leverage; Wexner denied knowledge |
 | Feb 22 | El Mencho (CJNG) killed — US intel support | US-Mexico cartel friction |
 | Feb 22 | Kurdish Coalition formed (Coalition of Political Forces in Iranian Kurdistan) | Iran destabilization signal |
 | Feb 22 | Global Entry suspended | DHS shutdown impact |
@@ -847,6 +893,85 @@ This clustering pattern is consistent with Thermostat model predictions.
 
 ---
 
+## Node 10: Religious Layer / Eschatological Infrastructure (March 2026)
+
+| Detail | Status (March 2026) |
+|--------|---------------------|
+| Tracking type | Theological-policy pipeline — eschatological motivational infrastructure |
+| **Theological access architecture** | Four documented input channels into executive/military decision-making: (1) Paula White (human router / White House Faith Office), (2) Ralph Drollinger / Capitol Ministries (weekly curriculum), (3) Doug Wilson / CREC (denominational pipeline into Pentagon), (4) CUFI / John Hagee (mass political base, 10M+ members) | Source files: `15_The_Religious_Layer/The_Religious_Layer.md` |
+| **Paula White** | Trump's personal pastor since ~2002; Senior Advisor and leader of White House Faith Office (created Feb 6, 2025); hosted ~500 faith leaders through WH since Feb 2025; organized Oval Office prayer gathering during Iran war escalation (March 9, 2026); Boller describes White pressuring her about social media posts criticizing Israel | Source: Tucker Carlson Show (March 13, 2026), Christianity Today, Ynet News |
+| **Capitol Ministries** | Weekly Cabinet Bible Study reignited Feb 26, 2025; 14 attendees; co-sponsored by Brooke Rollins and Russell Vought (OMB Director); Hegseth and Huckabee attend; 8-12 page studies weekly covering Israel's prophetic role; operates in 43 state capitols, 24 foreign nations | Source: capmin.org, Activist Post, Forward |
+| **CREC / Doug Wilson** | Hegseth's denomination (Pilgrim Hill Reformed Fellowship, Nashville); Wilson invited to preach at Pentagon (Feb 18, 2026); monthly Christian prayer services at Pentagon, streamed on internal DOD network; Pastor Potteiger: "Jesus has the final say" over Tomahawk and Minuteman missiles | Source: CNN, Activist Post, Forward |
+| **CUFI / John Hagee** | 10M+ members; Ezekiel 38-39 = Iran war fulfills prophecy; advanced 21st Century Peace Through Strength Act ($14.3B military aid to Israel); CUFI Action Fund pushed Iran Sanctions Enforcement Act; March 2026: "What Iran started we will finish" | Source: cufi.org, CDAMM, InfluenceWatch |
+| **Convergence node: Hegseth** | Receives all four theological inputs AND controls DOD operational authority; called for Third Temple (2018); gutted civilian casualty offices ~90% before Iran war; Camden "Arsenal of Freedom" speech <24hrs before Iran strikes; troops briefed war fulfills "God's divine plan" (110 MRFF complaints, 40 units, 30 installations) | Source: Israel National News, Politico, Arkansas Advocate, Activist Post |
+| **Enforcement mechanism** | Documented escalation pattern — Corporate → Government → Intelligence: (1) Candace Owens departed Daily Wire after criticizing Israel (2024), (2) Carrie Prejean Boller fired from Religious Liberty Commission by Dan Patrick/Trump for raising Catholic theology against Zionist framing (Feb-March 2026), (3) Tucker Carlson — CIA criminal referral reportedly under consideration for FARA after talking to Iranians and platforming dissenters (March 2026) | Source: `15_The_Religious_Layer/The_Lever.md`, Tucker Carlson Show, JTA, Jewish Insider |
+| **Denominational fault line** | Christian Zionism (Hegseth, Huckabee, Drollinger, Hagee, White, Patrick) vs. Catholic/Replacement Theology (Boller, Rev. Fares Abraham) vs. Emerging Dissent (Carlson, Palin, Flynn) — administration enforcing one denominational interpretation through government apparatus | Source: `15_The_Religious_Layer/The_Religious_Layer.md` |
+| **Critical personnel overlap: Vought** | Russell Vought co-sponsors Cabinet Bible Study AND named to institutionalize DOGE — theological infrastructure and administrative restructuring share this personnel node | Source: capmin.org, public reporting |
+| **Dan Patrick** | Lt. Gov. Texas; Chair of White House Religious Liberty Commission; removed Boller; state connections: Stargate data center (Abilene), defense contractors | Source: JTA, Jewish Insider |
+| Framework significance | [Inference] The capital layer documents *what* is happening. The attention layer documents *how* it's concealed. This layer documents *why* — the belief system that makes otherwise irrational behavior (burning global oil markets, risking Strait of Hormuz closure, launching wars that destabilize the capital architecture) appear divinely mandated to the actors involved. |
+| Last updated | March 16, 2026 |
+
+**Sources**:
+- Main analysis: `15_The_Religious_Layer/The_Religious_Layer.md`
+- Enforcement mechanisms: `15_The_Religious_Layer/The_Lever.md`
+- Node Dossier: `Node_Dossiers/tier2_religious_infrastructure.md`
+- Evangelical network cross-reference: `Project_Trident/Copilot_Opus_4.6_Analysis/Evangelical_Network_Cross_Reference_Analysis.md`
+
+---
+
+## Node 11: April 2026 Convergence Window — Pre-Event Prediction (Filed March 21, 2026)
+
+| Detail | Status (March 2026) |
+|--------|---------------------|
+| Tracking type | Predicted convergence window — pre-filed for real-time validation or falsification |
+| **Window** | April 12–20, 2026 |
+| **Track A event: Bondi deposition** | AG Pam Bondi subpoenaed for April 14, 2026 deposition before House Oversight Committee — sworn testimony on Epstein file handling, DOJ redactions, and obstruction allegations | ✅ VERIFIED — [CNBC](https://www.cnbc.com/2026/03/17/epstein-pam-bondi-trump-doj-subpoena.html), [CBS News](https://www.cbsnews.com/news/epstein-files-pam-bondi-subpoena-house-oversight-committee/), [UPI](https://www.upi.com/Top_News/US/2026/03/17/House-Oversight-Bondi-Epstein/1751773778691/) |
+| **Track B event: CLARITY Act** | Crypto market structure bill defining SEC vs. CFTC jurisdiction; Senate Ag Committee advanced 12-11 party-line vote (Jan 29, 2026); primary blocker (stablecoin yield) resolved "in principle" by Senators Tillis (R-NC) + Alsobrooks (D-MD) + White House (March 20, 2026); Senate Banking Committee markup targeted April 13–27 (post-Easter recess); full Senate vote targeted by May 2026. Remaining hurdles: ethics/anti-self-dealing amendments (Warren/Merkley), Banking+Agriculture committee reconciliation. Democrats unanimously opposed Ag Committee version citing Trump COI and insufficient ethics rules. | ✅ Senate Ag 12-11 vote: [CNBC](https://www.cnbc.com/2026/01/29/senate-ag-committee-advances-crypto-bill-to-establish-cftc-regulatory-authority.html) ✅ Tillis-Alsobrooks stablecoin yield deal (Mar 20): [Politico](https://www.politico.com/live-updates/2026/03/20/congress/senators-strike-deal-with-white-house-to-resolve-bank-crypto-clash-00837464), [The Block](https://www.theblock.co/post/394554/lawmakers-breakthrough-agreement-in-principle-stablecoin-yield-sweeping-crypto-bill), [CoinDesk](https://www.coindesk.com/policy/2026/03/20/crypto-clarity-act-may-be-cleared-to-move-after-senators-agree-on-stablecoin-yield) ⚠️ April Banking markup: [Cryptonomist](https://en.cryptonomist.ch/2026/03/19/clarity-act-crypto-timeline/), [CryptoNewBytes](https://cryptonewsbytes.com/senate-banking-committee-clarity-act-markup-2026/) |
+| **Capital architecture context** | USD1 stablecoin (~$4.59B market cap), MGX $2B Binance investment settled in USD1, Binance 135M WLFI airdrop (March 20 – April 17), WLF OCC charter application pending | ✅ VERIFIED — [CoinGecko](https://www.coingecko.com/en/coins/usd1-wlfi), [CNBC](https://www.cnbc.com/2025/03/13/abu-dhabis-mgx-to-invest-2-billion-in-crypto-exchange-binance.html), [Lookonchain](https://lookonchain.com/feeds/50855), [OCC](https://www.occ.gov/topics/charters-and-licensing/digital-assets-licensing-applications/world-liberty-trust-company.pdf) |
+| **Emoluments question** | Warren and Merkley raised Emoluments Clause concerns over MGX/USD1/WLF structure. No Congressional consent resolution filed. No OLC opinion released. | ✅ VERIFIED — [Senate Banking Committee](https://www.banking.senate.gov/newsroom/minority/forwarding-merkley-warren-trump-linked-crypto-deal-is-a-staggering-conflict-of-interest), [CBS News](https://www.cbsnews.com/news/senate-democrats-trump-world-liberty-crypto-deal-genius-act-vote/) |
+| **Pre-loaded distraction arsenal** | UAP disclosure (announced Feb 2026), Cuba kinetic (speedboat Feb 2026), Iran war escalation (active since Feb 28), domestic crisis trajectory, **U.S.-Russia naval confrontation over Cuban oil** (Anatoly Kolodkin: sanctioned, 730K barrels, ETA ~March 23; Treasury March 20 amendment; SOUTHCOM tracking; Skipper seizure precedent) | See `10_Real-Time_Updates_and_Tasks/2026_March/April_2026_Convergence_Window.md` and `10_Real-Time_Updates_and_Tasks/2026_March/Cuba_Crisis_Escalation_March_2026.md` for full assessment |
+| **Thermostat prediction** | 🔍 HYPOTHESIS — At least one major distraction event will materialize April 12–13 or within April 14–20, fragmenting media coverage of accountability track |
+| **Falsification criteria** | If April 12–20 passes with NO major competing events AND Bondi deposition AND CLARITY Act vote receive sustained prominent coverage, the distraction prediction is falsified |
+| Framework significance | [Inference] Tests the thermostat model's predictive power: dual-track convergence (accountability + capital architecture) within a defined, pre-filed window. Outcome documents whether the pattern of friction events preceding compliance events holds prospectively. |
+| Last updated | March 21, 2026 (CLARITY Act details updated with full legislative timeline — Senate Ag 12-11 vote, Tillis-Alsobrooks stablecoin yield deal, April Banking Committee markup target) |
+
+**Sources**:
+- Full prediction document: `10_Real-Time_Updates_and_Tasks/2026_March/April_2026_Convergence_Window.md`
+- Capital architecture context: `04_CAPITAL_ARCHITECTURE.md`
+- Distraction mechanics: `06_ATTENTION_ECONOMY.md`
+- Thermostat timing model: `Node_Dossiers/tier3_thermostat_ruleset.md`
+
+---
+
+## Node 12: Zorro Ranch / New Mexico Investigation — Active State-Level Accountability (March 2026)
+
+| Detail | Status (March 2026) |
+|--------|---------------------|
+| Tracking type | State-level Epstein accountability / 7-year gap data point |
+| **7-year gap** | NM investigation opened 2019 → **closed at federal request (SDNY) 2019** → reopened 2026 = **7-year suppression window**. Closure was immediate after Epstein's death; no charges filed, no ranch searched, no formal victim testimony formalized. Gap ends only after DOJ releases 3M+ pages of sealed FBI files. | ✅ VERIFIED — [AP](https://apnews.com/article/new-mexico-epstein-investigation-reopen-12dffa70784c6f468627962da3cf51b7) |
+| **Framework significance** | The 7-year closure-to-reopening arc mirrors the core framework's r = +0.6196 pattern at state level: federal compliance action (closure) → sustained suppression window → external friction (DOJ file release) → compliance event (reopening). This is a documented structural instance of "regulated friction" outside the federal context. |
+| **Truth commission** | Bipartisan, 4-member commission: Rep. Andrea Romero (D-SF, chair), Rep. Marianna Anaya (D-ABQ), Rep. William Hall (R-Aztec, retired FBI), Rep. Andrea Reeb (R-Clovis, former DA). Subpoena power. $2M+ budget. Unanimous NM House vote (Feb 17). First meeting Feb 18. | ✅ VERIFIED — [AP](https://apnews.com/article/jeffrey-epstein-files-new-mexico-ranch-d1ab5064453fe3df154f779326b53345) |
+| **AG reopening** | AG Raúl Torrez reopened criminal investigation Feb 19, 2026, citing "revelations outlined in the previously sealed FBI files." Seeking complete, unredacted federal case file. Coordinating with truth commission. | ✅ VERIFIED — [AP](https://apnews.com/article/new-mexico-epstein-investigation-reopen-12dffa70784c6f468627962da3cf51b7) |
+| **Timing convergence** | Feb 19, 2026: NM AG reopening announced same day as Prince Andrew arrest (UK) + Wexner deposition video release — three major Epstein accountability events in a single day | ✅ VERIFIED — see Node 5 + Feb 19 timeline |
+| **Physical search** | NM state investigators began physical search of property (~Mar 17, 2026) with full cooperation of Huffines family. First documented law enforcement search of the ranch property. | ✅ VERIFIED — [AP](https://apnews.com/article/jeffrey-epstein-sex-abuse-trafficking-new-mexico-98ee07a273865c1cfc2b034ef182171a) |
+| **NM failure documented** | Epstein was **never required to register as a sex offender in New Mexico** after his 2008 Florida guilty plea — state law failure that truth commission is actively investigating | ✅ VERIFIED — AP |
+| **Ranch references in DOJ release** | Thousands of references to the ranch in the 3M+ page DOJ file release; named visitors from email/schedule records: Woody Allen, Robert Redford, Reid Hoffman, Joi Ito, Peter Thiel | ✅ VERIFIED — AP |
+| **Congressional depositions** | March 11: Richard Kahn (accountant, estate co-executor) — confirmed funds from Wexner, Dubin, Sinofsky, Black, Rothschilds; Ehud Barak financial ties. March 19: Darren Indyke (attorney, ~20 years, estate co-executor) — denied knowledge. Committee reviewed 40,000+ JPMorgan/Deutsche Bank documents; 64+ Epstein business entities confirmed. | ✅ VERIFIED — [AP/Kahn](https://apnews.com/article/jeffrey-epstein-accountant-richard-kahn-408bd7342060174bd456eb08bdd13488), [AP/Indyke](https://apnews.com/article/jeffrey-epstein-darren-indyke-congress-08641aacbcbf705b7b7f51862e09f7c2) |
+| **Estate class action settlement** | Epstein estate agreed to pay $25M–$35M (pending judge approval). Prior payments: $121M (136 EVCP claimants) + $48M+ (59 other victims). | ✅ VERIFIED — AP |
+| **Religious layer intersection** | Huffines renamed property "San Rafael Ranch" (Saint Raphael = healing), plans a Christian retreat. Don Huffines (Texas Republican, won 2026 state comptroller primary) invoking faith-based framing at a site under active criminal investigation. See Node 10 + `15_The_Religious_Layer/` | ✅ VERIFIED — AP, Huffines X post |
+| **Next milestone** | April 14, 2026: AG Pam Bondi deposition before House Oversight on Epstein file handling and DOJ redactions | ✅ VERIFIED — [CNBC](https://www.cnbc.com/2026/03/17/epstein-pam-bondi-trump-doj-subpoena.html), [CBS News](https://www.cbsnews.com/news/epstein-files-pam-bondi-subpoena-house-oversight-committee/) |
+| Last updated | March 21, 2026 |
+
+**Sources**:
+- Full dossier: `_AI_CONTEXT_INDEX/Node_Dossiers/tier1_zorro_ranch_epstein.md`
+- [AP — NM investigation reopened (Feb 19, 2026)](https://apnews.com/article/new-mexico-epstein-investigation-reopen-12dffa70784c6f468627962da3cf51b7)
+- [AP — Truth commission first meeting (Feb 18, 2026)](https://apnews.com/article/jeffrey-epstein-files-new-mexico-ranch-d1ab5064453fe3df154f779326b53345)
+- [AP — Ranch physical search (March 2026)](https://apnews.com/article/jeffrey-epstein-sex-abuse-trafficking-new-mexico-98ee07a273865c1cfc2b034ef182171a)
+- [AP — Richard Kahn deposition (March 11, 2026)](https://apnews.com/article/jeffrey-epstein-accountant-richard-kahn-408bd7342060174bd456eb08bdd13488)
+- [AP — Darren Indyke deposition (March 19, 2026)](https://apnews.com/article/jeffrey-epstein-darren-indyke-congress-08641aacbcbf705b7b7f51862e09f7c2)
+
+---
+
 ## Research Gaps
 
 ### Needs More Data
@@ -873,6 +998,8 @@ This clustering pattern is consistent with Thermostat model predictions.
 
 | Source | Location |
 |--------|----------|
+| Cuba Crisis Escalation | `10_Real-Time_Updates_and_Tasks/2026_March/Cuba_Crisis_Escalation_March_2026.md` |
+| April 2026 Convergence Window | `10_Real-Time_Updates_and_Tasks/2026_March/April_2026_Convergence_Window.md` |
 | February 26, 2026 Update | `10_Real-Time_Updates_and_Tasks/2026_February/February-26-2026.md` |
 | February 2026 Update | `10_Real-Time_Updates_and_Tasks/2026_February/February-05-2026.md` |
 | 2026 Analysis | `New_Data_2026/2026_Analysis.md` |
@@ -910,4 +1037,4 @@ This clustering pattern is consistent with Thermostat model predictions.
 
 ---
 
-*Last Updated: March 8, 2026. Node 9 updated: deep-dive verification resolved all 8 partially verified claims — 4 upgraded to ✅ VERIFIED (Hiland authorship, 6-0 vote, Brooks Nov 19 injunction, Bryan King quotes via Bolts Magazine), 3 downgraded to ❌ UNABLE TO VERIFY (Les Eaves lobbyist quote, Joshua Silverstein quote, David Couch "permanently dismantle" quote — removed from _AI_CONTEXT_INDEX), 1 corrected ("eight new laws" → "at least six specific Acts"). Node 9 now contains only verified information. Final tally: 24/28 ✅ VERIFIED, 1/28 ⚠️ CORRECTED, 3/28 ❌ UNABLE TO VERIFY. Previous: March 8, 2026 — Node 9 added; Node 5 updated. Previous: March 7, 2026 — Node 8 added. Previous: March 6, 2026 — March 1-6 verified developments. Full verification: `Project_Trident/Copilot_Opus_4.6_Analysis/Arkansas_Law_Forensic_Audit_Verification.md`. Items unable to verify documented in Project_Trident/Copilot_Opus_4.6_Analysis/Unable_to_Verify_March_2026.md. This document should be updated as new developments occur.*
+*Last Updated: March 21, 2026. Cuban Crisis section expanded: March 14–21 escalation (Morón protests, grid collapse, embassy diesel refusal, Russian tanker confrontation, Skipper/Operation Southern Spear seizure chain connecting all four CRINK nodes). Anatoly Kolodkin ETA updated to ~March 23 based on maritime tracking (previously ~April 4) — ✅ confirmed by Euronews, Bloomberg, CiberCuba, VesselFinder, MarineTraffic. Sea Horse T&T diversion ✅ VERIFIED (Bloomberg, US News, Maritime Professional, gCaptain — March 20); vessel subsequently rerouted to Puerto Cabello, Venezuela (MarineTraffic, March 21); documented as regulatory friction event — March 20 Treasury amendment directly caused one of two inbound vessels to stand down. Sea Horse early March Cuba delivery remains ⚠️ PARTIALLY VERIFIED. Fifth distraction mechanism (U.S.-Russia naval confrontation) added to Node 11 arsenal. Node 11 updated: CLARITY Act legislative status fully documented — Senate Agriculture Committee 12-11 party-line vote (Jan 29, 2026, ✅ verified), Tillis-Alsobrooks stablecoin yield "agreement in principle" + White House (March 20, 2026, ✅ verified), Senate Banking Committee markup targeted April 13–27 (⚠️ targeted), full Senate vote by May (⚠️ target). Node 11 added: April 2026 Convergence Window — pre-event prediction filed before the April 12–20 window opens. Documents predicted convergence of Bondi deposition (April 14, ✅ verified) and CLARITY Act vote (now substantially verified), USD1/WLF/MGX capital architecture context (✅ verified), pre-loaded distraction arsenal, thermostat model prediction with explicit falsification criteria. Source: `10_Real-Time_Updates_and_Tasks/2026_March/April_2026_Convergence_Window.md`. Previous: March 16, 2026. Node 10 added: Religious Layer / Eschatological Infrastructure — documents four theological input channels (Paula White, Capitol Ministries, CREC/Wilson, CUFI/Hagee), Hegseth as convergence node, enforcement mechanism (Corporate → Government → Intelligence escalation), denominational fault line, and Vought personnel overlap. Source: `15_The_Religious_Layer/`. Previous: March 8, 2026. Node 9 updated: deep-dive verification resolved all 8 partially verified claims — 4 upgraded to ✅ VERIFIED, 3 downgraded to ❌ UNABLE TO VERIFY, 1 corrected. Node 9 now contains only verified information. Previous: March 8, 2026 — Node 9 added; Node 5 updated. Previous: March 7, 2026 — Node 8 added. Previous: March 6, 2026 — March 1-6 verified developments. This document should be updated as new developments occur.*
