@@ -1,7 +1,7 @@
 name: Sync Live Data
 
-# Runs twice daily — 1 hour after Live_Trackers' pipeline runs at
-# 08:00 and 20:00 UTC, giving them time to finish first.
+# Runs twice daily — 1 hour after The_Regulated_Friction_Project's pipeline
+# runs at 08:00 and 20:00 UTC, giving it time to finish first.
 on:
   schedule:
     - cron: '0 9,21 * * *'
@@ -26,29 +26,9 @@ jobs:
         with:
           python-version: '3.12'
 
-      # ── 2. Fetch live data from Live_Trackers ──────────────────────
-      - name: Fetch data from Live_Trackers
-        run: |
-          set -euo pipefail
-          BASE="https://raw.githubusercontent.com/Leerrooy95/Live_Trackers/main"
-          mkdir -p _staging/live_trackers/output
-
-          echo "::group::Fetching output/ (intelligence pipeline results)"
-          for file in daily_intelligence.json live_verification.json \
-                      node_status.json convergence_report.json \
-                      extracted_entities.json fact_check.json; do
-            echo "  ↓ $file"
-            curl -sSfL -o "_staging/live_trackers/output/$file" \
-              "$BASE/output/$file" || true
-          done
-          echo "::endgroup::"
-
-          # Remove any empty files from failed fetches
-          find _staging -type f -empty -delete
-          echo "✅ Live Trackers data fetched."
-
-      # ── 3. Fetch _AI_CONTEXT_INDEX from The_Regulated_Friction_Project ──
-      - name: Fetch _AI_CONTEXT_INDEX from The_Regulated_Friction_Project
+      # ── 2. Clone The_Regulated_Friction_Project once; sync output/ ──
+      #       and _AI_CONTEXT_INDEX/ from the same clone.
+      - name: Clone and sync from The_Regulated_Friction_Project
         run: |
           set -euo pipefail
 
@@ -56,6 +36,17 @@ jobs:
           git clone --depth=1 \
             https://github.com/Leerrooy95/The_Regulated_Friction_Project.git \
             /tmp/rfp_clone
+          echo "::endgroup::"
+
+          echo "::group::Staging output/ (intelligence pipeline results)"
+          mkdir -p _staging/output
+          if [ ! -d "/tmp/rfp_clone/output" ]; then
+            echo "::error::Source output/ directory not found in The_Regulated_Friction_Project clone"
+            exit 1
+          fi
+          # Copy all non-.gitkeep files from the source output/ folder
+          find /tmp/rfp_clone/output -maxdepth 1 -type f ! -name '.gitkeep' \
+            -exec cp {} _staging/output/ \;
           echo "::endgroup::"
 
           echo "::group::Syncing _AI_CONTEXT_INDEX/ (baseline knowledge files)"
@@ -68,42 +59,54 @@ jobs:
           echo "::endgroup::"
 
           rm -rf /tmp/rfp_clone
-          echo "✅ _AI_CONTEXT_INDEX updated from The_Regulated_Friction_Project."
-          echo "--- Top-level files ---"
+
+          # Remove any empty files from failed copies
+          find _staging -type f -empty -delete
+
+          echo "✅ Data synced from The_Regulated_Friction_Project."
+          echo "--- Staged output files ---"
+          ls -la _staging/output/ || echo "No files staged"
+          echo "--- Top-level AI context files ---"
           ls _AI_CONTEXT_INDEX/*.md 2>/dev/null | head -20 || echo "No markdown files found in _AI_CONTEXT_INDEX"
 
-      # ── 4. Validate all fetched data ───────────────────────────────
+      # ── 3. Validate all fetched data ───────────────────────────────
       - name: Validate fetched data
         run: |
-          python scripts/validate_sync.py _staging/live_trackers
+          python scripts/validate_sync.py _staging
 
-      # ── 5. Copy verified data to clean _LIVE_DATA/ folder ─────────
+      # ── 4. Copy verified data to clean _LIVE_DATA/ folder ─────────
       - name: Update clean _LIVE_DATA folder
         run: |
           set -euo pipefail
 
-          # Wipe old data to keep the folder clean
-          rm -rf _LIVE_DATA/*
+          # Wipe old output data to keep the folder clean
+          rm -rf _LIVE_DATA/output
+          mkdir -p _LIVE_DATA/output
 
-          # Copy verified Live Trackers data
-          if [ -d "_staging/live_trackers" ]; then
-            cp -r _staging/live_trackers/* _LIVE_DATA/
+          # Copy verified output data
+          if [ -d "_staging/output" ]; then
+            cp -r _staging/output/. _LIVE_DATA/output/
+          fi
+
+          # Copy manifest produced by validate_sync.py
+          if [ -f "_staging/manifest.json" ]; then
+            cp _staging/manifest.json _LIVE_DATA/manifest.json
           fi
 
           echo "✅ _LIVE_DATA/ updated with verified data."
           echo "--- Contents ---"
           find _LIVE_DATA -type f | head -50
 
-      # ── 6. Generate knowledge-base digest ──────────────────────────
+      # ── 5. Generate knowledge-base digest ──────────────────────────
       - name: Generate LIVE_INTELLIGENCE_DIGEST.md
         run: |
           python scripts/generate_digest.py _LIVE_DATA _AI_CONTEXT_INDEX
 
-      # ── 7. Clean up staging ────────────────────────────────────────
+      # ── 6. Clean up staging ────────────────────────────────────────
       - name: Clean up staging directory
         run: rm -rf _staging
 
-      # ── 8. Commit and push ─────────────────────────────────────────
+      # ── 7. Commit and push ─────────────────────────────────────────
       - name: Commit and Push Updates
         run: |
           git config --global user.name "github-actions[bot]"
