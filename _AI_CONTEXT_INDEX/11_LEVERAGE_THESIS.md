@@ -18,6 +18,9 @@
 | Gulf SWFs personally controlled by royal family members | ✅ VERIFIED | `Node_Dossiers/tier2_entity_leadership_profiles.md` |
 | Same capital sources fund both Epstein-adjacent networks and AI infrastructure | 🔍 HYPOTHESIS | `04_CAPITAL_ARCHITECTURE.md`, `Node_Dossiers/tier2_affinity_qxo.md` |
 | Barak–Epstein Russia/Israel back channel (2013-2016) via leaked emails | ⚠️ PARTIALLY VERIFIED | [Al Jazeera](https://www.aljazeera.com/news/2025/12/9/israels-ex-pm-ehud-barak-and-jeffrey-epstein-had-close-relationship-emails-reveal), [Middle East Monitor](https://www.middleeastmonitor.com/20251103-leaked-emails-reveal-jeffrey-epstein-helped-israel-build-backchannel-to-russia/), [Drop Site News](https://www.dropsitenews.com/s/epstein-and-israel) |
+| Mueller subpoenaed by Comer for Epstein investigation; subpoena withdrawn (health); died March 21, 2026 | ✅ VERIFIED | [CBS News](https://www.cbsnews.com/news/robert-mueller-subpoena-withdrawn-jeffrey-epstein-house-overnight/), [The Hill](https://thehill.com/homenews/house/5478443-mueller-epstein-probe-oversight-testimony/), [NBC](https://www.nbcnews.com/politics/politics-news/robert-mueller-former-special-counsel-dies-rcna264561) |
+| Trump "innocent people" / Greene "my friends will get hurt" linguistic parallel re: Epstein files | ✅ VERIFIED | [NYT Magazine](https://www.ms.now/news/greene-says-trump-told-her-his-friends-would-get-hurt-by-epstein-files), [The Hill](https://thehill.com/homenews/house/5665887-trump-greene-epstein-coverup-claims/), multiple outlets |
+| Thiel called Giving Pledge "Epstein-adjacent, fake boomer club" (March 2026 NYT interview) | ✅ VERIFIED | [TechCrunch](https://techcrunch.com/2026/03/15/the-billionaires-made-a-promise-now-some-want-out/), [Yahoo Finance](https://finance.yahoo.com/news/peter-thiel-actively-convincing-billionaires-174212328.html) |
 | Epstein sought Putin meeting via Barak — meeting NOT confirmed to have occurred | ⚠️ PARTIALLY VERIFIED | [Times of Israel](https://www.timesofisrael.com/liveblog_entry/epstein-sought-meeting-with-putin-through-barak-report/), [Straits Times](https://www.straitstimes.com/world/united-states/epstein-waged-years-long-quest-to-meet-putin-and-talk-finance), [France24](https://www.france24.com/en/americas/20260217-putin-women-doj-files-reveal-jeffrey-epstein-build-russian-ties) |
 | Raskin called Iran strikes "desperate" distraction from Epstein files | ✅ VERIFIED | [FOX 5 DC](https://www.fox5dc.com/news/dc-maryland-virginia-leaders-react-mpd-increases-vigilance-after-us-strikes-iran) |
 | Raskin: Trump mentioned >1M times in unredacted Epstein files | ✅ VERIFIED | [Axios](https://www.axios.com/2026/02/10/trump-epstein-files-jamie-raskin-unredacted), [Truthout](https://truthout.org/articles/raskin-trump-mentioned-more-than-a-million-times-in-unredacted-epstein-files/), [Mediaite](https://www.mediaite.com/media/news/jamie-raskin-reveals-trumps-name-shows-up-in-unredacted-epstein-files-more-than-a-million-times/) |
@@ -29,6 +32,31 @@
 ## The Original Pattern: Musk/Epstein/Netanyahu (September 26, 2025)
 
 This is where the leverage mechanism was first identified operating in real-time. September 26, 2025 is the Theory Origin Date for the entire Regulated Friction framework.
+
+### Pre-September Context: The Musk–Administration Falling Out (May–September 2025)
+
+The September 26 Epstein calendar release did not occur in a vacuum. In the months preceding it, Musk had publicly broken with the Trump administration — creating the conditions where Epstein files naming him became strategically useful.
+
+| Date | Event | Verification |
+|------|-------|-------------|
+| **Jan 20, 2025** | Trump inaugurated; Musk appointed as Special Government Employee leading DOGE | ✅ VERIFIED — [Politico](https://www.politico.com/news/2025/05/28/musk-doge-depart-government-00373963), [TIME](https://time.com/7289045/musk-trump-big-beautiful-bill-national-debt-deficit-disappointed-doge/) |
+| **Feb 27, 2025** | AG Bondi releases "Epstein Files: Phase 1" binders to conservative influencers at White House; content is largely previously public material (flight logs, redacted address book); criticized as inadequate | ✅ VERIFIED — [DOJ](https://www.justice.gov/opa/pr/attorney-general-pamela-bondi-releases-first-phase-declassified-epstein-files), [CBS News](https://www.cbsnews.com/news/right-wing-influencers-get-binders-labeled-the-epstein-files-but-downplay-revelations/), [TIME](https://time.com/7262542/pam-bondi-jeffrey-epstein-files/) |
+| **May 2025** | Bondi and Deputy AG Todd Blanche brief Trump that his name appears multiple times in Epstein files; administration language on full disclosure shifts | ✅ VERIFIED — [WSJ via The Hill](https://thehill.com/homenews/administration/5416848-wsj-doj-trump-epstein-files/), [ABC News](https://abcnews.com/US/trump-told-bondi-appeared-multiple-times-epstein-files/story?id=124014441), [Rolling Stone](https://www.rollingstone.com/politics/politics-news/trump-told-epstein-files-doj-1235392612/) |
+| **May 8, 2025** | House Task Force demands Bondi release full Epstein files; no response before May 16 deadline | ✅ VERIFIED — [ABC News](https://abcnews.com/Politics/timeline-trump-administration-responses-epstein-files-release-saga/story?id=127529275) |
+| **May 22, 2025** | House passes "One Big Beautiful Bill" (215–214); extends Trump tax cuts, increases defense/border spending, projected to add ~$2.5T+ to deficit over a decade | ✅ VERIFIED — [Wikipedia](https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act), [Kiplinger](https://www.kiplinger.com/taxes/trump-tax-bill-summary) |
+| **May 27–28, 2025** | Musk publicly criticizes the bill as undermining DOGE's work: "A bill can be big or it can be beautiful, but I don't know if it can be both." Announces resignation from DOGE | ✅ VERIFIED — [Axios](https://www.axios.com/2025/05/28/musk-trump-big-beautiful-bill-doge-disappointed), [Politico](https://www.politico.com/news/2025/05/28/musk-doge-depart-government-00373963), [El País](https://english.elpais.com/usa/2025-05-29/elon-musk-announces-final-departure-from-the-white-house-a-day-after-criticizing-trump.html) |
+| **Jun 3, 2025** | Musk calls the bill a "disgusting abomination" on X; public feud with Trump escalates | ✅ VERIFIED — [CNBC](https://www.cnbc.com/2025/06/03/musk-trump-budget-bill.html), [CBS News](https://www.cbsnews.com/news/musk-renews-attacks-on-trumps-big-beautiful-bill-says-it-will-destroy-million-of-jobs/) |
+| **Jun 5, 2025** | Musk posts on X accusing Trump of being in unreleased Epstein logs; post subsequently deleted; stocks drop on feud | ✅ VERIFIED — [USA Today](https://www.usatoday.com/story/news/politics/2025/06/05/elon-musk-trump-bomb-epstein/84054503007/), [Barron's](https://www.barrons.com/livecoverage/stock-market-news-today-060525), [TIME](https://time.com/7291744/epstein-files-elon-musk-donald-trump-allegation/) |
+| **Jul 2025** | DOJ announces no actionable "client list" exists; declines further disclosure — reversing Bondi's earlier transparency promises | ✅ VERIFIED — [PBS](https://www.pbs.org/newshour/nation/epstein-client-list-doesnt-exist-doj-says-walking-back-theory-bondi-promoted), [PolitiFact](https://www.politifact.com/article/2025/jul/08/timeline-trump-admin-epstein-files-release/) |
+| **Jul 1, 2025** | Senate passes the Big Beautiful Bill; signed into law Jul 4 | ✅ VERIFIED — [Wikipedia](https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act) |
+| **Sep 21, 2025** | Trump and Musk publicly reconcile at Charlie Kirk memorial in Glendale, Arizona | ✅ VERIFIED — [Economic Times](https://economictimes.indiatimes.com/news/international/us/trump-musk-reunion-at-charlie-kirk-memorial-lip-reader-revels-the-conversation-claims-user-after-rift-over-epstein-files/articleshow/124037746.cms) |
+| **Sep 26, 2025** | House Oversight Democrats release Epstein calendars naming Musk — 5 days after reconciliation | ✅ VERIFIED — [Politico](https://www.politico.com/news/2025/09/26/musk-bannon-thiel-epstein-documents-00582627), [Al Jazeera](https://www.aljazeera.com/news/2025/9/27/elon-musk-peter-thiel-steve-bannon-among-names-in-new-epstein-documents) |
+
+**The Structural Sequence**: Musk entered the administration as a key ally (January), broke with Trump over the Big Beautiful Bill (May–June), weaponized Epstein files against Trump during the feud (June 5 deleted post), was reconciled at a public event (September 21), and then had Epstein files deployed against *him* five days later (September 26). The reconciliation-to-release gap of five days is consistent with the project's documented 7-day median lag between friction and compliance events.
+
+**[Inference] Timing Significance**: The September 26 Epstein calendar release — naming Musk among others — arrived immediately after the public reconciliation, at a moment when Musk had demonstrated he was willing to deploy Epstein material against the administration. The release rebalanced the leverage dynamic: Musk had shown the files could be used offensively against Trump (June 5); the September 26 release demonstrated that the same architecture could target Musk. This reading is consistent with the project's broader observation that Epstein files function bidirectionally — offensively against rivals, defensively for allies.
+
+**Sources**: [USA Today timeline](https://www.usatoday.com/story/graphics/2025/07/01/elon-musk-donald-trump-feud-timeline/84430939007/), [NBC News](https://www.nbcnews.com/politics/donald-trump/trump-musk-summary-timeline-political-relationship-rcna211453), [Wikipedia — Trump–Musk feud](https://en.wikipedia.org/wiki/Trump%E2%80%93Musk_feud), [ABC News Epstein timeline](https://abcnews.com/Politics/timeline-trump-administration-responses-epstein-files-release-saga/story?id=127529275)
 
 ### The Friction Event
 
@@ -70,6 +98,52 @@ This is where the leverage mechanism was first identified operating in real-time
 The September release functions as a demonstration of leverage. Netanyahu's same-day framing of Musk as someone to "talk to" about platform control was signaling within a leverage architecture. The January escalation (actual emails vs. calendar entries) shows the leverage can be *tightened* if needed. The compliance outcome (defense integration) follows.
 
 **Sources**: `New_Data_2026/2026_Analysis.md`, `Report.md`, `09_CURRENT_THREADS.md` (DOJ Epstein Files section)
+
+### March 21, 2026: The Same Architecture in Reverse
+
+The Mueller death response demonstrates the leverage architecture operating defensively — celebrating the loss of a potential witness rather than deploying files against a target.
+
+#### The Event
+
+Robert Mueller III — FBI Director (2001–2013), Special Counsel (2017–2019) — died March 21, 2026 (age 81, Parkinson's disease). Trump posted on Truth Social: "Robert Mueller just died. Good, I'm glad he's dead. He can no longer hurt innocent people!"
+
+Mueller had been subpoenaed by House Oversight Chairman James Comer for the committee's Epstein investigation — the subpoena was withdrawn after the committee learned of Mueller's health issues. Mueller was FBI Director during Epstein's entire operating period at Zorro Ranch, NYC, and Palm Beach. The FBI received tips about the ranch during Mueller's tenure. No search was conducted. His potential testimony is now permanently inaccessible.
+
+**Sources**: Mueller death: [NBC News](https://www.nbcnews.com/politics/politics-news/robert-mueller-former-special-counsel-dies-rcna264561), [Politico](https://www.politico.com/news/2026/03/21/robert-mueller-trump-special-counsel-fbi-obituary-00039059), [CNN](https://www.cnn.com/2026/03/21/politics/robert-mueller-former-fbi-director-dies). Comer subpoena: [CBS News](https://www.cbsnews.com/news/robert-mueller-subpoena-withdrawn-jeffrey-epstein-house-overnight/), [The Hill](https://thehill.com/homenews/house/5478443-mueller-epstein-probe-oversight-testimony/), [ABC News](https://abcnews.com/Politics/house-oversight-withdrawn-subpoena-robert-mueller-new-report/story?id=125148414).
+
+#### The Linguistic Parallel: "Innocent People" = "My Friends"
+
+Trump's "He can no longer hurt innocent people" maps directly to his September 2025 call with Rep. Marjorie Taylor Greene: "My friends will get hurt" — regarding Epstein files. Both statements refer to the people whose names appear in the files. Greene's account — published in NYT Magazine (December 29, 2025) and confirmed on the "Keeping It Real" podcast (February 2026) — documents Trump yelling at her for appearing at a news conference with Epstein survivors and threatening to name abusers. Trump told Greene survivors "had not earned the honor" of an Oval Office meeting. Greene called this "the last conversation" she had with Trump and identified the Epstein files as the reason for their permanent break: "Epstein was everything."
+
+**Sources**: [NYT Magazine](https://www.ms.now/news/greene-says-trump-told-her-his-friends-would-get-hurt-by-epstein-files), [The Hill](https://thehill.com/homenews/house/5665887-trump-greene-epstein-coverup-claims/), [New Republic](https://newrepublic.com/post/204786/marjorie-taylor-greene-last-conversation-trump-epstein), [HuffPost/Yahoo](https://www.yahoo.com/news/articles/marjorie-taylor-greene-says-trump-002940019.html), [TIME](https://time.com/7339247/marjorie-taylor-greene-trump-feud-epstein-files-new-claims/)
+
+#### The Greene Arc — Enforcement Outcome
+
+Greene's trajectory documents the leverage architecture's enforcement mechanism in action:
+
+| Date | Event |
+|------|-------|
+| **Sep 2025** | Greene holds news conference with Epstein survivors; threatens to name abusers |
+| **Sep 2025** | Trump calls Greene: "My friends will get hurt." Tells her survivors don't deserve Oval Office meeting |
+| **Nov 2025** | Greene signs discharge petition to force Epstein Files Transparency Act vote |
+| **Nov 2025** | Trump calls Greene "traitor" and "Lunatic"; withdraws endorsement |
+| **Nov 18, 2025** | House passes Epstein Files Transparency Act 427-1 |
+| **Nov 21, 2025** | Greene announces resignation from Congress |
+| **Dec 2025** | Greene tells NYT: "Epstein was everything." Calls MAGA "all a lie… serving their big donors" |
+
+MAGA's most loyal congresswoman had her career destroyed for supporting survivor transparency against the protected network. The framework documents this as an observable enforcement outcome.
+
+#### The Thiel Deployment (Same Week)
+
+In the same week, Peter Thiel called the Gates/Buffett Giving Pledge an "Epstein-adjacent, fake boomer club" in a New York Times interview — deploying Epstein association offensively against Gates while Thiel's own Epstein exposure (Valar Ventures limited partnership, personal introductions, listed as Zorro Ranch visitor) sits in the public record.
+
+**Sources**: [TechCrunch](https://techcrunch.com/2026/03/15/the-billionaires-made-a-promise-now-some-want-out/), [Yahoo Finance](https://finance.yahoo.com/news/peter-thiel-actively-convincing-billionaires-174212328.html), [Bloomberg (Epstein-Thiel connections)](https://www.bloomberg.com/news/articles/2026-03-12/epstein-courted-peter-thiel-for-years-with-banker-political-connections)
+
+#### [Inference] Interpretation
+
+The September 26, 2025 origin pattern demonstrated files deployed *offensively* — Epstein calendars naming Musk released on the same day Netanyahu calls him a "friend." March 21, 2026 demonstrates the *defensive* side — Trump celebrating the death of a potential witness because it removes a threat to the protected network. Thiel simultaneously deploys "Epstein-adjacent" offensively against Gates. The person who says "Epstein-adjacent" first controls who the label sticks to. The architecture operates bidirectionally: offensive against rivals, defensive for allies.
+
+**Full analysis**: `10_Real-Time_Updates_and_Tasks/2026_March/Mueller_Death_Epstein_Leverage_Signal.md`
 
 ---
 
@@ -314,10 +388,11 @@ The Barak–Epstein back channel and the "Epstein war" framing suggest that Epst
 - **For Iran strike mapping**: `sources/2026-02-28_Iran_Strike_Target_Mapping.md`
 - **For framework validation**: `10_FRAMEWORK_VALIDATION.md`
 - **For methodology and statistics**: `07_METHODOLOGY.md`
+- **For Mueller death / "innocent people" / Greene arc**: `10_Real-Time_Updates_and_Tasks/2026_March/Mueller_Death_Epstein_Leverage_Signal.md`
 
 ---
 
-*This document synthesizes the leverage mechanism across domestic (Musk/Epstein/Netanyahu), geopolitical (Iran), institutional (Anthropic), and capital (Gulf SWF) domains. All statistical claims are independently reproducible via `Run_Correlations_Yourself/`. Claims marked [Inference] represent analytical interpretations beyond the data.*
+*This document synthesizes the leverage mechanism across domestic (Musk/Epstein/Netanyahu), geopolitical (Iran), institutional (Anthropic), capital (Gulf SWF), and enforcement (Mueller death/Greene arc/Thiel deployment) domains. All statistical claims are independently reproducible via `Run_Correlations_Yourself/`. Claims marked [Inference] represent analytical interpretations beyond the data.*
 
 ---
 
@@ -362,4 +437,4 @@ The Barak–Epstein back channel and the "Epstein war" framing suggest that Epst
 | Sen. Markwayne Mullin (R-OK) nominated as DHS replacement | ✅ VERIFIED | [NPR](https://www.npr.org/2026/03/06/g-s1-112721/up-first-newsletter-kristi-noem-iran-beirut-trump-epstein-venezuela) |
 | DHS in third week without funding | ✅ VERIFIED | [NPR](https://www.npr.org/2026/03/05/nx-s1-5737455/travel-industry-dhs-shutdown) |
 
-*Updated March 6, 2026. All additions verified via web search.*
+*Updated March 22, 2026. Added Musk information leverage hypothesis: [Inference] The SpaceX-xAI merger (Feb 3, 2026, $1.25T) consolidated Musk's control over X (social media), Grok (Pentagon AI with classified access), and Starshield (spy satellite network) into a single private entity — an information leverage architecture with no confirmed civilian oversight analog. If Epstein-related leverage operates through information control, this node warrants tracking alongside existing patterns. This is flagged as a hypothesis for tracking, not a confirmed claim — see `09_CURRENT_THREADS.md` (Node 13) and `10_Real-Time_Updates_and_Tasks/2026_March/Elon_Musk_Empire_Realignment_March_2026.md`. Previous: March 6, 2026. All additions verified via web search.*

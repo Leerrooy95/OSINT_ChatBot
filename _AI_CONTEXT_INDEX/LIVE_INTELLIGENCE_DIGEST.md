@@ -1,6 +1,6 @@
 # 📡 Live Intelligence Digest
 
-> **Auto-generated:** 2026-03-21 23:00 UTC
+> **Auto-generated:** 2026-03-22 09:20 UTC
 > **Source:** Synced twice daily from the Live_Trackers pipeline
 > **Purpose:** Provides the chatbot with the latest verified intelligence data.
 > This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated each sync cycle.
@@ -144,4 +144,4 @@ Schedule Policy/Career took effect March 8, 2026, following OPM's final rule pub
 Search results do not contain information about Mojtaba Khamenei's confirmation as Supreme Leader. However, one source references Operation Epic Fury, a US-Israel joint military operation that killed Supreme Leader Ali Khamenei, suggesting a significant leadership transition occurred. The current status of Iran's Supreme Leader succession process requires additional verification beyond available search results.
 
 ---
-*Digest generated 2026-03-21 23:00 UTC by sync_live_data workflow.*
+*Digest generated 2026-03-22 09:20 UTC by sync_live_data workflow.*
