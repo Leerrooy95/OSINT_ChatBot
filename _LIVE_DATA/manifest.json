@@ -1,37 +1,41 @@
 {
-  "file_count": 8,
+  "file_count": 9,
   "files": {
     "output/chart_data.json": {
-      "sha256": "db250b40c0dc9311749d47c2d8a4a0d237167367b4c572e3dd1a324b445fd723",
-      "size": 5042
+      "sha256": "8e568dd1921915c5ad8de26048f83b25efee974ad755ad78f9c4e5ce52303ddf",
+      "size": 5330
     },
     "output/convergence_report.json": {
-      "sha256": "77f5c059d34f9d0ee0f99ece0c8310b1c0aa3aca0f94d61462792ae0ec0fd57a",
-      "size": 21371
+      "sha256": "454d7ad45e16c9e5bdb1998ac99699cefd2fd1966c1440a9e0c6cee48676d81a",
+      "size": 21568
     },
     "output/daily_intelligence.json": {
-      "sha256": "2c0845e2a5e8f8e1d5eb1461327e2fcdc832733baf9bd17fc5e66bf03d8b7626",
-      "size": 41506
+      "sha256": "f10ed4b690062f516b43c17581980effd809bcccf6402031f4b6074c7c2aabaf",
+      "size": 4427
+    },
+    "output/entity_kb_context.json": {
+      "sha256": "7ee86182ec341949742dc217e75cc464d6b4f4ce25b8cd48ffb3a240506a9e0c",
+      "size": 68212
     },
     "output/extracted_entities.json": {
-      "sha256": "c58d817839affc061a3cfb538db2d7df8722e279eef2281f579d17bec0bfdce9",
-      "size": 5767
+      "sha256": "1a983f3fe9af585e149160e92aca06256d093272676d34d2c1173afd888badf2",
+      "size": 21500
     },
     "output/fact_check.json": {
-      "sha256": "7fc7b955e4775a7774276f7540f6f210e23d4b7d1a984b0392453316c146b494",
-      "size": 14869
+      "sha256": "922d92ed1c539a4170a060b68dd3df853bee1076fd391408a5fb2b7c1a7b4f41",
+      "size": 6107
     },
     "output/live_verification.json": {
-      "sha256": "b8982b2d0ad4f2d0911a13306e3969bbe005d0a99330e76397e5eb499bea1421",
-      "size": 6870
+      "sha256": "b3dac6d6246bbada1ce6828f8508474c2c3c656ee248d3b7c54ebe08f7a88aca",
+      "size": 6776
     },
     "output/node_status.json": {
-      "sha256": "804f1d408704a54716765f45c442319695eee3da0dbd01bf0d65f581d69c53a6",
-      "size": 14152
+      "sha256": "ecfd70888a7322bfff4363d26a3e3f14a153f0faedae7e95ef82f784e90ccbf0",
+      "size": 15567
     },
     "output/rhetoric_reality.json": {
-      "sha256": "b8e13349c34a95748db4ced3c3e75380db440d149322a7b798e7d8b32af8472d",
-      "size": 29664
+      "sha256": "4e81b3b105e10fba6c048cdca7055ab673afacd75257801b51df530c7a9a921a",
+      "size": 32687
     }
   }
 }
