@@ -1,6 +1,6 @@
 # 📡 Live Intelligence Digest
 
-> **Auto-generated:** 2026-03-22 21:15 UTC
+> **Auto-generated:** 2026-03-23 09:50 UTC
 > **Source:** Synced twice daily from the Live_Trackers pipeline
 > **Purpose:** Provides the chatbot with the latest verified intelligence data.
 > This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated each sync cycle.
@@ -98,4 +98,4 @@ Schedule Policy/Career took effect March 8, 2026, following OPM's final rule pub
 No search results indicate that Mojtaba Khamenei has been confirmed as Supreme Leader of Iran by the Assembly of Experts or any other body as of March 22, 2026. The prediction remains unresolved within the 2026 timeframe. Current status is monitoring for relevant developments.
 
 ---
-*Digest generated 2026-03-22 21:15 UTC by sync_live_data workflow.*
+*Digest generated 2026-03-23 09:50 UTC by sync_live_data workflow.*
