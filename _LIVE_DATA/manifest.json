@@ -2,40 +2,40 @@
   "file_count": 9,
   "files": {
     "output/chart_data.json": {
-      "sha256": "8e568dd1921915c5ad8de26048f83b25efee974ad755ad78f9c4e5ce52303ddf",
-      "size": 5330
+      "sha256": "3b5949755d775a6c3919f41d9ec8fa9801e51c2a7d22917a856bc79fa1f232f1",
+      "size": 5903
     },
     "output/convergence_report.json": {
-      "sha256": "454d7ad45e16c9e5bdb1998ac99699cefd2fd1966c1440a9e0c6cee48676d81a",
-      "size": 21568
+      "sha256": "556c2eb75e0d9cc0142891c99131b0f61e7df03501bfee89b453233d076c0fa7",
+      "size": 21610
     },
     "output/daily_intelligence.json": {
-      "sha256": "f10ed4b690062f516b43c17581980effd809bcccf6402031f4b6074c7c2aabaf",
-      "size": 4427
+      "sha256": "a4aa02417b4accae0c56e13090300c773f759d408c1ca96a1ebe08a7b4f03b0b",
+      "size": 61607
     },
     "output/entity_kb_context.json": {
-      "sha256": "7ee86182ec341949742dc217e75cc464d6b4f4ce25b8cd48ffb3a240506a9e0c",
-      "size": 68212
+      "sha256": "40a2dec525e2ea4dbcb5735f5d8424cda6d2dcc5523c043d85725cd06c25b369",
+      "size": 78596
     },
     "output/extracted_entities.json": {
-      "sha256": "1a983f3fe9af585e149160e92aca06256d093272676d34d2c1173afd888badf2",
-      "size": 21500
+      "sha256": "a0477adf46961036aa9e9f2fd803667363ed520a2a352627a7ac9cd96c6c8ff6",
+      "size": 24433
     },
     "output/fact_check.json": {
-      "sha256": "922d92ed1c539a4170a060b68dd3df853bee1076fd391408a5fb2b7c1a7b4f41",
-      "size": 6107
+      "sha256": "738c88273c9a8fb4fa00b57ef817edb38978ef3ac3541d5d01f822b71391b677",
+      "size": 13768
     },
     "output/live_verification.json": {
-      "sha256": "b3dac6d6246bbada1ce6828f8508474c2c3c656ee248d3b7c54ebe08f7a88aca",
-      "size": 6776
+      "sha256": "e78f57f0969ee5bd0f7845d813cad25b9cd67eaf08634237b639e90212b2c3fd",
+      "size": 8094
     },
     "output/node_status.json": {
-      "sha256": "ecfd70888a7322bfff4363d26a3e3f14a153f0faedae7e95ef82f784e90ccbf0",
-      "size": 15567
+      "sha256": "828c4157d0261765a9120daee592f2bb0a89a7b27f83ce9b5d4ec58a4167e1c3",
+      "size": 14415
     },
     "output/rhetoric_reality.json": {
-      "sha256": "4e81b3b105e10fba6c048cdca7055ab673afacd75257801b51df530c7a9a921a",
-      "size": 32687
+      "sha256": "a7e630528ed1041e39d1f75e4ee6752eeba9ca45e7a9f754d7a6cbe35a09d4ef",
+      "size": 31824
     }
   }
 }
