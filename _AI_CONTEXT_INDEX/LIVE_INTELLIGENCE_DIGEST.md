@@ -1,6 +1,6 @@
 # 📡 Live Intelligence Digest
 
-> **Auto-generated:** 2026-03-24 21:25 UTC
+> **Auto-generated:** 2026-03-25 09:40 UTC
 > **Source:** Synced twice daily from the Live_Trackers pipeline
 > **Purpose:** Provides the chatbot with the latest verified intelligence data.
 > This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated each sync cycle.
@@ -146,4 +146,4 @@ Schedule Policy/Career reclassifications took effect in March 2026 amid ongoing 
 No confirmation of Mojtaba Khamenei as Supreme Leader by the Assembly of Experts as of March 24, 2026. Supreme Leader Ali Khamenei was assassinated on February 28, 2026, during Operation Epic Fury, leaving Iran in a succession crisis with the Assembly of Experts responsible for selection. Search results confirm Khamenei's death but provide no updates on a successor.
 
 ---
-*Digest generated 2026-03-24 21:25 UTC by sync_live_data workflow.*
+*Digest generated 2026-03-25 09:40 UTC by sync_live_data workflow.*
