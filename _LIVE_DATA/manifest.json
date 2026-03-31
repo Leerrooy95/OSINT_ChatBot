@@ -2,40 +2,40 @@
   "file_count": 9,
   "files": {
     "output/chart_data.json": {
-      "sha256": "f3ad083ae00e1f64e132e2b64ff9756fbe7c263ababe1ba794d584d035a6a6bb",
-      "size": 7846
+      "sha256": "db0ac92d480ff93263ac792d3d8a8551b78281b7708ddf18b976506f3befb24b",
+      "size": 7848
     },
     "output/convergence_report.json": {
-      "sha256": "9f2ba6cd4b8b50cdcc71135dcd11681b2ef9a64ae84e4f10b0d3596f10e74158",
-      "size": 35502
+      "sha256": "8af08624e4586704f7963b16a4d8f2a54acb207e26a792d967e15b16f7c1b8a7",
+      "size": 41097
     },
     "output/daily_intelligence.json": {
-      "sha256": "ee9d02c7dbf43adaaa044f0b5431d0dc346a77832f1e176bf6f43b59b7691107",
-      "size": 53558
+      "sha256": "ac8d44e26f1e84f32694e3063a52da2c57ca8a1a1c2e9f37ddb56b1d037c44fd",
+      "size": 54042
     },
     "output/entity_kb_context.json": {
-      "sha256": "006669eaa6e502fcded80f4ae6a0bbd377654b278a641ac0ef6da3c3478b2476",
-      "size": 111665
+      "sha256": "fd10eb607327b814fbd0c2684fd3dc6e4c3b8775e5a21fa96ffd1c3e3130be39",
+      "size": 91023
     },
     "output/extracted_entities.json": {
-      "sha256": "f81a8065ed391829d7e007af8bd22d2be3cd273be2f346d2d76b0e7295da515a",
-      "size": 16378
+      "sha256": "2c3f94f2d5261f5b86acba809029b078b7b86b44d7847f4dd8151ddb2d01c529",
+      "size": 15514
     },
     "output/fact_check.json": {
-      "sha256": "ee55871a7207563e5ae48d07de780b682829591205fc4108f5f456d4ce9aafc0",
-      "size": 67033
+      "sha256": "0385ee549424f50f0fc913a4bb26f79a7594fb8477b8823e68399bdaa176e2aa",
+      "size": 61301
     },
     "output/live_verification.json": {
       "sha256": "1058ae8cc0aa78d0604eb50822fa6cfd3bbf54d906db7890b4e19d2d22c26d07",
       "size": 3990
     },
     "output/node_status.json": {
-      "sha256": "269a61718cf92b62603d662d78c3b0f998536d728fa45e5cf263805562037222",
-      "size": 18037
+      "sha256": "1c80d72687e30e1385248a52ba8b09797e375ee6cb1accb1433087f6821b74c8",
+      "size": 16694
     },
     "output/rhetoric_reality.json": {
-      "sha256": "6f9479425f759a5c56b40982201378cdea0602ae2028ae902bbb934a4bccfcab",
-      "size": 71238
+      "sha256": "d2c9838e827310bf93e7bb445cc2dadc06f7bc8b18bbd779965819a5097d59b3",
+      "size": 50393
     }
   }
 }
