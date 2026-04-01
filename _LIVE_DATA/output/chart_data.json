@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-31T20:38:18.129005+00:00",
-  "total_runs": 66,
+  "last_updated": "2026-04-01T03:14:00.183405+00:00",
+  "total_runs": 70,
   "timeline": {
     "dates": [
       "2026-03-08",
@@ -26,7 +26,8 @@
       "2026-03-28",
       "2026-03-29",
       "2026-03-30",
-      "2026-03-31"
+      "2026-03-31",
+      "2026-04-01"
     ],
     "active_nodes": [
       4,
@@ -51,6 +52,7 @@
       0,
       0,
       0,
+      7,
       7,
       7
     ],
@@ -78,7 +80,8 @@
       0,
       0,
       3,
-      2
+      2,
+      1
     ],
     "convergence_detected": [
       true,
@@ -103,6 +106,7 @@
       false,
       false,
       false,
+      true,
       true,
       true
     ]
@@ -132,7 +136,8 @@
       "2026-03-28",
       "2026-03-29",
       "2026-03-30",
-      "2026-03-31"
+      "2026-03-31",
+      "2026-04-01"
     ],
     "COMPLIANCE": [
       6,
@@ -158,7 +163,8 @@
       2,
       2,
       9,
-      15
+      18,
+      9
     ],
     "DE_ESCALATION": [
       0,
@@ -184,6 +190,7 @@
       2,
       2,
       2,
+      1,
       0
     ],
     "ESCALATION": [
@@ -210,7 +217,8 @@
       0,
       0,
       4,
-      10
+      11,
+      6
     ],
     "FRICTION": [
       1,
@@ -236,7 +244,8 @@
       0,
       0,
       3,
-      9
+      11,
+      5
     ],
     "NEUTRAL": [
       0,
@@ -262,6 +271,7 @@
       10,
       10,
       10,
+      1,
       1
     ]
   },
@@ -290,7 +300,8 @@
       "2026-03-28",
       "2026-03-29",
       "2026-03-30",
-      "2026-03-31"
+      "2026-03-31",
+      "2026-04-01"
     ],
     "nodes": [
       "arkansas_datacenter",
@@ -326,6 +337,7 @@
         "MONITORING",
         "MONITORING",
         "ACTIVE",
+        "ACTIVE",
         "ACTIVE"
       ],
       "epstein_files": [
@@ -352,6 +364,7 @@
         "MONITORING",
         "MONITORING",
         "CRITICAL",
+        "ACTIVE",
         "ACTIVE"
       ],
       "gulf_swf": [
@@ -377,6 +390,7 @@
         "MONITORING",
         "MONITORING",
         "MONITORING",
+        "ACTIVE",
         "ACTIVE",
         "ACTIVE"
       ],
@@ -404,6 +418,7 @@
         "ACTIVE",
         "ACTIVE",
         "CRITICAL",
+        "CRITICAL",
         "CRITICAL"
       ],
       "israel": [
@@ -430,7 +445,8 @@
         "ACTIVE",
         "ACTIVE",
         "CRITICAL",
-        "CRITICAL"
+        "CRITICAL",
+        "ACTIVE"
       ],
       "maxwell": [
         "ACTIVE",
@@ -455,6 +471,7 @@
         "MONITORING",
         "MONITORING",
         "MONITORING",
+        "ACTIVE",
         "ACTIVE",
         "ACTIVE"
       ],
@@ -482,20 +499,21 @@
         "MONITORING",
         "MONITORING",
         "ACTIVE",
+        "ACTIVE",
         "ACTIVE"
       ]
     }
   },
   "leverage_type_totals": {
-    "LEGAL": 67,
-    "KINETIC": 82,
-    "FINANCIAL": 107,
+    "LEGAL": 73,
+    "KINETIC": 90,
+    "FINANCIAL": 119,
     "REGULATORY": 39,
-    "REPUTATIONAL": 26
+    "REPUTATIONAL": 28
   },
   "convergence_rate": {
-    "total_runs": 66,
-    "convergence_events": 17,
-    "rate_pct": 25.8
+    "total_runs": 70,
+    "convergence_events": 21,
+    "rate_pct": 30.0
   }
 }
