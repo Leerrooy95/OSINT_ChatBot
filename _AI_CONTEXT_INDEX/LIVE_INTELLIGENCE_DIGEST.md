@@ -1,6 +1,6 @@
 # 📡 Live Intelligence Digest
 
-> **Auto-generated:** 2026-04-01 21:31 UTC
+> **Auto-generated:** 2026-04-02 09:48 UTC
 > **Source:** Synced twice daily from the Live_Trackers pipeline
 > **Purpose:** Provides the chatbot with the latest verified intelligence data.
 > This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated each sync cycle.
@@ -103,4 +103,4 @@ Schedule Policy/Career legal challenges are actively proceeding through federal 
 Mojtaba Khamenei was officially confirmed as Iran's third Supreme Leader by the Assembly of Experts on March 8, 2026, following his father Ali Khamenei's assassination during the 2026 Iran war. The 88-member clerical body chose him in what was reported as both a unanimous vote and separately as receiving 59 out of 88 votes, above the required two-thirds majority.
 
 ---
-*Digest generated 2026-04-01 21:31 UTC by sync_live_data workflow.*
+*Digest generated 2026-04-02 09:48 UTC by sync_live_data workflow.*
