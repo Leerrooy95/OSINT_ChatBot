@@ -1,49 +1,96 @@
 # 📡 Live Intelligence Digest
 
-> **Auto-generated:** 2026-04-02 09:48 UTC
+> **Auto-generated:** 2026-04-02 21:24 UTC
 > **Source:** Synced twice daily from the Live_Trackers pipeline
 > **Purpose:** Provides the chatbot with the latest verified intelligence data.
 > This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated each sync cycle.
 
 ## Data Timestamp
-- **Generated:** 2026-04-01T08:59:29Z
+- **Generated:** 2026-04-02T08:54:48Z
 - **Source engine:** Live Trackers daily_intelligence.py (Brave Search + Claude)
+
+## Top Developments
+### 1. Trump claims Iran requested ceasefire but demands Strait of Hormuz reopening first on Day 33 of Operation Epic Fury
+**Type:** KINETIC
+
+President Trump announced April 1st that Iran has requested a ceasefire but the US will only consider it after Iran reopens the Strait of Hormuz shipping lane. Trump delivered a national address stating US 'core strategic objectives are nearing completion' with operations potentially ending in 2-3 weeks. This represents a potential inflection point in the month-long kinetic operation that has disrupted global oil markets and stressed Gulf sovereign wealth fund portfolios.
+
+*Source: CNN, CNBC, AP News*
+
+### 2. DOJ's 3.5M-page Epstein release in January 2026 triggered Prince Andrew arrest; March 5 sixth release added further documents
+**Type:** INTELLIGENCE
+
+The DOJ published approximately 3.5 million responsive Epstein pages on January 30, 2026, under the Epstein Files Transparency Act, with a sixth supplemental release on March 5, 2026; reports indicate the complete file set exceeds 6 million pages. Prince Andrew was arrested in February 2026 after newly released materials included photos and emails suggesting he may have shared confidential information with Epstein. New documents also detailed what prison guards Noel and Thomas were doing the night Epstein died, including failures to conduct required 30-minute checks.
+
+*Source: DOJ Disclosures, CNN Politics*
+
+### 3. Oracle reports record Q3 results but $50B AI capex push turns free cash flow deeply negative, threatening dividend sustainability
+**Type:** FINANCIAL
+
+Oracle delivered 22% revenue growth to $17.2 billion in Q3 FY2026 with 84% explosion in cloud infrastructure revenue, but aggressive AI spending including Stargate partnership has pushed capital expenditure to $50.64 billion for FY2026. This has turned free cash flow deeply negative despite strong operational performance, adding stress to the company's existing $100B+ debt load and creating potential dividend sustainability issues.
+
+*Source: Oracle Q3 FY2026 earnings reports*
+
+## New Alerts
+- **[]** N/A
+- **[]** N/A
+- **[]** N/A
+
+## Active Signals
+- **[ACTIVE - CRITICAL]** () N/A
+- **[ACTIVE - HIGH IMPACT]** () N/A
+- **[ACTIVE - FINANCIAL STRESS]** () N/A
+- **[ACTIVE - RESILIENT]** () N/A
+- **[ACTIVE - STRUCTURAL]** () N/A
+- **[MONITORING]** () N/A
+- **[ACTIVE - DIPLOMATIC]** () N/A
+
+## Priority Watchlist
+- {'item': 'Iran war conclusion timeline vs. Lebanon linkage', 'rationale': "Trump's 2-3 week timeline conflicts with Iran's demand to include Lebanon war resolution. Watch for timeline extension or scope expansion.", 'timeframe': '2-3 weeks'}
+- {'item': 'Oracle dividend sustainability decision', 'rationale': 'Negative free cash flow from AI capex spending may force dividend cut despite record revenue. Watch Q4 guidance and capital allocation statements.', 'timeframe': 'Next earnings cycle'}
+- {'item': 'DOJ Epstein document release continuation', 'rationale': '3.5M pages released but reports indicate 100K+ additional pages plus digital evidence (40 computers, 70 CDs) still held. Watch for next batch timing.', 'timeframe': 'Ongoing'}
+- {'item': 'Schedule Policy/Career legal challenge resolution', 'rationale': 'Federal employee union lawsuits against 50K position reclassification could affect broader workforce restructuring timeline.', 'timeframe': 'Court calendar dependent'}
+- {'item': 'Gulf SWF transaction pace under kinetic stress', 'rationale': "Monitor whether current transaction velocity (Mubadala $10.95B in deals) can be sustained if Iran conflict extends beyond Trump's timeline.", 'timeframe': 'Next 30 days'}
 
 ## Entities Scanned
 58
 
 ## Node Status
 - **maxwell** — `ACTIVE`
-  - New DOJ search warrant applications disclosed March 31, 2026 reveal emails suggesting Ghislaine Maxwell arranged women for Prince Andrew, including communications ahead of his official state visit to Peru in 2002. This represents fresh documentary evidence of Maxwell's operational role beyond her convicted trafficking activities. Separately, Representative Raja Krishnamoorthi introduced House Resolution 119-635 on August 5 formally opposing any Maxwell clemency, stating her conviction was 'more than warranted by the facts.' The resolution affirms that clemency would 'deny survivors the justice they deserve.' These developments occur as Maxwell continues serving her 20-year sentence at FPC Bryan while her habeas corpus petition remains pending.
-- **iran** — `CRITICAL`
-  - Iranian drone attacks struck fuel tanks at Kuwait International Airport and set ablaze a Kuwaiti crude oil tanker off Dubai, causing fires but no reported casualties. Trump is scheduled to deliver a prime-time address on the Iran war, with Defense Secretary Hegseth stating the next few days will be decisive. Iran's foreign minister confirmed his country had neither responded to the US 15-point peace proposal nor made a counteroffer, denying formal negotiations were underway.
+  - Lawyers for Ghislaine Maxwell have publicly stated she would speak fully and honestly about her relationship with Jeffrey Epstein if President Trump grants her clemency, representing an explicit public offer. Representative Raja Krishnamoorthi has proposed House Resolution 119-635 to the House Judiciary Committee opposing any clemency, affirming her conviction was warranted. The DOJ has published approximately 3.5 million responsive pages under the Epstein Files Transparency Act, with a sixth release on March 5, 2026, though reports suggest the full file set exceeds 6 million pages.
+- **iran** — `ACTIVE`
+  - President Trump delivered a prime-time address on April 1, 2026 claiming US forces will 'finish the job' in Iran within 2-3 weeks as 'core strategic objectives are nearing completion,' while threatening to bomb Iran back to the 'Stone Age' if the Strait of Hormuz remains closed. Simultaneously, China and Pakistan presented a new ceasefire initiative on March 31 linking immediate ceasefire to reopening the Strait of Hormuz, with multiple sources reporting backchannel negotiations are underway despite Iranian Foreign Minister Araghchi publicly stating 'at present there is no negotiation.' Iran is demanding a guaranteed permanent ceasefire according to senior Iranian sources, while US intelligence assessments suggest Iran believes it is in a strong position and does not trust Trump's negotiation intentions. The war has now entered its fifth week with oil supplies squeezed and inflation rising.
 - **gulf_swf** — `ACTIVE`
-  - Saudi PIF Governor Al-Rumayyan announced a new five-year strategy to be released in coming weeks, featuring a 15% reduction in capital spending and a pivot toward AI investments, with eight PIF subsidiary IPOs planned for 2026. UAE's Mubadala, as a minority investor alongside lead seller KKR, completed an exit from CoolIT Systems in a $4.75B deal with 15x returns, with the transaction expected to close in Q3. The claim regarding a Mubadala acquisition of Clear Channel could not be verified from available evidence.
+  - Saudi Arabia's Public Investment Fund is implementing a major strategic shift from self-funded mega-projects toward private sector partnerships in its new 2026-2030 strategy, as announced by Governor Al-Rumayyan at FII PRIORITY Miami. The strategy emphasizes attracting third-party capital to flow into PIF portfolio companies across multiple sectors, moving away from the previous model of predominantly internal funding. This pivot comes as regional tensions from the Iran war create economic pressures, though S&P raised Saudi's 2026 growth forecast to 4.1% despite the conflict. Meanwhile, UAE's Mubadala completed a $4.75 billion exit from CoolIT Systems in a KKR-led transaction, capitalizing on AI infrastructure demand, while also securing new energy assets with a 100% stake in Indonesia's Southwest Andaman exploration block.
 - **israel** — `ACTIVE`
-  - Israel conducted two separate strikes in the Beirut area on April 1, 2026, targeting a senior Hezbollah commander and another senior member, according to IDF statements. Simultaneously, Israeli forces completed wide-scale strikes on Iranian regime infrastructure sites in Tehran, with the IDF reporting 170 targets hit over 24 hours including weapons research facilities. The Israeli military suspended an entire reserve battalion on March 30 after soldiers detained a CNN crew in the West Bank village of Tayasir, with the unit pulled for additional training. Iran continues launching missile salvos toward central Israel, with IDF air defenses actively intercepting threats as the conflict enters day 33.
-- **oracle_ellison** — `ACTIVE`
-  - Oracle reported strong Q3 FY2026 results (ended February 2026) with total revenue jumping 22% to $17.2 billion, driven by an 84% explosion in Oracle Cloud Infrastructure (OCI) revenue and 44% overall cloud growth. The company announced a $0.50 cash dividend with ex-date of April 9, 2026, and stock surged 14% on the results. Remaining Performance Obligations (RPO) reached a record $553 billion backlog. Despite the strong quarter, Oracle stock remains down 24.6% over the past 3 months and analysts maintain mixed ratings with price targets ranging from $200 (Bank of America buy rating) to $262.91 consensus target. Oracle also secured a federal contract win with Treasury's financial management marketplace as the first cloud-native offering.
+  - The Israeli Air Force conducted strikes on approximately 400 Iranian regime targets over the past two days, with overnight operations targeting dozens of military infrastructure sites in central Tehran including around 15 facilities, according to IDF announcements on April 1, 2026. Simultaneously, Israel is establishing a 'security zone' in southern Lebanon designed to push anti-tank missile fire away from Israel's northern border, as confirmed by PM Netanyahu. Iranian missile attacks continue with Israel's air defense systems responding to fresh waves of missile fire marking the fourth such attack within recent days. The IDF also killed IRGC's Lebanon engineering chief and struck 170 Iranian regime targets in the previous 24-hour period, indicating sustained high-tempo operations across multiple fronts.
+- **oracle_ellison** — `CRITICAL`
+  - Oracle's stock has fallen approximately 57% amid investor concerns over its aggressive AI infrastructure push, coinciding with the announcement of up to 30,000 layoffs globally — roughly 18% of its workforce — to fund a $10 billion AI expansion. The company has set aside up to $2.1 billion for restructuring costs in fiscal 2026. Despite strong Q3 results showing 22% revenue growth to $17.2 billion, analysts are questioning Oracle's financial stability given its existing $100B+ debt load and deeply negative free cash flow.
 - **epstein_files** — `ACTIVE`
-  - The DOJ published 3.5 million responsive pages of Epstein-related records in compliance with the Epstein Files Transparency Act through March 2026, including files pertaining to President Trump. Emails showing Prince Andrew may have forwarded confidential trade documents to Epstein were cited by police in connection with his arrest on February 18, 2026 on suspicion of misconduct in public office. The release also included new details about Epstein's final hours, with guards failing to conduct required 30-minute checks.
+  - The DOJ released approximately 3.5 million responsive pages under the Epstein Files Transparency Act on January 30, 2026, with a sixth release on March 5, 2026; reports indicate the full file set exceeds 6 million pages. Prince Andrew was arrested in February 2026 after newly released documents suggested he may have shared confidential information with Epstein. FBI Director Kash Patel told Congress that an exhaustive review found no evidence Epstein trafficked women to other high-profile individuals, drawing pushback from lawmakers including Rep. Thomas Massie.
 - **arkansas_datacenter** — `ACTIVE`
-  - Google's $1 billion Port of Little Rock data center project has been detailed as consisting of five industrial buildings totaling 1.43 million square feet, two office buildings and an electrical substation, according to recent U.S. Army Corps documents. Meanwhile, Meta is funding construction of seven new natural gas-fired plants to power its Louisiana data center, with Entergy announcing the project will create thousands of construction jobs from 2026 to 2031. The developments reinforce Arkansas-Louisiana as a major datacenter corridor, with Google also supporting a new 600-megawatt solar and 350-megawatt battery facility that will serve all Entergy Arkansas customers. West Memphis, Arkansas is being positioned as home to one of the world's largest AI data centers, representing the largest economic investment in Arkansas history.
+  - Google's $1 billion data center project at the Port of Little Rock has been detailed with five industrial buildings totaling 1.43 million square feet, two office buildings and an electrical substation according to documents submitted to the U.S. Army Corps of Engineers on March 31, 2026. Meanwhile, Meta is funding construction of seven new natural gas-fired plants to power its largest data center in Louisiana, with Entergy Louisiana announcing the project will create thousands of construction jobs from 2026 to 2031. The University of Arkansas at Pine Bluff launched a new AI and Data Center program on April 2, 2026, approved by the UA System Board of Trustees to strengthen workforce pathways for the expanding sector. These developments occur as data center construction spending shows record growth in early 2026, with the sector among the largest gainers in nonresidential construction despite overall market weakness.
 
-*Node scan: 2026-04-01T08:55:55.622434+00:00*
+*Node scan: 2026-04-02T08:46:03.456353+00:00*
 
 ## Convergence Report
-- **Convergence events detected:** 22
+- **Convergence events detected:** 24
   - 2026-03-08: 3 active nodes
   - 2026-03-08: 4 active nodes
   - 2026-03-09: 5 active nodes
 
-*Convergence analysis: 2026-04-01T08:59:04.253975+00:00*
+*Convergence analysis: 2026-04-02T08:49:05.913681+00:00*
 
 ## Fact Check Results
-- **Web evidence confirms the Kuwait airport drone strike and the tanker strike off Dubai, but the tanker struck was a Kuwaiti-owned tanker (Kuwait Petroleum), not described as an Iranian attack on 'April 1' — the tanker strike occurred on March 30-31 per evidence. More critically, no web evidence supports a China-Pakistan '5-point peace initiative' presented on March 31; the verified peace proposal referenced is a 15-point US proposal that Iran rejected. The claim misattributes the ceasefire initiative to China and Pakistan.** — Iran strikes Kuwait airport and Kuwaiti oil tanker off Dubai as Trump plans prime-time address; Iran rejects US 15-point ceasefire proposal
-- **The CoolIT exit is confirmed as a Mubadala and KKR deal, but the claim describes it as a 'Mubadala exit' when Mubadala was only a minority investor — the deal was led by KKR. The Clear Channel acquisition by Mubadala is not supported by any web evidence provided. The PIF and CoolIT details are otherwise verified.** — PIF unveils five-year strategy cutting capital spending 15% with eight IPOs planned for 2026 while Mubadala and KKR complete $4.75B CoolIT exit amid Iran war pressures
-- **The claim states Prince Andrew's arrest was linked to him forwarding confidential trade documents to Epstein, which is confirmed. However, the claim says 'led to his recent arrest' implying it is recent as of the claim date (March/April 2026), when web evidence shows Andrew was arrested on February 18, 2026 — not recently relative to late March 2026. More critically, the claim states '3.5 million Epstein documents' were released, but web evidence indicates the DOJ press release cites 3.5 million responsive pages while a Wikipedia source notes the database indexed only 2.15 million documents as of March 2026, suggesting the 3.5M figure refers to pages not documents. The framing of 'new revelations about Prince Andrew arrest' as if the arrest is recent is misleading given it occurred in February 2026.** — DOJ releases 3.5 million pages of Epstein records through March 2026; Prince Andrew arrested in February over trade document allegations
+- **The claim states the total document release is 3.5 million pages, but web evidence indicates over 6 million pages exist in the full Epstein files, with a sixth release on March 5, 2026; the 3.5 million figure refers to an earlier DOJ press release milestone, not the complete March 2026 total. Additionally, the claim references 'House Resolution 119-635' as a recent April 2026 development, but Wikipedia places this resolution on August 5 (no year specified), and the BBC April 2 reporting date for the clemency offer is unverifiable from provided evidence. The core BBC-reported clemency offer framing ('fully and honestly') is partially supported by web evidence but the precise April 2 date and wording cannot be fully confirmed.** — Maxwell lawyers publicly offer full Epstein testimony in exchange for Trump clemency; House resolution opposes any pardon
+- **The stock decline figure is inconsistently reported: Forbes cites 57% while CapitalAI Daily cites 58%; the claim uses 57% which aligns with Forbes. However, the claim states Oracle 'set aside $2.1 billion for restructuring costs this fiscal year, including an additional $500 million allocation' — web evidence from The Guardian confirms the $2.1B restructuring cost figure but does not confirm a separate additional $500M allocation as a distinct line item. More critically, the claim frames the 57% drop as a single-event crash tied to the layoff announcement, but evidence suggests it reflects cumulative stock decline from AI spending pressures rather than a single-day crash. The core facts (57% decline, ~30,000 layoffs, $10B AI bet, $2.1B restructuring) are supported.** — Oracle stock down ~57% amid AI spending concerns as company cuts up to 30,000 jobs and sets $2.1B restructuring budget
+- **The claim states the DOJ released 3.5 million Epstein documents 'by March 2026,' but web evidence indicates the major 3.5 million page release occurred on January 30, 2026, with a sixth release on March 5, 2026, and the full file set reportedly exceeds 6 million pages — the 3.5 million figure is not the March 2026 total. Additionally, Prince Andrew's arrest is confirmed by web evidence as occurring in February 2026 based on the January 30 release, not as a result of a March release.** — DOJ published 3.5M Epstein pages by January 2026 with further releases through March; Prince Andrew arrested in February over email disclosures
+- **The claim attributes crew count reporting to the 'Qatari Defense Ministry,' but no web source mentions Qatar's Defense Ministry in connection with this incident; sources cite Kuwait Petroleum Corporation and Dubai/UAE authorities. The 21 crew member figure is not confirmed in available web evidence.** — Kuwaiti oil tanker struck by Iranian drone attack off Dubai on March 30, 2026; fire extinguished with crew aboard
+- **The claim states the DOJ 'completed' a 3.5 million page release 'in March 2026,' but web evidence shows the major 3.5 million page release occurred January 30, 2026 (not March), with a sixth supplemental release on March 5, 2026, and total files reportedly exceed 6 million pages. Prince Andrew's arrest occurred in February 2026 following the January release, not as a result of a March 2026 release.** — DOJ's 3.5M-page Epstein release in January 2026 triggered Prince Andrew arrest; March 5 sixth release added further documents
+- **The claim names 'Jared Kushner' as a Trump administration mediator in Ukraine-Russia talks, but web evidence identifies Steve Witkoff as the US special envoy handling these negotiations; Kushner is not mentioned in any of the provided sources as a Ukraine-Russia mediator. Kushner's role is associated with Gulf/Middle East investment, not Ukraine diplomacy.** — Russia rejects Ukraine's Easter ceasefire proposal; US-mediated trilateral talks continue without breakthrough as Trump's deadline passes
+- **The claim states the DOJ released approximately 3.5 million pages 'as of March 2026,' but web evidence shows the 3.5 million page milestone was reached with the January 30, 2026 release, with a sixth supplemental release on March 5, 2026; the total file set reportedly exceeds 6 million pages, making '3.5 million pages as of March 2026' an undercount of the cumulative total.** — DOJ Epstein document releases surpass 3.5M pages through March 2026 with sixth release on March 5; prison guard details and Prince Andrew arrest among key developments
 
-*Fact-check run: 2026-04-01T09:00:18.871063+00:00*
+*Fact-check run: 2026-04-02T08:57:52.931250+00:00*
 
 ## Live Verification Summary
 - **Total predictions tracked:** 10
@@ -55,52 +102,52 @@
 ### Maxwell clemency decision by Trump DOJ
 **Status:** monitoring | **Timeframe:** 2026
 
-Ghislaine Maxwell has repeatedly requested clemency from Trump, with her lawyer indicating she could provide information clearing Trump and Bill Clinton of Epstein-related wrongdoing in exchange for clemency. Trump has responded noncommittally, stating he's "allowed to do it" but hasn't thought about it, while DOJ officials have made contradictory statements about her prison transfer.
+Ghislaine Maxwell is actively seeking clemency from the Trump administration, with Democratic lawmakers questioning the possibility of Trump granting her a pardon or commutation. A DOJ official was caught on video claiming Maxwell was transferred to lower-security prison to keep her quiet, while the clemency petition remains under consideration with no final decision announced.
 
 ### Iran war ceasefire or major escalation
 **Status:** monitoring | **Timeframe:** Ongoing
 
-The Iran-US conflict remains active with no ceasefire achieved as of April 1, 2026. Iran has rejected multiple US ceasefire proposals, including a 15-point peace plan, while Trump claims negotiations are ongoing despite Iranian officials denying any direct talks are taking place. The conflict continues with ongoing strikes across the region.
+The conflict remains active with contradictory signals on ceasefire prospects. Trump claims Iran requested a ceasefire and wants the Strait of Hormuz reopened first, while Iranian officials consistently deny any ongoing negotiations and reject US ceasefire proposals as "one-sided and unfair." Recent strikes continue including attacks on Tehran that injured Iranian officials, indicating neither ceasefire nor major escalation threshold has been definitively reached.
 
 ### Strait of Hormuz full shipping restoration
 **Status:** monitoring | **Timeframe:** Ongoing
 
-The Strait of Hormuz remains effectively closed to most commercial shipping as of late March 2026, with Iran maintaining control through mines and selective passage permissions. While Iran has allowed a small number of vessels from China, Malaysia, India, and Pakistan to pass through, approximately 2,000 ships remain stranded and tanker traffic has dropped by roughly 70 percent since the closure began March 1, 2026.
+The Strait of Hormuz remains effectively closed after nearly four weeks, with Iran blocking most commercial shipping through VHF transmissions stating passages are "not allowed." While a few Chinese, Indian, Pakistani, and Malaysian vessels have been granted selective passage through diplomatic arrangements, approximately 2,000 ships from other nations remain stranded on either side of the waterway. The U.S. Navy is conducting mine-clearing operations and strikes against Iranian naval vessels, but Defense Secretary Hegseth has not specified concrete measures or timeline for full reopening.
 
 ### Oracle Stargate financial restructuring or default
 **Status:** partial | **Timeframe:** 2026
 
-Oracle is undergoing significant financial restructuring amid its AI infrastructure buildout, including a $2.1 billion restructuring plan with up to 30,000 layoffs and $58 billion in new debt. The company faces securities fraud class action lawsuits with an April 6, 2026 deadline, and credit default swap spreads have hit record highs at 198.18 basis points as Oracle manages $120 billion in outstanding debt. While not a formal default, Oracle is experiencing severe financial stress related to its Stargate commitments.
+Oracle has implemented a major $2.1 billion restructuring plan involving up to 30,000 layoffs to free up $8-10 billion in annual cash flow for AI infrastructure spending. The company's credit default swap spreads reached record highs at 198.18 basis points, indicating market concerns about default risk amid $100B+ debt levels and $50B additional capital raising for Stargate and other AI investments.
 
 ### New batch of Epstein documents released
 **Status:** verified | **Timeframe:** Ongoing
 
-The DOJ has released multiple new batches of Epstein documents in 2026. On January 30, 2026, over 3 million pages of documents, 180,000 images, and 2,000 videos were released. A sixth release was published on March 5, 2026, releasing about 50,000 previously removed files after DOJ and FBI review.
+The DOJ has released multiple new batches of Epstein documents in 2026. On January 30, 2026, the DOJ released over 3 million pages of documents, 180,000 images, and 2,000 videos, which Deputy Attorney General Todd Blanche stated would be the final major release under the Epstein Files Transparency Act. A sixth release was published on March 5, 2026, followed by the restoration of about 50,000 previously removed files after DOJ and FBI review.
 
 ### Epstein associate indicted or named in new documents
 **Status:** partial | **Timeframe:** 2026
 
-The 2026 Epstein files releases have named multiple associates in new documents, including Commerce Secretary Howard Lutnick (planned 2012 island visit despite claiming no contact after 2005) and physicist Lawrence Krauss (ongoing relationship through 2018). However, FBI Director Kash Patel told Congress that an exhaustive review by nearly 1,000 agents found no evidence warranting new indictments against uncharged third parties.
+The Epstein Files Transparency Act has resulted in the release of over 2.1 million documents through March 2026, including FBI 302 victim interview statements and emails from Epstein's computers. Several associates have been newly named in released documents, including Commerce Secretary Howard Lutnick (shown planning a 2012 island visit despite claiming no contact after 2005) and physicist Lawrence Krauss (revealed ongoing relationship through 2018). However, FBI Director Kash Patel stated that an exhaustive review by nearly 1,000 agents found no evidence warranting new indictments against uncharged third parties.
 
 ### Gulf SWF emergency capital reallocation from US markets
 **Status:** partial | **Timeframe:** Ongoing
 
-Gulf sovereign wealth funds are showing signs of strategic shift amid regional conflict, with some GCC members reportedly revisiting investment plans. However, Saudi PIF Governor Al Rumayyan recently reaffirmed commitment to global investments despite Iran war, stating the fund remains "structurally resilient" with a well-diversified portfolio. The UAE has also reaffirmed its $1.4 trillion US investment commitment, suggesting measured caution rather than emergency withdrawal.
+Gulf sovereign wealth funds are facing strategic pressure but maintaining US market commitments with modifications. Saudi PIF's governor reaffirmed global investment commitment despite Iran war tensions, while the fund shifts toward attracting third-party capital in its upcoming five-year strategy. However, reports indicate potential pullbacks from Middle Eastern investments could limit capital availability to US tech startups and investment firms that rely on Gulf funding.
 
 ### TikTok USDS JV lawsuit outcome or Congressional review action
 **Status:** monitoring | **Timeframe:** 2026
 
-The TikTok USDS Joint Venture LLC was restructured in January 2026 with 80% ownership by non-Chinese investors including Oracle, following ByteDance's May 2024 lawsuit challenging the Protecting Americans from Foreign Adversary Controlled Applications Act. The joint venture now oversees data protection, algorithm security, content moderation, and software assurance in the U.S. market with algorithm licensing from ByteDance.
+The TikTok USDS Joint Venture LLC was officially established on January 22, 2026, with 80% ownership by non-Chinese investors including Oracle, Silver Lake, and MGX, while ByteDance retains a 19.9% stake. The joint venture oversees data protection, algorithm security, content moderation, and software assurance in the U.S. market. No specific lawsuit outcomes or Congressional review actions regarding the USDS joint venture structure have been identified in current search results.
 
 ### Schedule Policy/Career legal challenge succeeds or fails
 **Status:** monitoring | **Timeframe:** 2026
 
-Schedule Policy/Career legal challenges are actively proceeding through federal courts with mixed preliminary outcomes. The NTEU has filed an amended complaint and the court accepted their proposal on March 17, 2026, while a separate Ninth Circuit case vacated a preliminary injunction that had blocked Executive Order 14,251 related to federal collective bargaining requirements. No final resolution on the core Schedule Policy/Career reclassification has been reached yet.
+Schedule Policy/Career implementation began in March 2026 following OPM's February 6 final rule, with multiple legal challenges filed by unions including NTEU. Courts have accepted amended complaints and litigation is actively proceeding, but no final judicial ruling on the constitutional or statutory validity of the reclassification has been issued yet.
 
 ### Mojtaba Khamenei confirmed as Supreme Leader of Iran
 **Status:** verified | **Timeframe:** 2026
 
-Mojtaba Khamenei was officially confirmed as Iran's third Supreme Leader by the Assembly of Experts on March 8, 2026, following his father Ali Khamenei's assassination during the 2026 Iran war. The 88-member clerical body chose him in what was reported as both a unanimous vote and separately as receiving 59 out of 88 votes, above the required two-thirds majority.
+Mojtaba Khamenei was officially selected as Iran's third Supreme Leader by the Assembly of Experts on March 8, 2026, following his father Ali Khamenei's assassination during the 2026 Iran war. The 88-member clerical body chose him in what was reported as both a unanimous vote and separately as receiving 59 out of 88 votes, above the required two-thirds majority.
 
 ---
-*Digest generated 2026-04-02 09:48 UTC by sync_live_data workflow.*
+*Digest generated 2026-04-02 21:24 UTC by sync_live_data workflow.*
