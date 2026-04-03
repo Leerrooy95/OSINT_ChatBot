@@ -55,11 +55,11 @@ The 1991–2003 period established three pillars of the Epstein network infrastr
 
 | Detail | Information | Verification |
 |--------|-------------|--------------|
-| Current facility | Federal Prison Camp (FPC) Bryan, Texas | ✅ VERIFIED — Court TV, Tallahassee Democrat, Star-Advertiser, Daily Wire (Aug 2025) |
+| Current facility | Federal Prison Camp (FPC) Bryan, Texas (minimum-security); transferred from FCI Tallahassee, Florida | ✅ VERIFIED — [CNN](https://www.cnn.com/2025/08/01/politics/ghislaine-maxwell-federal-prison-texas), [NBC News](https://www.nbcnews.com/news/us-news/texas-federal-prison-camp-bryan-ghislaine-maxwell-was-moved-steps-secu-rcna223464), [KBTX](https://www.kbtx.com/2025/08/01/epstein-accomplice-ghislaine-maxwell-moved-bryan-prison/) |
 | Security level | Minimum-security (federal prison camp) | ✅ VERIFIED — BOP classification; dormitory-style housing, limited/no perimeter fencing |
 | Previous facility | FCI Tallahassee, Florida (low-security) | ✅ VERIFIED — multiple outlets |
 | Transfer date | August 2025 | ✅ VERIFIED — Tallahassee Democrat (Aug 1, 2025), Court TV |
-| Transfer context | Transfer to lower security unusual for conviction profile; BOP declined to comment on individual placement | ✅ VERIFIED — Star-Advertiser, Daily Wire |
+| Transfer context | Transfer to lower security unusual for conviction profile — BOP policy requires sex offenders to be housed at minimum low-security; waiver required and unprecedented per BOP. Transfer occurred one week after Maxwell met privately with Deputy AG Todd Blanche (Jul 24-25, 2025). Sen. Whitehouse demanded documents on waiver, specifically noting Blanche involvement | ✅ VERIFIED — [CNN](https://www.cnn.com/2025/08/15/politics/ghislaine-maxwell-texas-federal-prison-camp-bryan), [NBC News](https://www.nbcnews.com/news/us-news/texas-federal-prison-camp-bryan-ghislaine-maxwell-was-moved-steps-secu-rcna223464), [Sen. Whitehouse Letter](https://www.whitehouse.senate.gov/news/release/whitehouse-demands-documents-on-transfer-of-ghislaine-maxwell-to-minimum-security-bureau-of-prisons-facility/) |
 | Original sentence | 20 years (June 2022) | ✅ VERIFIED — court records |
 | Conviction | Sex trafficking of minors (Dec 2021 verdict) | ✅ VERIFIED — court records |
 
@@ -67,7 +67,7 @@ The 1991–2003 period established three pillars of the Epstein network infrastr
 
 | Detail | Information | Verification |
 |--------|-------------|--------------|
-| Clemency offer | Maxwell's attorney (David Markus) stated she would testify "fully and honestly" in exchange for clemency from President Trump | ✅ VERIFIED — CBS News, Politico, NBC News, Time (Feb 9, 2026) |
+| Clemency offer | Maxwell's attorney David Markus stated: "Maxwell is prepared to speak fully and honestly if granted clemency by President Trump" — invoked 5th Amendment at Feb 9 deposition; offered to clear Trump and Clinton in exchange for clemency | ✅ VERIFIED — [NPR](https://www.npr.org/2026/02/10/g-s1-109413/maxwell-appeals-for-clemency), [NBC News](https://www.nbcnews.com/politics/justice-department/ghislaine-maxwell-pleads-fifth-says-speak-fully-honestly-trump-grants-rcna258227), [TIME](https://time.com/7375277/ghislaine-maxwell-epstein-trump-clinton-innocent-congress-testimony-clemency-pardon/) |
 | Formal letter to Congress | Maxwell's legal counsel sent letter tying cooperation to clemency grant; offered to "exonerate" both Trump and Clinton | ✅ VERIFIED — Time, The Telegraph (Feb 2026) |
 | Formal OPA petition status | DOJ Office of the Pardon Attorney case status: pending; no public grant or denial as of March 2026 | ⚠️ PARTIALLY VERIFIED — DOJ OPA search database accessible but individual case details not publicly disclosed |
 | Congressional opposition | H.Res.913 (119th Congress) introduced Nov 2025: expressing opposition to any clemency, commutation, or pardon for Maxwell | ✅ VERIFIED — Congress.gov |
