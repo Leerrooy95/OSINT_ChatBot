@@ -1,12 +1,12 @@
 # 📡 Live Intelligence Digest
 
-> **Auto-generated:** 2026-04-05 09:27 UTC
+> **Auto-generated:** 2026-04-05 21:19 UTC
 > **Source:** Synced twice daily from the Live_Trackers pipeline
 > **Purpose:** Provides the chatbot with the latest verified intelligence data.
 > This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated each sync cycle.
 
 ## Data Timestamp
-- **Generated:** 2026-04-04T08:39:29Z
+- **Generated:** 2026-04-05T08:41:44Z
 - **Source engine:** Live Trackers daily_intelligence.py (Brave Search + Claude)
 
 ## Entities Scanned
@@ -28,15 +28,15 @@
 - **arkansas_datacenter** — `ACTIVE`
   - Google's $1 billion data center project at the Port of Little Rock has been detailed as consisting of five industrial buildings totaling 1.43 million square feet, two office buildings and an electrical substation, according to documents submitted to the U.S. Army Corps of Engineers on March 31, 2026. Simultaneously, the University of Arkansas at Pine Bluff launched its Center for Artificial Intelligence and Data Analytics (CAIDA) on April 2, 2026, approved by the UA System Board of Trustees to strengthen workforce pathways in emerging technologies. These developments complement the existing AVAIO Digital $6-21B campus announcement and demonstrate accelerating AI infrastructure buildout in Arkansas under the state's datacenter-friendly regulatory framework established through Acts 373/548.
 
-*Node scan: 2026-04-04T08:31:54.110956+00:00*
+*Node scan: 2026-04-05T08:34:12.980063+00:00*
 
 ## Convergence Report
-- **Convergence events detected:** 28
+- **Convergence events detected:** 30
   - 2026-03-08: 3 active nodes
   - 2026-03-08: 4 active nodes
   - 2026-03-09: 5 active nodes
 
-*Convergence analysis: 2026-04-04T08:34:46.315595+00:00*
+*Convergence analysis: 2026-04-05T08:37:02.913821+00:00*
 
 ## Fact Check Results
 - **The claim states House Resolution 119-635 was proposed on August 5th, but this date is inconsistent with the April 1-2 2026 timeframe of the claim; the web evidence confirms the resolution was proposed by Krishnamoorthi but does not confirm 'August 5th' as the date within the April 2026 context. Additionally, the claim says the resolution 'formally opposes clemency' which the Wikipedia source confirms, but the framing that Maxwell's move occurred 'within days of being personally interviewed by Deputy AG Todd Blanche' is misleading — web sources indicate Blanche said the Bureau of Prisons made the decision to move Maxwell due to threats against her life, not as part of clemency negotiations.** — Maxwell moved to minimum-security Texas facility after DOJ transfer; House Resolution 119-635 opposes clemency as Blanche cites safety concerns
@@ -107,4 +107,4 @@ Verification call failed.
 Verification call failed.
 
 ---
-*Digest generated 2026-04-05 09:27 UTC by sync_live_data workflow.*
+*Digest generated 2026-04-05 21:19 UTC by sync_live_data workflow.*
