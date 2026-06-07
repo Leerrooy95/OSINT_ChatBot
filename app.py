@@ -16,6 +16,7 @@ deployed on Render (or any host) without touching the source code.
 
 import os
 import re
+import secrets
 import time
 import logging
 from datetime import timedelta
@@ -23,11 +24,12 @@ from functools import wraps
 
 from flask import (
     Flask, request, jsonify, render_template,
-    session, redirect, url_for,
+    session, redirect, url_for, g,
 )
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from flask_wtf.csrf import CSRFProtect
+from werkzeug.middleware.proxy_fix import ProxyFix
 import anthropic
 
 from knowledge_base import KNOWLEDGE_BASE_TEXT
@@ -40,6 +42,17 @@ log = logging.getLogger(__name__)
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", os.urandom(32).hex())
 
+# ---------------------------------------------------------------------------
+# ProxyFix — Render (and most PaaS platforms) sit behind a load-balancer /
+# CDN that adds X-Forwarded-For and X-Forwarded-Proto headers.  Without this
+# middleware Flask sees the *proxy* IP as the client address, which means:
+#   • Rate limiting counts ALL users as a single IP (the load-balancer's).
+#   • SESSION_COOKIE_SECURE may be ineffective because proto looks like "http".
+# x_for=1 / x_proto=1 / x_host=1 trusts exactly one proxy hop — Render's LB.
+# Never set x_for higher than the number of trusted proxy hops in your stack.
+# ---------------------------------------------------------------------------
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1)
+
 # Harden session cookies
 app.config["SESSION_COOKIE_HTTPONLY"] = True
 app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
@@ -49,13 +62,42 @@ app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(hours=2)
 # CSRF protection
 csrf = CSRFProtect(app)
 
-# Rate limiting — uses client IP by default, in-memory storage
+# ---------------------------------------------------------------------------
+# Rate limiting
+# ---------------------------------------------------------------------------
+# In production with multiple gunicorn workers the in-process memory://
+# backend tracks limits *per worker*.  Each worker has its own counter, so a
+# user can effectively multiply the allowed rate by the worker count.
+# Set RATELIMIT_STORAGE_URI=redis://<host>:<port>/0 for accurate cross-worker
+# limits.  On Render: add a Redis (Key Value) service and paste its Internal
+# URL here.  Upstash also offers a free Redis tier that works on Render free.
+_rate_limit_storage_uri = os.environ.get("RATELIMIT_STORAGE_URI", "memory://")
+
 limiter = Limiter(
     get_remote_address,
     app=app,
     default_limits=[],              # no global default; limits set per-route
-    storage_uri="memory://",
+    storage_uri=_rate_limit_storage_uri,
+    headers_enabled=True,           # emit X-RateLimit-* / Retry-After headers
 )
+
+
+# ---------------------------------------------------------------------------
+# CSP nonce — generated once per request; injected into the
+# Content-Security-Policy header AND into every Jinja2 template so inline
+# <script> blocks can carry the nonce attribute instead of relying on the
+# insecure 'unsafe-inline' source expression.
+# ---------------------------------------------------------------------------
+@app.before_request
+def _generate_csp_nonce() -> None:
+    """Attach a cryptographically random nonce to the request context."""
+    g.csp_nonce = secrets.token_urlsafe(16)
+
+
+@app.context_processor
+def _inject_csp_nonce() -> dict:
+    """Make the per-request CSP nonce available to all Jinja2 templates."""
+    return {"csp_nonce": g.get("csp_nonce", "")}
 
 
 # ---------------------------------------------------------------------------
@@ -63,6 +105,7 @@ limiter = Limiter(
 # ---------------------------------------------------------------------------
 @app.after_request
 def _set_security_headers(response):
+    nonce = g.get("csp_nonce", "")
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["X-Frame-Options"] = "DENY"
     response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
@@ -72,9 +115,12 @@ def _set_security_headers(response):
     response.headers["Strict-Transport-Security"] = (
         "max-age=63072000; includeSubDomains; preload"
     )
+    # Per-request nonce replaces 'unsafe-inline' for inline <script> blocks.
+    # External CDN scripts (Tailwind, marked.js, DOMPurify) are allowed by
+    # their origin domain and do not need a nonce.
     response.headers["Content-Security-Policy"] = (
         "default-src 'self'; "
-        "script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com "
+        f"script-src 'self' 'nonce-{nonce}' https://cdn.tailwindcss.com "
         "https://cdn.jsdelivr.net; "
         "style-src 'self' 'unsafe-inline'; "
         "img-src 'self' data:; "
@@ -85,6 +131,20 @@ def _set_security_headers(response):
     response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, private"
     response.headers["Pragma"] = "no-cache"
     return response
+
+
+# ---------------------------------------------------------------------------
+# Error handlers
+# ---------------------------------------------------------------------------
+@app.errorhandler(429)
+def _rate_limit_handler(e):
+    """Return a JSON 429 so the chat UI can display a readable message.
+
+    Without this handler Flask-Limiter returns an HTML error page, which
+    breaks the JSON contract of /api/chat and causes the UI to show a raw
+    '<html>...' string as an error bubble.
+    """
+    return jsonify({"error": "Rate limit exceeded. Please slow down."}), 429
 
 
 # ---------------------------------------------------------------------------
