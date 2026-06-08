@@ -1,0 +1,28 @@
+version: 2
+updates:
+  # ── GitHub Actions ──────────────────────────────────────────────────────────
+  # Dependabot will open PRs when new releases are available for the actions
+  # used in .github/workflows/.  Because we pin to full commit SHAs (see
+  # fix/github-actions-hardening), Dependabot will bump the SHA *and* update
+  # the inline # vX.Y.Z comment so the intent remains human-readable.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "dependencies"
+      - "github-actions"
+
+  # ── Python (pip) ────────────────────────────────────────────────────────────
+  # Dependabot will open PRs when new versions of Flask, anthropic, gunicorn,
+  # Flask-Limiter, or Flask-WTF are released.  Review and merge these PRs to
+  # stay ahead of security advisories.
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "dependencies"
+      - "python"
