@@ -135,7 +135,9 @@
         </div>
     </div>
 
-    <script>
+    <!-- nonce="{{ csp_nonce }}" allows this inline script under the per-request
+         Content-Security-Policy nonce, replacing the insecure 'unsafe-inline'. -->
+    <script nonce="{{ csp_nonce }}">
         const inputField = document.getElementById('user-input');
         const sendBtn    = document.getElementById('send-btn');
         const chatContainer = document.getElementById('chat-container');
