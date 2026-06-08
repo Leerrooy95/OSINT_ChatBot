@@ -3,11 +3,51 @@ services:
     name: osint-chatbot
     runtime: python
     plan: free
+
+    # pip install is sufficient for this project — no build tools needed.
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+
+    # Gunicorn tuning notes:
+    #   --workers 2          : 2 sync workers is safe on Render's free tier
+    #                          (512 MB RAM). Each Claude API call blocks a
+    #                          worker for up to 120 s, so >2 workers risks OOM.
+    #   --timeout 120        : matches the max Claude response time
+    #   --max-requests 1000  : restart each worker after 1000 requests to
+    #                          reclaim any leaked memory (recommended for
+    #                          long-running production deployments)
+    #   --max-requests-jitter 100 : randomise restarts so both workers don't
+    #                          restart simultaneously
+    #   --access-logfile -   : emit access logs to stdout so Render captures
+    #                          them in the service log stream
+    #   --log-level info     : surface startup and worker lifecycle messages
+    startCommand: >-
+      gunicorn app:app
+      --bind 0.0.0.0:$PORT
+      --workers 2
+      --timeout 120
+      --max-requests 1000
+      --max-requests-jitter 100
+      --access-logfile -
+      --log-level info
+
     healthCheckPath: /health
+
     envVars:
       - key: FLASK_SECRET_KEY
-        generateValue: true
+        generateValue: true   # Render generates a secure random value at deploy time
+
+      # Python 3.12.13 (released 2026-03-03) includes security fixes for
+      # CVE-2026-24515, CVE-2026-25210, CVE-2025-59375, and others in libexpat
+      # and http.client.  Always use the latest security patch of 3.12.x.
       - key: PYTHON_VERSION
-        value: "3.12.3"
+        value: "3.12.13"
+
+      # Ensure Python output is sent straight to the log stream without
+      # buffering, so log messages appear in real time in the Render dashboard.
+      - key: PYTHONUNBUFFERED
+        value: "1"
+
+      # Prevent Python from writing .pyc files inside the container — not
+      # needed on a read-only or ephemeral filesystem and saves a few ms.
+      - key: PYTHONDONTWRITEBYTECODE
+        value: "1"
