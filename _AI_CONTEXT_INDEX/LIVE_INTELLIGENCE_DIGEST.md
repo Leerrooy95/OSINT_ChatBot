@@ -1,6 +1,6 @@
 # 📡 Live Intelligence Digest
 
-> **Auto-generated:** 2026-07-05 11:07 UTC
+> **Auto-generated:** 2026-07-05 22:05 UTC
 > **Source:** Synced twice daily from the Live_Trackers pipeline
 > **Purpose:** Provides the chatbot with the latest verified intelligence data.
 > This file is separate from the core _AI_CONTEXT_INDEX files and is regenerated each sync cycle.
@@ -107,4 +107,4 @@ Verification call failed.
 Verification call failed.
 
 ---
-*Digest generated 2026-07-05 11:07 UTC by sync_live_data workflow.*
+*Digest generated 2026-07-05 22:05 UTC by sync_live_data workflow.*
